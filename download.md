@@ -34,13 +34,13 @@
 			<td><b>yutq</b> </td>
 		</tr>		
 		<tr class="a">
-			<td>v 1.2 GA </td>
+			<td>v 1.2.0 GA </td>
 			<td>2020/01/18</td>
 			<td> <a href="https://pan.baidu.com/s/1NDeB_g_-6Qbn_bHkTGnFGA" target="_blank">链接下载</a>  </td>
 			<td><b>6bda</b> </td>
 		</tr> 
 		<tr class="b">
-			<td>v 1.0 GA </td>
+			<td>v 1.0.0 GA </td>
 			<td>2019/12/06</td>
 			<td> <a href="https://pan.baidu.com/s/15j7RSUQybCVlHx8uyFk2rQ" target="_blank">链接下载</a> </td>
 			<td><b>g17z</b> </td>
