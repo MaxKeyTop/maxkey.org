@@ -10,10 +10,10 @@
 			<th>提取码</th>
 		</tr>
 		<tr class="a">
-			<td>v 2.0.0 RC1 </td>
-			<td>2020/06/01</td>
-			<td> <a href="https://pan.baidu.com/s/1iXdknvvBUvaqSF6Ro2RDiw" target="_blank">链接下载</a>  </td>
-			<td><b>jr9m</b> </td>
+			<td>v 2.0.0 GA </td>
+			<td>2020/07/13</td>
+			<td> <a href="https://pan.baidu.com/s/16hhDTk_I-yjh0E6Lukpkxw" target="_blank">链接下载</a>  </td>
+			<td><b>xfrr</b> </td>
 		</tr> 
 		<tr class="b">
 			<td>v 1.4.0 GA </td>
