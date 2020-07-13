@@ -42,7 +42,7 @@ start_maxkey_wiki.bat
 		</thead>
 		<tbody>
 			<tr>
-				<td>1</td><td>认证平台</td><td><a href="http://sso.maxkey.top/maxkey/login" target="blank">http://sso.maxkey.top/maxkey/login</a></td>
+				<td>1</td><td>认证平台</td><td><a href="https://sso.maxkey.top/maxkey/login" target="blank">https://sso.maxkey.top/maxkey/login</a></td>
 			</tr>
 			<tr>
 				<td>2</td><td>管理平台</td><td><a href="http://sso.maxkey.top:9521/maxkey-mgt/login" target="blank">http://sso.maxkey.top:9521/maxkey-mgt/login</a></td>
