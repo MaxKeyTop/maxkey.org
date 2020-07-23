@@ -4,13 +4,13 @@
 
 JDK 1.8 +
 
-Gradle 6.0 +
+Gradle 6.5.1 +
 
-eclipse-jee-2019-12 +
+eclipse-jee-2020‑06 +
 
 Tomcat 9 +
 
-MySQL Server 5.5 +
+MySQL Server 8.0.21 +
 
 kafka 2.5.0 +
 
@@ -42,7 +42,7 @@ OpenLDAP 2.2 +
 		</tr>
 		<tr>
 			<td></td>
-			<td>database-sql</td>
+			<td>sql</td>
 			<td></td>
 			<td></td>
 			<td>版本对应MYSQL</td>
@@ -70,55 +70,6 @@ OpenLDAP 2.2 +
 		</tr>
 		<tr>
 			<td></td>
-			<td>maxkey-client-sdk</td>
-			<td></td>
-			<td></td>
-			<td>JAVA集成使用SDK</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>maxkey-connectors</td>
-			<td></td>
-			<td></td>
-			<td>身份供应连接器</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>maxkey-connector-activedirectory</td>
-			<td></td>
-			<td>ActiveDirectory连接器</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>maxkey-connector-base</td>
-			<td></td>
-			<td>身份供应连接器接口</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>maxkey-connector-ldap</td>
-			<td></td>
-			<td>LDAP连接器</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>maxkey-connector-dingtalk</td>
-			<td></td>
-			<td>钉钉连接器</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>maxkey-connector-workweixin</td>
-			<td></td>
-			<td>企业微信连接器</td>
-		</tr>
-		<tr>
-			<td></td>
 			<td>maxkey-core</td>
 			<td></td>
 			<td></td>
@@ -126,7 +77,7 @@ OpenLDAP 2.2 +
 		</tr>
 		<tr>
 			<td></td>
-			<td>maxkey-dao</td>
+			<td>maxkey-persistence</td>
 			<td></td>
 			<td></td>
 			<td>数据库访问</td>
@@ -257,7 +208,6 @@ OpenLDAP 2.2 +
 			<td></td>
 			<td>版本参数配置</td>
 		</tr>
-		
 		<tr>
 			<td></td>
 			<td>settings.gradle</td>
