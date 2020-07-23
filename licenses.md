@@ -63,10 +63,9 @@ Apache License Version 2.0 鼓励代码共享和尊重原作者的著作权，�
 
 <h3><a name="Declaration "></a>MaxKey 声明 </h3>
 
+<font color='red'> 以下声明不可忽略 </font>
 
 <img src="{{ "/images/maxkey_login_licenses.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt=""/>
-
-以上声明不可忽略
 
 
 <h3><a name="Illegal "></a>违反 Apache 2.0新闻</h3>
