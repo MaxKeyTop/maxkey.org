@@ -42,13 +42,6 @@ OpenLDAP 2.2 +
 		</tr>
 		<tr>
 			<td></td>
-			<td>sql</td>
-			<td></td>
-			<td></td>
-			<td>版本对应MYSQL</td>
-		</tr>
-		<tr>
-			<td></td>
 			<td>docs</td>
 			<td></td>
 			<td></td>
@@ -193,6 +186,13 @@ OpenLDAP 2.2 +
 			<td></td>
 			<td></td>
 			<td>启动脚本</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>sql</td>
+			<td></td>
+			<td></td>
+			<td>版本对应MYSQL</td>
 		</tr>
 		<tr>
 			<td></td>
