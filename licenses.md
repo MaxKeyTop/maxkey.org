@@ -11,7 +11,7 @@ http://www.apache.org/licenses/LICENSE-2.0
 </a>
 
 <pre><code class="ini hljs">
-Copyright [2020] [MaxKey of copyright http://www.maxkey.top & shimingxy@163.com]
+Copyright [2020] [MaxKey of copyright http://www.maxkey.top]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -61,12 +61,12 @@ Apache License Version 2.0 鼓励代码共享和尊重原作者的著作权，�
 
 
 
-<h3><a name="Declaration "></a>MaxKey 显著声明 </h3>
+<h3><a name="Declaration "></a>MaxKey 声明 </h3>
 
 
 <img src="{{ "/images/maxkey_login_licenses.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt=""/>
 
-
+以上声明不可忽略
 
 
 <h3><a name="Illegal "></a>违反 Apache 2.0新闻</h3>
