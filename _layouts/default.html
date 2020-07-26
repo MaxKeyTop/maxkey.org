@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
 {% include head.html %}
-<body class="topBarDisabled">
-
-  <div class="container-fluid">
+<body   id="body" >
+	<div id="preloader"></div>
+	
     {% include header.html %}
-      <div class="row-fluid">
-			{% include navigation.html %}
-			<main id="bodyColumn"  class="span10" >
+			
+	<main id="main"  >
+		<section class="wow fadeInUp">
+			<div class="container">
 				{{ content }}
-			</main>
-		</div>
-	</div>
-	<hr/>
+			</div>
+		</section>
+	</main>
+	 
   {% include footer.html %}
+
 </body>
 </html>
