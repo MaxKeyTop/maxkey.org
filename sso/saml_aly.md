@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2>阿里云集成</h2>
 本文介绍阿里云使用SAML如何与MaxKey进行集成。
 

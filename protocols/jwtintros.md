@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2>1 JSON Web Token介绍</h2>
 
 JSON Web Token （JWT）是一个开放标准（<a href="https://tools.ietf.org/html/rfc7519" target="_blank">RFC 7519</a>），它定义了一种紧凑且自包含的方式，用于在各方之间安全地将信息作为JSON对象传输。由于此信息是经过数字签名的，因此可以被验证和信任。可以使用秘密（使用<b>HMAC</b>算法）或使用<b>RSA</b>或<b>ECDSA</b>的公用/专用密钥对对JWT进行签名。

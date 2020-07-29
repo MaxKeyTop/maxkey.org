@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <h2>TokenBased应用集成</h2>
 本文介绍TokenBased应用如何与MaxKey进行集成。
 

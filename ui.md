@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h1>MaxKey界面</h1>
 
 <h3>登录</h3>

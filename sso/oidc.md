@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2>OpenID Connect应用集成</h2>
 本文介绍OpenID Connect应用如何与MaxKey进行集成。
 

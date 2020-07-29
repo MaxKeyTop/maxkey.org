@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2>腾讯云集成</h2>
 本文介绍腾讯云使用SAML如何与MaxKey进行集成。
 

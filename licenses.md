@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2><a name="Overview"></a>概况</h2>
 <a name="Overview"></a>
 <p>通常，为项目列出的许可证是项目本身的许可证，而不是依赖项。</p>

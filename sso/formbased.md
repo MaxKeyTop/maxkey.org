@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2>FormBased应用集成</h2>
 本文介绍FormBased应用如何与MaxKey进行集成。
 

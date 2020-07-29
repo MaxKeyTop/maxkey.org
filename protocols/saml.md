@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2>1 SAML 介绍</h2>
  	
 SAML即安全断言标记语言，英文全称是Security Assertion Markup Language。它是一个基于XML的标准，用于在不同的安全域(security domain)之间用户身份验证和授权数据交换。在SAML标准定义了身份提供者(identity provider)和服务提供者(service provider)，这两者构成了前面所说的不同的安全域。 SAML是OASIS组织安全服务技术委员会(Security Services Technical Committee)的产品。官方技术说明可参看OASIS Security Services (SAML) TC.

@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2>1 OpenID Connect简介</h2>
 OpenID Connect是基于OAuth 2.0规范族的可互操作的身份验证协议。它使用简单的REST / JSON消息流来实现，和之前任何一种身份认证协议相比，开发者可以轻松集成。
 

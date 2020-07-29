@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h1>MaxKey身份管理</h1>
 
 <h3>身份管理是什么</h3>

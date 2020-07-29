@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2>高可用性High Availability</h2>
 
 架构Architecture

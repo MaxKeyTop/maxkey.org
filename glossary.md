@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <h2>专业术语词汇表Glossary</h2>
 
 解释本文档所用到的专业术语。
