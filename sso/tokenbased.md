@@ -22,15 +22,15 @@ LTPA使用Cookie传输令牌
 
 jar包依赖如下
 
-https://github.com/shimingxy/MaxKey-Demo/tree/master/maxkey-demo-tokenbase/lib
+https://github.com/MaxKeyTop/MaxKey-Demo/tree/master/maxkey-demo-tokenbase/lib
 
 
 JSP实现Code
 
 <h4>简单令牌</h4>
 
-https://github.com/shimingxy/MaxKey-Demo/blob/master/maxkey-demo-tokenbase/src/main/webapp/jsontoken.jsp
+https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-tokenbase/src/main/webapp/jsontoken.jsp
 
 <h4>基于JSON令牌</h4>
 
-https://github.com/shimingxy/MaxKey-Demo/blob/master/maxkey-demo-tokenbase/src/main/webapp/sampletoken.jsp
+https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-tokenbase/src/main/webapp/sampletoken.jsp

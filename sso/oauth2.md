@@ -438,12 +438,12 @@ OAuth2.0错误响应中的错误码定义如下表所示：
 
 jar包依赖如下
 
-https://github.com/shimingxy/MaxKey-Demo/tree/master/maxkey-demo-oauth/lib
+https://github.com/MaxKeyTop/MaxKey-Demo/tree/master/maxkey-demo-oauth/lib
 
 认证跳转
 
-https://github.com/shimingxy/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oauth20index.jsp
+https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oauth20index.jsp
 
 获取令牌及用户信息
 
-https://github.com/shimingxy/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oauth20callback.jsp
+https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oauth20callback.jsp

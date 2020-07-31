@@ -16,9 +16,9 @@ layout: default
 
 jar包依赖如下
 
-https://github.com/shimingxy/MaxKey-Demo/tree/master/maxkey-demo-jwt/lib
+https://github.com/MaxKeyTop/MaxKey-Demo/tree/master/maxkey-demo-jwt/lib
 
 
 JSP实现Code
 
-https://github.com/shimingxy/MaxKey-Demo/blob/master/maxkey-demo-jwt/src/main/webapp/jwtcallback.jsp
+https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-jwt/src/main/webapp/jwtcallback.jsp

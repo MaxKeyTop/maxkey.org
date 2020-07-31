@@ -100,12 +100,12 @@ OAuth认证接口属性列表
 
 jar包依赖如下
 
-https://github.com/shimingxy/MaxKey-Demo/tree/master/maxkey-demo-oauth/lib
+https://github.com/MaxKeyTop/MaxKey-Demo/tree/master/maxkey-demo-oauth/lib
 
 认证跳转
 
-https://github.com/shimingxy/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oidc10index.jsp
+https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oidc10index.jsp
 
 获取令牌和用户信息及验证签名 (id_token及用户信息)
 
-https://github.com/shimingxy/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oidc10callback.jsp
+https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oidc10callback.jsp

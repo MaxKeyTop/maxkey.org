@@ -17,12 +17,12 @@ layout: default
 
 jar包依赖如下
 
-https://github.com/shimingxy/MaxKey-Demo/tree/master/maxkey-demo-cas/lib
+https://github.com/MaxKeyTop/MaxKey-Demo/tree/master/maxkey-demo-cas/lib
 
 web.xml配置
 
-https://github.com/shimingxy/MaxKey-Demo/blob/master/maxkey-demo-cas/src/main/webapp/WEB-INF/web.xml
+https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-cas/src/main/webapp/WEB-INF/web.xml
 
 JSP实现Code
 
-https://github.com/shimingxy/MaxKey-Demo/blob/master/maxkey-demo-cas/src/main/webapp/index.jsp
+https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-cas/src/main/webapp/index.jsp
