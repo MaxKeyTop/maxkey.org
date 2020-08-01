@@ -12,6 +12,12 @@ layout: default
 			<th>下载地址</th>
 			<th>提取码</th>
 		</tr>
+		<tr class="b">
+			<td>v 2.1.0 GA </td>
+			<td>2020/08/01</td>
+			<td> <a href="https://pan.baidu.com/s/1dVtIxm2NmM21VA1TUIgXKg" target="_blank">链接下载</a>  </td>
+			<td><b>9umv</b> </td>
+		</tr>
 		<tr class="a">
 			<td>v 2.0.0 GA </td>
 			<td>2020/07/13</td>
