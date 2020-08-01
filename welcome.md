@@ -12,9 +12,13 @@ layout: default
 
 2.所有应用系统能够识别和提取ticket信息
 
-  MaxKey <a href="https://www.maxkey.top" target="_blank">**官方文档**</a> <span class="divider">|</span> <a href="https://github.com/MaxKeyTop/MaxKey" target="_blank">**GitHub**</a> <span class="divider">|</span> <a href="https://gitee.com/maxkeytop/MaxKey" target="_blank">**码云(Gitee)**</a>
 
-  QQ交流群：**434469201**  <span class="divider">|</span> 邮箱EMAIL: **shimingxy@163.com**
+官方网站  <a href="https://www.maxkey.top" target="_blank"><b>官方网站</b></a> |  <a href="https://maxkeytop.gitee.io" target="_blank"><b>官方网站二线</b></a>
+
+社区交流  QQ群：<b>434469201</b> | 邮箱EMAIL: <b>shimingxy@163.com</b>
+
+代码托管 <a href="https://github.com/MaxKeyTop/MaxKey" target="_blank"><b>GitHub</b></a> | <a href="https://gitee.com/maxkeytop/MaxKey" target="_blank"><b>码云(Gitee)</b></a>
+
   
 <h2>认证协议</h2>
 
