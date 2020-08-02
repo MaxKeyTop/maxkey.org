@@ -35,7 +35,8 @@ https://github.com/MaxKeyTop/MaxKey-SpringBoot4CAS-demo
 
 
 demo分别写了三个请求:拦截请求 test1/index,test1/index1 以及不拦截请求test1/index2,
-<h3> 第一步，引入cas 客户端所需包
+
+<h3> 第一步，引入cas 客户端所需包</h3>
 
 <pre><code class="xml hljs">
 &lt;dependency&gt;
@@ -45,7 +46,7 @@ demo分别写了三个请求:拦截请求 test1/index,test1/index1 以及不拦�
 &lt;/dependency&gt;
 </code></pre>	  
 
-<h3>第二部，配置spring boot 配置文件</h3>
+<h3>第二步，配置spring boot 配置文件</h3>
 
 <pre><code class="ini hljs">
 server:
@@ -81,7 +82,7 @@ cas.accept-any-proxy
 server.context-parameters.renew
 </code></pre>
 
-<h3>第三部 在application启动类上加上 @EnableCasClient 注解</h3>
+<h3>第三步 在application启动类上加上 @EnableCasClient 注解</h3>
 
 <pre><code class="java hljs">
 @SpringBootApplication
