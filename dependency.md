@@ -33,7 +33,7 @@ layout: default
             <td>GNU General Public License v2.0</td>
 		</tr>
 		<tr>
-            <td>Tomcat</td>
+            <td>Tomcat/Tomcat-embed</td>
 			<td>9.0.*</td>
             <td>
 			The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket specifications are developed under the Java Community Process.
@@ -81,7 +81,7 @@ layout: default
 		</tr>
 		<tr>
             <td>Eclipse</td>
-			<td>eclipse-jee-2020-03</td>
+			<td>eclipse-jee-2020-06</td>
             <td>
 			The Eclipse IDE is famous for our Java Integrated Development Environment (IDE), but we have a number of pretty cool IDEs, including our C/C++ IDE, JavaScript/TypeScript IDE, PHP IDE, and more.
 

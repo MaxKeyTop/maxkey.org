@@ -16,7 +16,7 @@ IDP支持单点注销(SLO),即用户不仅仅从认证中心注销，同时也�
 1,应用系统先完成本系统注销，注销完成后调用认证中心的单点注销地址。
 		
 		
-2,修改应用单点注销完成后的地址为https://idpserver/logout,参数reLoginUrl为注销完成后访问地址。
+2,修改应用单点注销完成后的地址为https://sso.maxkey.top/logout,参数reLoginUrl为注销完成后访问地址。
 		
 
 <h2>单点注销机制</h2>

@@ -5,23 +5,54 @@ layout: default
 
 <h3>开发工具及相关软件</h3>
 
-JDK 1.8 +
-
-Gradle 6.5.1 +
-
-eclipse-jee-2020‑06 +
-
-Tomcat 9 +
-
-MySQL Server 8.0.21 +
-
-kafka 2.5.0 +
-
-Redis 6 +
-
-OpenLDAP 2.2 +
-
-
+<table border="0" class="table table-striped table-bordered ">
+	<thead>
+		<th  >软件</th><th>版本</th><th>备注</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>JDK</td>
+			<td>1.8 +</td>
+			<td>JAVA运行及开发工具包</td>
+		</tr>
+		<tr>
+			<td>eclipse-jee</td>
+			<td>2020-06 +</td>
+			<td>推荐JAVA开发工具</td>
+		</tr>
+		<tr>
+			<td>Gradle</td>
+			<td>6.5.1 +</td>
+			<td>代码构建</td>
+		</tr>
+		<tr>
+			<td>Tomcat/tomcat-embed</td>
+			<td> 9 +</td>
+			<td>应用服务器</td>
+		</tr>
+		<tr>
+			<td>MySQL Server</td>
+			<td>8.0.21 +</td>
+			<td>数据库服务器</td>
+		</tr>
+		<tr>
+			<td>Kafka</td>
+			<td>2.5.0 +</td>
+			<td>用户生命周期管理同步中间件</td>
+		</tr>
+		<tr>
+			<td>Redis</td>
+			<td>6 +</td>
+			<td>高速缓存内存数据库</td>
+		</tr>
+		<tr>
+			<td>OpenLDAP</td>
+			<td>2.2 +</td>
+			<td>企业目录服务器</td>
+		</tr>
+	</tbody>
+</table>		
+ 
 <h3>程序目录</h3>
 
 <table border="0" class="table table-striped table-bordered ">
@@ -42,13 +73,6 @@ OpenLDAP 2.2 +
 			<td></td>
 			<td></td>
 			<td>许可证</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>docs</td>
-			<td></td>
-			<td></td>
-			<td>项目网站</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -73,13 +97,6 @@ OpenLDAP 2.2 +
 		</tr>
 		<tr>
 			<td></td>
-			<td>maxkey-persistence</td>
-			<td></td>
-			<td></td>
-			<td>数据库访问</td>
-		</tr>
-		<tr>
-			<td></td>
 			<td>maxkey-identitys</td>
 			<td></td>
 			<td></td>
@@ -90,14 +107,21 @@ OpenLDAP 2.2 +
 			<td></td>
 			<td>maxkey-identity-kafka</td>
 			<td></td>
-			<td>kafka身份同步</td>
+			<td>kafka身份同步，和连接器Connector配合使用</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-identity-rest</td>
+			<td></td>
+			<td>REST身份管理接口</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
 			<td>maxkey-identity-scim</td>
 			<td></td>
-			<td>SCIM2.0身份管理</td>
+			<td>SCIM2.0身份管理接口</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -105,6 +129,13 @@ OpenLDAP 2.2 +
 			<td></td>
 			<td></td>
 			<td>使用jar包</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>maxkey-persistence</td>
+			<td></td>
+			<td></td>
+			<td>数据库访问</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -188,14 +219,21 @@ OpenLDAP 2.2 +
 			<td>shellscript</td>
 			<td></td>
 			<td></td>
-			<td>启动脚本</td>
+			<td>Window和LINUX启动脚本</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td>sql</td>
 			<td></td>
 			<td></td>
-			<td>版本对应MYSQL</td>
+			<td>数据库MYSQL脚步,GA版本对应SQL</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>style</td>
+			<td></td>
+			<td></td>
+			<td>编码规范配置</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -217,6 +255,13 @@ OpenLDAP 2.2 +
 			<td></td>
 			<td></td>
 			<td>项目引入</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>ReleaseNotes.txt</td>
+			<td></td>
+			<td></td>
+			<td>GA版本描述</td>
 		</tr>
 		<tr>
 			<td></td>

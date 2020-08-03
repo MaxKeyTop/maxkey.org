@@ -94,18 +94,209 @@ OAuth认证接口属性列表
 其他请参照OAuth2
 
 
-<h2>OAuth2客户端集成</h2>
+<h2>OIDC V1客户端集成</h2>
 
 本文使用JAVA WEB程序为例
 
-jar包依赖如下
+<h3> 第一步，引入客户端所需包</h3>
 
-https://github.com/MaxKeyTop/MaxKey-Demo/tree/master/maxkey-demo-oauth/lib
+<pre><code class="ini hljs">
+gson-2.2.4.jar
+maxkey-client-sdk.jar
+nimbus-jose-jwt-8.10.jar
+commons-codec-1.9.jar
+commons-io-2.2.jar
+commons-logging-1.1.1.jar
+</code></pre>
 
-认证跳转
+<h3> 第二步，认证跳转</h3>
 
-https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oidc10index.jsp
+<pre><code class="jsp hljs">
+&lt;%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.oauth.*" %&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.builder.*" %&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.builder.api.MaxkeyApi20" %&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.model.Token" %&gt;
 
-获取令牌和用户信息及验证签名 (id_token及用户信息)
+&lt;%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+path+"/";
 
-https://github.com/MaxKeyTop/MaxKey-Demo/blob/master/maxkey-demo-oauth/src/main/webapp/oidc10callback.jsp
+String callback="http://oauth.demo.maxkey.top:8080/demo-oauth/oauth20callback.jsp";
+OAuthService service = new ServiceBuilder()
+                            .provider(MaxkeyApi20.class)
+                            .apiKey("ae20330a-ef0b-4dad-9f10-d5e3485ca2ad")
+                            .apiSecret("KQY4MDUwNjIwMjAxNTE3NTM1OTEYty")
+                            .callback(callback)
+                            .build();
+Token EMPTY_TOKEN = null;
+String authorizationUrl = service.getAuthorizationUrl(EMPTY_TOKEN);
+
+request.getSession().setAttribute("oauthv20service", service);
+
+%&gt;
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;base href="&lt;%=basePath%&gt;"&gt;
+    
+    &lt;title&gt;OIDC V1 SSO&lt;/title&gt;
+	&lt;meta http-equiv="pragma" content="no-cache"&gt;
+	&lt;meta http-equiv="cache-control" content="no-cache"&gt;
+	&lt;meta http-equiv="expires" content="0"&gt;    
+	&lt;meta http-equiv="keywords" content="keyword1,keyword2,keyword3"&gt;
+	&lt;meta http-equiv="description" content="This is my page"&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+    &lt;a href="&lt;%=authorizationUrl%&gt;&approval_prompt=auto"&gt;OIDC V1 SSO&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+
+<h3> 第三步，获取令牌和用户信息及验证签名 (id_token及用户信息)</h3>
+
+<pre><code class="jsp hljs">
+&lt;%@ page language="java" import="java.util.*" pageEncoding="utf-8"%&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.oauth.*" %&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.builder.*" %&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.builder.api.MaxkeyApi20" %&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.model.*" %&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.*" %&gt;
+&lt;%@ page language="java" import="org.maxkey.client.oauth.domain.*" %&gt;
+&lt;%@ page language="java" import="org.maxkey.client.utils.*" %&gt;
+&lt;%@ page language="java" import="com.nimbusds.jwt.JWTClaimsSet" %&gt;
+&lt;%@ page language="java" import="com.nimbusds.jose.*" %&gt;
+&lt;%@ page language="java" import="com.nimbusds.jwt.*" %&gt;
+&lt;%@ page language="java" import="com.connsec.oidc.jose.keystore.*" %&gt;
+&lt;%@ page language="java" import="com.nimbusds.jose.jwk.*" %&gt;
+&lt;%@ page language="java" import="java.io.File" %&gt;
+&lt;%@ page language="java" import="com.nimbusds.jose.crypto.*" %&gt;
+&lt;%@ page language="java" import="com.google.gson.*" %&gt;
+
+&lt;%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+
+OAuthService service = (OAuthService)request.getSession().getAttribute("oauthv20service");
+
+if(service==null){
+	String callback="http://oauth.demo.maxkey.top:8080/demo-oauth/oidc10callback.jsp";
+	service = new ServiceBuilder()
+     .provider(MaxkeyApi20.class)
+     .apiKey("ae20330a-ef0b-4dad-9f10-d5e3485ca2ad")
+     .apiSecret("KQY4MDUwNjIwMjAxNTE3NTM1OTEYty")
+     .callback(callback)
+     .build();
+}
+
+Token EMPTY_TOKEN = null;
+Verifier verifier = new Verifier(request.getParameter("code"));
+Token accessToken = service.getAccessToken(EMPTY_TOKEN, verifier);
+
+//JWTClaimsSet idClaims = JWTClaimsSet.parse(accessToken.getId_token());
+SignedJWT signedJWT=null;
+
+//JWKSetKeyStore jwkSetKeyStore=new JWKSetKeyStore();
+
+File jwksFile=new File(PathUtils.getInstance().getClassPath()+"jwk.jwks");
+JWKSet jwkSet=JWKSet.load(jwksFile);
+
+RSASSAVerifier rsaSSAVerifier = new RSASSAVerifier(((RSAKey) jwkSet.getKeyByKeyId("maxkey_rsa")).toRSAPublicKey());
+try {
+    signedJWT = SignedJWT.parse(accessToken.getId_token());
+} catch (java.text.ParseException e) {
+    // Invalid signed JWT encoding
+}
+;
+
+OAuthClient restClient=new OAuthClient("https://sso.maxkey.top/maxkey/api/connect/v10/userinfo",accessToken.getToken());
+ 
+OIDCUserInfo userInfo=restClient.getOIDCUserInfo(accessToken.getToken());
+ 
+%&gt;
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;base href="&lt;%=basePath%&gt;"&gt;
+
+   &lt;title&gt;OpenID Connect 1.0 Demo&lt;/title&gt;
+	&lt;meta http-equiv="pragma" content="no-cache"&gt;
+	&lt;meta http-equiv="cache-control" content="no-cache"&gt;
+	&lt;meta http-equiv="expires" content="0"&gt;    
+	&lt;meta http-equiv="keywords" content="keyword1,keyword2,keyword3"&gt;
+	&lt;meta http-equiv="description" content="OpenID Connect 1.0 Demo"&gt;
+	&lt;link rel="shortcut icon" type="image/x-icon" href="&lt;%=basePath %&gt;/images/favicon.ico"/&gt;
+	&lt;script type="text/javascript" src="&lt;%=basePath %&gt;/jquery-3.5.0.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="&lt;%=basePath %&gt;/jsonformatter.js"&gt;&lt;/script&gt;
+	&lt;link   type="text/css" rel="stylesheet"  href="&lt;%=basePath %&gt;/demo.css"/&gt;
+
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+  		&lt;div class="container"&gt;
+	  		&lt;table class="datatable"&gt;
+	  			&lt;tr&gt;
+	  				
+	  				&lt;td colspan="2" class="title"&gt;OpenID Connect 1.0 Demo&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			
+	  			&lt;tr&gt;
+	  				&lt;td&gt;OpenID Connect 1.0 Logo&lt;/td&gt;
+	  				&lt;td&gt; &lt;img src="&lt;%=basePath %&gt;/images/openid.png"  width="124px" height="124px"/&gt;&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			&lt;tr&gt;
+	  				&lt;td&gt;Login&lt;/td&gt;
+	  				&lt;td&gt;&lt;%=userInfo.getSub() %&gt;&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			&lt;tr&gt;
+	  				&lt;td&gt;DisplayName&lt;/td&gt;
+	  				&lt;td&gt;&lt;%=userInfo.getName()%&gt;&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			&lt;tr&gt;
+	  				&lt;td&gt;Department&lt;/td&gt;
+	  				&lt;td&gt;&lt;%=userInfo.getGender() %&gt;&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			
+	  			&lt;tr&gt;
+	  				&lt;td&gt;email&lt;/td&gt;
+	  				&lt;td&gt;&lt;%=userInfo.getEmail() %&gt;&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			&lt;tr&gt;
+	  				&lt;td&gt;ResponseString&lt;/td&gt;
+	  				&lt;td style="word-wrap: break-word;"&gt;
+						&lt;textarea cols="68" rows="20" v-model="text2"&gt;&lt;%=userInfo.getResponseString() %&gt;&lt;/textarea&gt;
+					&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			&lt;tr&gt;
+	  				&lt;td&gt;Id_token&lt;/td&gt;
+	  				&lt;td style="word-wrap: break-word;"&gt;&lt;%=accessToken.getId_token() %&gt;&lt;/td&gt;
+	  			&lt;/tr&gt;
+				&lt;tr&gt;
+	  				&lt;td&gt;Verify&lt;/td&gt;
+	  				&lt;td style="word-wrap: break-word;"&gt;&lt;%=signedJWT.verify(rsaSSAVerifier) %&gt;&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			&lt;tr&gt;
+	  				&lt;td&gt;Issuer&lt;/td&gt;
+	  				&lt;td style="word-wrap: break-word;"&gt;&lt;%=signedJWT.getJWTClaimsSet().getIssuer() %&gt;&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			&lt;tr&gt;
+	  				&lt;td&gt;JWTClaims&lt;/td&gt;
+	  				&lt;td style="word-wrap: break-word;"&gt;
+						&lt;textarea cols="68" rows="20" v-model="text2"&gt;&lt;%=signedJWT.getPayload() %&gt;&lt;/textarea&gt;
+					&lt;/td&gt;
+	  			&lt;/tr&gt;
+	  			
+	  		&lt;/table&gt;
+  		&lt;/div&gt; 
+		&lt;script type="text/javascript"&gt;
+			FormatTextarea();
+		&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>

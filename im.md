@@ -48,4 +48,10 @@ SCIM 2 Connector
 钉钉 Connector
 
 
+飞书 Connector
+
+
+华为WeLink Connector
+
+
 other coming soon
