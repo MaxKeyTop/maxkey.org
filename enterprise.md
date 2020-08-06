@@ -47,6 +47,12 @@ layout: default
 		</tr>
 		<tr>
 			<td>认证服务</td>
+			<td>用户登录-双因素认证</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>认证服务</td>
 			<td>用户登录-Active Directory用户登录</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
@@ -390,6 +396,24 @@ layout: default
 		<tr>
 			<td>其他</td>
 			<td>JAVA SDK</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>其他</td>
+			<td>支持Windows、LINUX、UNIX多平台</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>其他</td>
+			<td>支持主流浏览器Google Chrome、Mozilla Firefox、 Internet Explorer 10、Microsoft Edge等</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>其他</td>
+			<td>支持PC、平板PAD、手机Moblie</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
