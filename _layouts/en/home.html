@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+{% include en/head.html %}
+<body   id="body" >
+	<div id="preloader"></div>
+
+	<section id="topbar" class="d-none d-lg-block">
+		<div class="container clearfix">
+		  <div class="contact-info float-left">
+			<i class="fa fa-paper-plane"></i> Last Published: {{ site.publishDate }}| Version: {{ site.publishVesion }}
+		  </div>
+		  <div class="social-links float-right">
+			<a href="#" class="twitter"><i class="fa fa-qq"></i>434469201</a>
+			<i class="fa fa-envelope-o"></i> <a href="mailto:shimingxy@163.com">shimingxy@163.com</a>
+		  </div>
+		</div>
+	</section>
+  
+	{% include en/header.html %} 
+  
+	<section id="intro" class="wow fadeIn">
+
+		<div class="intro-content">
+		  <h2><span>Connect</span> <br>In Security!</h2> 
+		  <div>
+			<a href="{{ "/en/tutorial.html" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" class="btn-get-started scrollto">
+				Getting started »
+			</a>
+			<a href="https://github.com/MaxKeyTop/MaxKey" class="btn-projects scrollto">
+				Project on GitHub
+			</a>
+		  </div>
+		</div>
+
+		<div id="intro-carousel" class="owl-carousel" >
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/1.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/2.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/3.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/4.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/5.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		</div>
+	</section><!-- #intro -->
+  
+	<main id="main"  >
+		<section id="about" class="wow fadeInUp">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-6 about-img">
+				<img src="{{ "/static/images/home/about-img.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" alt="">
+			  </div>
+
+			  <div class="col-lg-6 content">
+				<h2>Leading-Edge IAM Products</h2>
+				<h3>MaxKey is Identity and Access Management System-Single Sign On(SSO)，Maxkey is Marx's key, which means the MAX key for Every People and Every Application。</h3>
+
+				<ul>
+				  <li><i class="fa fa-check-circle-o"></i> Unified authentication and single sign on, simplify the process of account login, protect the security of account and password, and manage the account uniformly.</li>
+				  <li><i class="fa fa-check-circle-o"></i> Provides SIMPLE, STANDARD, SECURE and OPEN identity management (IDM), identity authentication (AM), single sign on (SSO), resource management and rights management.</li>
+				  <li><i class="fa fa-check-circle-o"></i> Standard security policy includes password policy, access policy; post security audit, user life cycle audit, access behavior record traceability audit, security compliance audit, security risk warning。</li>
+				</ul>
+
+			  </div>
+			</div>
+
+		  </div>
+		</section><!-- #about -->
+		
+		<section id="services">
+		  <div class="container">
+			<div class="section-header">
+			  <h2>Product Features</h2>
+			  <p>Maxkey can quickly carry out unified management and synchronization of enterprise users and institutions, and realize the management of user life cycle; it can quickly complete the integration of application authentication through standard protocol, and support the access of PC, tablet and mobile phone devices。</p>
+			</div>
+
+			<div class="row">
+			 <div class="col-lg-6">
+				<div class="box wow fadeInLeft">
+				  <div class="icon"><i class="fa fa-sitemap"></i></div>
+				  <h4 class="title"><a href="">Building Directory Service</a></h4>
+				  <p class="description">
+				  Unify enterprise organization and user master data, construct enterprise directory service。
+				  </p>
+				</div>
+			  </div>
+
+			   
+			  <div class="col-lg-6">
+				<div class="box wow fadeInRight">
+				  <div class="icon"><i class="fa fa-key"></i></div>
+				  <h4 class="title"><a href="">Single sign on</a></h4>
+				  <p class="description">
+				   Once Login, Access all authorized applications。
+				  </p>
+				</div>
+			  </div>
+
+			  <div class="col-lg-6">
+				<div class="box wow fadeInLeft">
+				  <div class="icon"><i class="fa fa-puzzle-piece"></i></div>
+				  <h4 class="title"><a href="">Standard Protocol</a></h4>
+				  <p class="description">
+					OAuth 2.0/OpenID Connect、SAML 2.0、JWT、CAS、SCIM2.0, etc。
+				  </p>
+				</div>
+			  </div>
+
+			<div class="col-lg-6">
+				<div class="box wow fadeInRight">
+				  <div class="icon"><i class="fa fa-wechat"></i></div>
+				  <h4 class="title"><a href="">Social Account Integration</a></h4>
+				  <p class="description">
+					Wechat, QQ, nail, microblog, Microsoft, Google, Facebook and other social accounts login trust。
+				  </p>
+				</div>
+			  </div>
+
+			  <div class="col-lg-6">
+				<div class="box wow fadeInLeft">
+				  <div class="icon"><i class="fa  fa-anchor"></i></div>
+				  <h4 class="title"><a href="">Multi-Factor Authentication</a></h4>
+				  <p class="description">
+					Support CAPTCHA, SMS , Google / Microsoft authenticator / freeotp / TOTP or HOTP。
+				  </p>
+				</div>
+			  </div>
+			  
+			  <div class="col-lg-6">
+				<div class="box wow fadeInRight" data-wow-delay="0.2s">
+				  <div class="icon"><i class="fa fa-balance-scale"></i></div>
+				  <h4 class="title"><a href="">Identity lifecycle management</a></h4>
+				  <p class="description">Provides standard REST and SCIM2.0 interface to easily complete the Identity synchronization of the organization. It is based on the management architecture of Apache Kafka and connector。</p>
+				</div>
+			  </div>
+
+			  <div class="col-lg-6">
+				<div class="box wow fadeInLeft" data-wow-delay="0.2s">
+				  <div class="icon"><i class="fa fa-random"></i></div>
+				  <h4 class="title"><a href="">Out of the box Connectors</a></h4>
+				  <p class="description">
+					Enterprise WECHAT, Dingding, Feishu, Huawei WeLink,SCIM 2,ActiveDirectory ,LDAP ,JDBC, etc Out of the box Connectors。
+				  </p>
+				</div>
+			  </div>
+			  
+			  <div class="col-lg-6">
+				<div class="box wow fadeInRight" data-wow-delay="0.2s">
+				  <div class="icon"><i class="fa fa-legal"></i></div>
+				  <h4 class="title"><a href="">Security Policy and Audit</a></h4>
+				  <p class="description">Configuration of password policy, access strategy; strong security audit, user life cycle audit, access behavior record traceability audit, security compliance audit, security risk warning。</p>
+				</div>
+			  </div>
+			  
+			  <div class="col-lg-6">
+				<div class="box wow fadeInLeft">
+				  <div class="icon"><i class="fa fa-bank"></i></div>
+				  <h4 class="title"><a href="">Perfect Community</a></h4>
+				  <p class="description">
+					Perfect community, to provide you with a full range of consulting and technical support, while providing enterprise services。
+				  </p>
+				</div>
+			  </div>
+			  
+			  <div class="col-lg-6">
+				<div class="box wow fadeInRight" data-wow-delay="0.2s">
+				  <div class="icon"><i class="fa fa-dollar"></i></div>
+				  <h4 class="title"><a href="">Open source And FREE</a></h4>
+				  <p class="description">
+					Based on Apache License, Version 2.0，Open source And FREE，Reduce Cost。
+				  </p>
+				</div>
+			  </div>
+			  
+			</div>
+
+		  </div>
+		</section><!-- #services -->
+		
+		
+		<section id="contact" class="wow fadeInUp">
+			<div class="container">
+				<div class="section-header">
+				  <h2>Community</h2>
+				  <p>The community helps you get the latest version, provides a place for communication, discusses the development direction and technical solutions of the product, and solves the problems encountered in the development and deployment. Join us to build the community!</p>
+				</div>
+
+				<div class="row contact-info"> 
+
+				  <div class="col-md-4">
+					<div class="contact-address">
+					  <div class="icon"><i class="fa fa-line-chart"></i></div>
+					  <h3>Last Published</h3>
+					  <address>Date: {{ site.publishDate }}| Version: <a href="{{ "/en/download.html" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}">{{ site.publishVesion }}</a></address>
+					</div>
+				  </div>
+
+				  <div class="col-md-4">
+					<div class="contact-phone">
+					  <div class="icon"><i class="fa fa-qq"></i></div>
+					  <h3>QQ Group</h3>
+					  <p>434469201</p>
+					</div>
+				  </div>
+
+				  <div class="col-md-4">
+					<div class="contact-email">
+					  <div class="icon"><i class="fa fa-envelope-o"></i></div>
+					  <h3>EMAIL</h3>
+					  <p><a href="mailto:shimingxy@163.com">shimingxy@163.com</a></p>
+					</div>
+				  </div>
+
+				</div>
+			  </div>
+
+			</div> 
+		</section><!-- #contact -->
+	
+	</main>
+	 
+    {% include en/footer.html %}
+</body>
+</html>

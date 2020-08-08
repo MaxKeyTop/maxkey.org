@@ -1,4 +1,4 @@
 ---
-layout: zh/home
+layout: en/home
 title: home
 ---
