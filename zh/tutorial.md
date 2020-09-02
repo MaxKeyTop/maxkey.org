@@ -54,7 +54,7 @@ start_maxkey_wiki.bat
 				<td>3</td><td>集成指南</td><td><a href="http://sso.maxkey.top:8080/wiki" target="blank">http://sso.maxkey.top:8080/wiki</a></td>
 			</tr>
 			<tr>
-				<td>4</td><td>账户密码</td><td>admin/admin</td>
+				<td>4</td><td>账户密码</td><td>admin/maxkey</td>
 			</tr>
 		</tbody>
 </table>		
