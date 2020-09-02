@@ -728,6 +728,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   opacity: 0.5;
   transition: 0.3s;
   padding: 15px 0;
+  width: 80px;
 }
 
 #clients img:hover {
