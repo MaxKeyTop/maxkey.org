@@ -34,6 +34,7 @@ layout: zh/default
       <td>100%</td>
       <td>100%</td>
 		</tr>
+</tbody>
 </table>
 
 
