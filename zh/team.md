@@ -78,6 +78,25 @@ layout: zh/default
 			<td>Asia/北京</td>
 			<td>解决Maxkey在Chrome “您的连接不是私密连接” 问题</td>
 		</tr>
+		<tr>
+			<td>fucan1017</td>
+			<td></td>
+			<td>https://github.com/fucan1017</td>
+			<td></td>
+			<td>contributor</td>
+			<td>Asia/北京</td>
+			<td>MaxKey-Maven版本</td>
+		</tr>
+		<tr>
+			<td>xiazhenyou</td>
+			<td></td>
+			<td>https://github.com/xiazhenyou</td>
+			<td></td>
+			<td>contributor</td>
+			<td>Asia/北京</td>
+			<td>MaxKey-SpringBoot4CAS-demo</td>
+		</tr>
+		
 	</tbody>
 </table>
 
