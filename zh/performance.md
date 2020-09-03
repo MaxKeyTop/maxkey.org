@@ -6,6 +6,8 @@ layout: zh/default
 
 环境配置 centos7.6  16核 16G
 
+测试工具 Apache JMeter 5.3  https://jmeter.apache.org/
+
 <table border="0" class="table table-striped table-bordered ">
 	<thead>
 		<th></th><th>600并发/600s</th><th>1200并发/600s</th><th>1600并发/600s</th><th>2400并发/600s</th>
@@ -35,3 +37,15 @@ layout: zh/default
 </table>
 
 
+
+600并发压力测试情况
+
+<img src="{{ "/static/images/performance/p600.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" alt=""/>
+
+1200并发压力测试情况
+
+<img src="{{ "/static/images/performance/p1200.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" alt=""/>
+
+1600并发压力测试情况
+
+<img src="{{ "/static/images/performance/p1600.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" alt=""/>
