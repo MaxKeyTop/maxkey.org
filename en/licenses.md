@@ -60,7 +60,7 @@ Apache License Version 2.0 鼓励代码共享和尊重原作者的著作权，�
 
 <h3><a name="Dependency "></a>第三方软件依赖声明</h3>
 
-参见<a href="https://maxkey.top/dependency.html">项目依赖</a>
+参见<a href="https://maxkey.top/en/dependency.html">项目依赖</a>
 
 
 
