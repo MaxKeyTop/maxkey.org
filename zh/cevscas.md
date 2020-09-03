@@ -97,7 +97,7 @@ layout: zh/default
 			<td>认证服务</td>
 			<td>认证协议-JWT协议支持</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
