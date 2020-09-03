@@ -6,7 +6,7 @@ layout: zh/default
 
 <table border="0" class="table table-striped table-bordered ">
 	<thead>
-		<th>模块</th><th>功能</th><th>社区版(Community Edition)</th><th>CAS</th>
+		<th>模块</th><th>功能</th><th>社区版(CE)</th><th>CAS</th>
 	</thead>
 	<tbody>
 		<tr>
