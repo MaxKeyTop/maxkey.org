@@ -49,3 +49,6 @@ layout: zh/default
 1600并发压力测试情况
 
 <img src="{{ "/static/images/performance/p1600.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" alt=""/>
+
+
+感谢https://github.com/fucan1017提供的测试报告
