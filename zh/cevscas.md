@@ -430,7 +430,7 @@ layout: zh/default
 			<td>客户服务</td>
 			<td>集成解决方案咨询</td>
 			<td><div class="icon">无</div></td>
-			<td></td>
+			<td><div class="icon">无</div></td>
 		</tr>
 		<tr>
 			<td>客户服务</td>
