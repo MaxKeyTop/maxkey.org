@@ -729,6 +729,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
   padding: 15px 0;
   width: 120px;
+  max-height: 100px;
 }
 
 #clients img:hover {
