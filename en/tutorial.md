@@ -2,7 +2,7 @@
 layout: en/default
 ---
 <h2>介绍</h2>
-为了你更好的使用MaxKey，本教程介绍在Windows中如何快速配置和使用MaxKey，在开始本文档前，请先<a href="https://maxkey.top/download.html" target="_blank">下载MaxKey</a>并解压到C:盘。
+为了你更好的使用MaxKey，本教程介绍在Windows中如何快速配置和使用MaxKey，在开始本文档前，请先<a href="https://www.maxkey.top/en/download.html" target="_blank">下载MaxKey</a>并解压到C:盘。
 
 <h2>配置</h2>
 hosts配置文件目录
