@@ -394,31 +394,43 @@ layout: zh/default
 			<td colspan="4"></td>
 		</tr>
 		<tr>
-			<td>其他</td>
+			<td>基础组件</td>
 			<td>JAVA SDK</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
-			<td>其他</td>
+			<td>基础组件</td>
+			<td>MySQL数据库支持</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>基础组件</td>
+			<td>ORACLE、MS SQL SERVER、IBM DB2、PostgreSQL数据库支持</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>基础组件</td>
 			<td>支持Windows、LINUX、UNIX多平台</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
-			<td>其他</td>
+			<td>基础组件</td>
 			<td>支持主流浏览器Google Chrome、Mozilla Firefox、 Internet Explorer 10、Microsoft Edge等</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
-			<td>其他</td>
+			<td>基础组件</td>
 			<td>支持PC、平板PAD、手机Moblie</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
-			<td>其他</td>
+			<td>基础组件</td>
 			<td>开发集成指南</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
