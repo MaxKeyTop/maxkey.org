@@ -23,7 +23,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>认证服务</td>
-			<td>用户登录-短信验证码</td>
+			<td>用户登录-短信验证码(阿里云短信、网易云信、腾讯云短信)</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
@@ -101,7 +101,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>认证服务</td>
-			<td>认证协议-CAS 1.0/2.0/3.0协议支持</td>
+			<td>认证协议-CAS 1.0/2.0/3.0/REST协议支持</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
