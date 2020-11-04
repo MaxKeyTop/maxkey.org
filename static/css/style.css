@@ -259,6 +259,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFD700;
 }
 
+#intro .intro-content .btn-projects-github:hover {
+  background: none;
+  color: #b3aeb1;
+}
+
+#intro .intro-content .btn-projects-gitee:hover {
+  background: none;
+  color: #009999;
+}
+
 #intro #intro-carousel {
   z-index: 8;
 }
