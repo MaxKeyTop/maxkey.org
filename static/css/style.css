@@ -224,7 +224,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 32px;
   border-radius: 2px;
   transition: 0.5s;
   margin: 10px;
@@ -244,14 +243,17 @@ h1, h2, h3, h4, h5, h6 {
 #intro .intro-content .btn-projects {
   background: #FFD700;
   border: 2px solid #FFD700;
+  padding: 10px 32px;
 }
 
 #intro .intro-content .btn-projects-github {
   background: #b3aeb1;
+  padding: 10px 14px;
 }
 
 #intro .intro-content .btn-projects-gitee {
   background: #009999;
+  padding: 10px 14px;
 }
 
 #intro .intro-content .btn-projects:hover {
