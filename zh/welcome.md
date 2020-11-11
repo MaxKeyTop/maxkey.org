@@ -131,5 +131,5 @@ layout: zh/default
 
 5. 基于Java平台开发，采用Spring、MySQL、Tomcat、Apache Kafka、Redis等开源技术，支持微服务，扩展性强。  
 
-6. 许可证 Apache License Version 2.0，开源免费。 
+6. 许可证 Apache License Version 2.0，开源、安全、自主可控。 
 
