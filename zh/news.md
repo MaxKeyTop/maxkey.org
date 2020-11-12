@@ -3,6 +3,8 @@ layout: zh/default
 ---
 <h2>新闻动态</h2>
 
+单点登录认证系统 MaxKey v2.3.0GA  发布 [2020/11/11] <a href="https://www.oschina.net/news/120328/maxkey-2-3-0-released" target="_blank">oschina</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://blog.csdn.net/shimingxy/article/details/109636738">CSDN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://segmentfault.com/a/1190000038141499">segmentfault思否</a> <br/>
+单点登录认证系统 MaxKey v2.2.0GA  发布 [2020/09/24] <a href="https://my.oschina.net/u/4420055/blog/4641359" target="_blank">oschina</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://blog.csdn.net/shimingxy/article/details/108397339">CSDN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://segmentfault.com/a/1190000023887962">segmentfault思否</a> <br/>
 单点登录认证系统 MaxKey v2.2.0RC  发布 [2020/09/04] <a href="https://www.oschina.net/news/118371/maxkey-2-2-0-rc-released" target="_blank">oschina</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://blog.csdn.net/shimingxy/article/details/108397339">CSDN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://segmentfault.com/a/1190000023887962">segmentfault思否</a> <br/>
 六个高Star开源项目，让你更懂OAuth和单点登录 [2020/08/17] <a href="https://www.bilibili.com/read/cv7206185/" target="_blank">bilibili专栏-Gitee酱</a><br/>
 MaxKey官方网站全新改版 [2020/08/06] <a href="https://www.maxkey.top" target="_blank">MaxKey.top</a><br/>
