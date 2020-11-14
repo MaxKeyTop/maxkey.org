@@ -230,7 +230,7 @@ layout: en/default
 		</tr>
 		<tr>
 			<td></td>
-			<td>style</td>
+			<td>checkstyle</td>
 			<td></td>
 			<td></td>
 			<td>编码规范配置</td>
@@ -265,38 +265,31 @@ layout: en/default
 		</tr>
 		<tr>
 			<td></td>
-			<td>gradleSetEnv.bat</td>
+			<td>setEnvVars.bat</td>
 			<td></td>
 			<td></td>
 			<td>JDK及Gradle路径配置，用于构建脚本，需要开发人员自行配置</td>
 		</tr>
 		<tr>
 			<td></td>
-			<td>gradleBuildClean.bat</td>
+			<td>release.bat</td>
 			<td></td>
 			<td></td>
 			<td>清除历史构建版本</td>
 		</tr>
 		<tr>
 			<td></td>
-			<td>gradleBuildRelease.bat</td>
-			<td></td>
-			<td></td>
-			<td>构建新版本</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>gradleIDEClean.bat</td>
-			<td></td>
-			<td></td>
-			<td>清除IDE的设置</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>gradleIDETask.bat</td>
+			<td>eclipsePluginApply.bat</td>
 			<td></td>
 			<td></td>
 			<td>设置IDE</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>eclipsePluginClean.bat</td>
+			<td></td>
+			<td></td>
+			<td>清除IDE的设置</td>
 		</tr>		
 		</tbody>
 </table>
@@ -305,7 +298,7 @@ layout: en/default
 
 1. 配置环境变量
 
-gradleSetEnv.bat
+setEnvVars.bat
 
 set JAVA_HOME=D:\JavaIDE\jdk1.8.0_91
 
@@ -314,7 +307,7 @@ set GRADLE_HOME=D:\JavaIDE\gradle-5.4.1
 
 2. 启动构建
 
-gradleBuildRelease.bat
+release.bat
 
 
 3. 构建结果
@@ -326,6 +319,69 @@ MaxKey/build/maxkey-jars
 依赖包路径
 
 MaxKey/build/maxkey-depjars
+
+
+<h3>Docker 构建release</h3>
+
+1. Docker 构建配置
+
+maxkey-web-manage/build.gradle增加以下配置
+
+<pre><code class="ini hljs">
+plugins {
+	id 'com.google.cloud.tools.jib' version '2.6.0'
+	id 'org.springframework.boot' version '2.3.4.RELEASE'
+}
+
+jib {
+	from {
+		image = 'adoptopenjdk:11-jre-openj9'
+	}
+	to {
+		image = "maxkey/maxkey-mgt"
+		tags = ["${project.version}".toString(), 'latest']
+	}
+	container {
+		jvmFlags = ['-Dfile.encoding=utf-8', '-Dserver.port=80']
+		ports = ['80']
+	}
+}
+</code></pre>
+
+maxkey-web-maxkey/build.gradle增加以下配置
+
+<pre><code class="ini hljs">
+plugins {
+	id 'com.google.cloud.tools.jib' version '2.6.0'
+	id 'org.springframework.boot' version '2.3.4.RELEASE'
+}
+
+jib {
+	from {
+		image = 'adoptopenjdk:11-jre-openj9'
+	}
+	to {
+		image = "maxkey/maxkey"
+		tags = ["${project.version}".toString(), 'latest']
+	}
+	container {
+		jvmFlags = ['-Dfile.encoding=utf-8', '-Dserver.port=80']
+		ports = ['80']
+	}
+}
+</code></pre>
+
+2. 启动构建
+
+release.bat
+
+
+3. 构建的结果
+
+maxkey-web-manage/
+
+maxkey-web-maxkey/
+
 
 
 <h3>问题及解决</h3>
