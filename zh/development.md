@@ -76,13 +76,6 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td></td>
-			<td>gradle</td>
-			<td></td>
-			<td></td>
-			<td>gradle的配置</td>
-		</tr>
-		<tr>
-			<td></td>
 			<td>maxkey-authentications</td>
 			<td></td>
 			<td></td>
@@ -265,6 +258,13 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td></td>
+			<td>gradle</td>
+			<td></td>
+			<td></td>
+			<td>gradle的配置</td>
+		</tr>
+		<tr>
+			<td></td>
 			<td>setEnvVars.bat</td>
 			<td></td>
 			<td></td>
@@ -293,6 +293,17 @@ layout: zh/default
 		</tr>		
 		</tbody>
 </table>
+
+<h3>开发环境应用启动</h3>
+
+MaxKey统一认证系统
+
+maxkey-web-maxkey/src/main/java/org/maxkey/MaxKeyApplication.java 
+
+MaxKey身份安全管理系统
+
+maxkey-web-manage/src/main/java/org/maxkey/MaxKeyMgtApplication.java
+
 
 <h3>工程构建BuildRelease</h3>
 
