@@ -26,6 +26,7 @@ MaxKey在登录完成后，会生成在线令牌，该令牌存储在Cookie和�
 
 <h5>3.1、IDP主动注销</h5>
 MaxKey注销时向SP发送注销请求，请求包含注销的令牌，SP获取注销的令牌，通知客户端进行注销
+
 基于CAS的单点登录，在单点登录时SP记住MaxKey的ticket，当MaxKey单点注销时向SP发送参数为logoutRequest，请求内容入下
 <pre><code class="xml hljs">
 &lt;samlp:LogoutRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="%s" Version="2.0" IssueInstant="%s"&gt;
