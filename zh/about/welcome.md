@@ -131,5 +131,9 @@ layout: zh/default
 
 5. 基于Java平台开发，采用Spring、MySQL、Tomcat、Apache Kafka、Redis等开源技术，支持微服务，扩展性强。  
 
-6. 许可证 Apache License Version 2.0，开源、安全、自主可控。 
+6. 开源、安全、自主可控，许可证 Apache License Version 2.0。 
 
+<h2>最有价值开源项目</h2>
+Gitee-最有价值开源项目
+
+<img src="{{ "/static/images/gitee_gvp.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt=""/>
