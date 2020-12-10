@@ -149,8 +149,6 @@ jQuery(document).ready(function( $ ) {
 	//根据屏幕分辨率判断是否是手机
 	if(window.screen.width < 500 ){
 		$("#main  img ").css({ "height": "auto", "width": "auto\9", "width":"100%", "max-width":"100%"});
-	}else{
-		$("#main  img ").css({ "height": "auto", "width": (window.screen.width - 100) + "px"});
 	}
 
   

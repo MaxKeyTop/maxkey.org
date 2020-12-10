@@ -138,4 +138,4 @@ layout: zh/default
 <h2>最有价值开源项目</h2>
 Gitee-最有价值开源项目
 
-<img src="{{ "/static/images/gitee_gvp.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt=""/>
+<img src="{{ "/static/images/gitee_gvp.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  width="800px"  alt=""/>
