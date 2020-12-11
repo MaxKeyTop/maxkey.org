@@ -16,7 +16,7 @@ layout: zh/default
 官方网站  <a href="https://www.maxkey.top" target="_blank"><b>官方网站</b></a> |  <a href="https://maxkeytop.gitee.io" target="_blank"><b>官方网站二线</b></a>
 <br/>
 
-社区交流  QQ群：<b>434469201</b> 
+QQ交流群：<b>434469201</b> 
 
 邮箱EMAIL: <b>maxkeysupport@163.com</b>
 <br/>
