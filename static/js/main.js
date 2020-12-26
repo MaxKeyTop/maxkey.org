@@ -19,9 +19,9 @@ jQuery(document).ready(function( $ ) {
   // Intro background carousel
   $("#intro-carousel").owlCarousel({
     autoplay: true,
-    dots: true,
+    dots: false,
     loop: true,
-    animateOut: 'fadeIn',
+    animateOut: 'fadeOut',
     items: 1
   });
 
