@@ -491,7 +491,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>授权标识</td>
-			<td><a href="{{site.baseurl}}/zh/licenses.html">许可证声明</a></td>
+			<td><a href="{{site.baseurl}}/zh/about/licenses.html">许可证声明</a></td>
 			<td><div class="icon">不可忽略/授权友好</div></td>
 			<td><div class="icon">友好</div></td>
 		</tr>
