@@ -162,33 +162,47 @@ lower_case_table_names=0
  
 2.3. 启动mysql服务
 
-    > service mysqld start
+    > systemctl start mysqld
 	
-    #或者下面这个
-	
-    >/etc/init.d/mysqld start
 	
 	停止
 	
-	service mysqld stop  --无需执行
+	systemctl stop mysqld  --无需执行
 	
 	
-2.5 设置密码	
+2.4 登录MySQL
 
-<pre><code class="bash hljs">
-/usr/bin/mysqladmin -u root password maxkey
-</code></pre>
+ 第一次启动MySQL后，就会有临时密码，这个默认的初始密码在/var/log/mysqld.log文件中，我们可以用这个命令来查看：
  
-2.6 设置访问权限
+ <pre><code class="bash hljs">
+ grep "password" /var/log/mysqld.log
+ </code></pre>
+ 
+2.5 设置访问权限及密码
 
 <pre><code class="bash hljs">
-mysql -u root -pmaxkey;
+mysql -u root -p;
+
+输入密码
+
+set global validate_password.policy=0; --改变密码等级
+
+set global validate_password.length=4; --改变密码最小长度
+
+SET PASSWORD = 'maxkey';
 
 use mysql;
 
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'maxkey' WITH GRANT OPTION;
+alter user 'root'@'localhost' identified with mysql_native_password by 'maxkey';
 
 flush privileges ;
+
+---修改root用户的访问权限为‘%’
+
+update user set host='%' where user='root';
+
+flush privileges ;
+
 </code></pre>
  
 2.7. 设置开机启动
