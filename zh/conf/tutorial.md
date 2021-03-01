@@ -107,7 +107,7 @@ start_maxkey_wiki.bat
 	</tbody>
 </table>
 
-<h2>LINUX版本</h2>
+<h2>LINUX 7 版本</h2>
 
 1 OpenJDK 14 安装
 
