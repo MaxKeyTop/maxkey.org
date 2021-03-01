@@ -227,7 +227,12 @@ chkconfig mysqld on
 
 3.2 数据导入
 
-使用客户端工具导出windows版本的MaxKey的数据及表SQL,登陆LINUX MYSQL并创建schema maxkey,数据导入到maxkey schema中。
+MaxKey对应的版本SQL文件，参见
+
+https://gitee.com/maxkeytop/MaxKey/tree/master/sql
+
+登陆LINUX MYSQL并创建schema maxkey,数据文件导入到maxkey schema中，
+
 
 3.3 启动
 <pre><code class="bash hljs">
