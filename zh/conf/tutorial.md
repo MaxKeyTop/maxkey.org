@@ -129,42 +129,29 @@ wget --no-check-certificate --no-cookies https://download.java.net/java/GA/jdk14
 tar -zxvf openjdk-14_linux-x64_bin.tar.gz
 </code></pre>
 
-2.安装MySQL5.6
+
+2.1 安装MySQL 8.0
+
+2.1.1 安装MySQL官方的yum repository
 
 <pre><code class="bash hljs">
-rpm -ivh http://repo.mysql.com/yum/mysql-5.5-community/el/6/x86_64/mysql-community-release-el6-5.noarch.rpm
+wget -i -c https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
  </code></pre>
  
-要安装MySQL5.6的可以安装：
+2.1.2 下载rpm包：
 
 <pre><code class="bash hljs">
-rpm -ivh http://repo.mysql.com/mysql-community-release-el6.rpm
+yum -y install mysql80-community-release-el7-3.noarch.rpm
  </code></pre>
  
-最新的yum源可以去http://dev.mysql.com/downloads/repo/yum下载
-
-
-2.1修改安装好的yum源
-
-编辑 /etc/yum.repos.d/mysql-community.repo文件，5.6的enabled改为1,其他改未0
-
-<pre><code class="bash hljs">
-# Enable to use MySQL 5.6
-[mysql56-community]
-name=MySQL 5.6 Community Server
-baseurl=http://repo.mysql.com/yum/mysql-5.6-community/el/6/$basearch/
-enabled=1
-gpgcheck=1
-gpgkey=file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
-</code></pre>
+2.1.3 安装MySQL服务
  
-2.2.安装mysql-5.6
-
 <pre><code class="bash hljs">
-yum install mysql-community-client mysql-community-devel mysql-community-server php-mysql
+yum -y install mysql-community-server
  </code></pre>
+
  
-2.3 调整配置
+2.2 调整配置
 
 编辑 /etc/my.cnf 文件
 
@@ -173,7 +160,7 @@ character-set-server=utf8
 lower_case_table_names=0
 </code></pre>
  
-2.4. 启动mysql服务
+2.3. 启动mysql服务
 
     > service mysqld start
 	
