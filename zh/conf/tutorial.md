@@ -123,10 +123,12 @@ OpenJDK 14
 wget --no-check-certificate --no-cookies https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz
 </code></pre>
  
-1.2 解压缩
+1.2 解压缩及安装
 
 <pre><code class="bash hljs">
 tar -zxvf openjdk-14_linux-x64_bin.tar.gz
+
+rpm -Uvh jdk-14_linux-x64_bin.rpm
 </code></pre>
 
 
