@@ -159,7 +159,7 @@ yum -y install mysql-community-server
 
 <pre><code class="bash hljs">
 character-set-server=utf8
-lower_case_table_names=0
+lower_case_table_names=1
 </code></pre>
  
 2.3. 启动mysql服务
