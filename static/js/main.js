@@ -147,8 +147,11 @@ jQuery(document).ready(function( $ ) {
   });
     //alert(window.screen.width+","+window.screen.height)
 	//根据屏幕分辨率判断是否是手机
+	//alert("img "+$("#main  img ").width() +",screen.width "+window.screen.width);
 	if(window.screen.width < 500 ){
 		$("#main  img ").css({ "height": "auto", "width": "auto\9", "width":"100%", "max-width":"100%"});
+	}else if(window.screen.width < $("#main  img ").width() ){
+		$("#main  img ").css({ "height": "auto", "width": (window.screen.width - 100)+"px"});
 	}
 
   
