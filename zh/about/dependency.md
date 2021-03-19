@@ -16,7 +16,7 @@ layout: zh/default
     <tbody>
         <tr>
             <td>MySQL Community Server</td>
-			<td>5.5</td>
+			<td>8.0.*</td>
             <td>
 			MySQL is the most trusted and widely used open source database platform in use today. 10 out of the top 10 most popular and highly-trafficked websites in the world rely on MySQL. 
 			</td>
