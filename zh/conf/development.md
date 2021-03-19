@@ -76,10 +76,52 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td></td>
+			<td>config</td>
+			<td></td>
+			<td></td>
+			<td>构建的三种方式配置bootjar,docker,standard</td>
+		</tr>
+		<tr>
+			<td></td>
 			<td>maxkey-authentications</td>
 			<td></td>
 			<td></td>
 			<td>登录认证</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-authentication-captcha</td>
+			<td></td>
+			<td>登录认证-验证码</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-authentication-core</td>
+			<td></td>
+			<td>登录认证-核心功能</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-authentication-otp</td>
+			<td></td>
+			<td>登录认证-令牌和一次性口令</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-authentication-social</td>
+			<td></td>
+			<td>登录认证-社交账号</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>maxkey-common</td>
+			<td></td>
+			<td></td>
+			<td>通用基础包和工具类</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -94,13 +136,6 @@ layout: zh/default
 			<td></td>
 			<td></td>
 			<td>身份管理</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>maxkey-identity-kafka</td>
-			<td></td>
-			<td>kafka身份同步，和连接器Connector配合使用</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -128,7 +163,7 @@ layout: zh/default
 			<td>maxkey-persistence</td>
 			<td></td>
 			<td></td>
-			<td>数据库访问</td>
+			<td>数据库持久化和Kafka同步</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -142,7 +177,7 @@ layout: zh/default
 			<td></td>
 			<td>maxkey-protocol-authorize</td>
 			<td></td>
-			<td>认证协议实现</td>
+			<td>认证协议及单点注销实现</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -171,6 +206,13 @@ layout: zh/default
 			<td>maxkey-protocol-formbased</td>
 			<td></td>
 			<td>Formbased实现</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-protocol-jwt</td>
+			<td></td>
+			<td>JWT实现</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -237,6 +279,27 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td></td>
+			<td>build_cnf_docker.gradle</td>
+			<td></td>
+			<td></td>
+			<td>docker工程构建及版本控制</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>build_cnf_jar.gradle</td>
+			<td></td>
+			<td></td>
+			<td>bootjar工程构建及版本控制</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>build_cnf_standard.gradle</td>
+			<td></td>
+			<td></td>
+			<td>standard工程构建及版本控制</td>
+		</tr>
+		<tr>
+			<td></td>
 			<td>gradle.properties</td>
 			<td></td>
 			<td></td>
@@ -275,7 +338,28 @@ layout: zh/default
 			<td>release.bat</td>
 			<td></td>
 			<td></td>
-			<td>清除历史构建版本</td>
+			<td>构建版本</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>release_cnf_docker.bat</td>
+			<td></td>
+			<td></td>
+			<td>构建docker版本配置</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>release_cnf_jar.bat</td>
+			<td></td>
+			<td></td>
+			<td>构建bootjar版本配置</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>release_cnf_standard.bat</td>
+			<td></td>
+			<td></td>
+			<td>构建standard版本配置</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -305,9 +389,9 @@ MaxKey身份安全管理系统
 maxkey-web-manage/src/main/java/org/maxkey/MaxKeyMgtApplication.java
 
 
-<h3>工程构建BuildRelease</h3>
+<h3>标准构建Release</h3>
 
-1. 配置环境变量
+1.配置环境变量
 
 setEnvVars.bat
 
@@ -316,12 +400,12 @@ set JAVA_HOME=D:\JavaIDE\jdk1.8.0_91
 set GRADLE_HOME=D:\JavaIDE\gradle-5.4.1
 
 
-2. 启动构建
+2.启动构建
 
 release.bat
 
 
-3. 构建结果
+3.构建结果
 
 构建包路径
 
@@ -329,65 +413,38 @@ MaxKey/build/maxkey-jars
 
 依赖包路径
 
-MaxKey/build/maxkey-depjars
+MaxKey/build/MaxKey-v(version)GA
 
 
-<h3>Docker 构建release</h3>
+<h3>Docker构建release</h3>
 
-1. Docker 构建配置
+1.Docker 构建配置
 
-maxkey-web-manage/build.gradle增加以下配置
+release_cnf_docker.bat
 
-<pre><code class="ini hljs">
-plugins {
-	id 'com.google.cloud.tools.jib' version '2.6.0'
-	id 'org.springframework.boot' version '2.3.4.RELEASE'
-}
+2.启动构建
 
-jib {
-	from {
-		image = 'adoptopenjdk:11-jre-openj9'
-	}
-	to {
-		image = "maxkey/maxkey-mgt"
-		tags = ["${project.version}".toString(), 'latest']
-	}
-	container {
-		jvmFlags = ['-Dfile.encoding=utf-8', '-Dserver.port=80']
-		ports = ['80']
-	}
-}
-</code></pre>
+release.bat
 
-maxkey-web-maxkey/build.gradle增加以下配置
+3.构建的结果
 
-<pre><code class="ini hljs">
-plugins {
-	id 'com.google.cloud.tools.jib' version '2.6.0'
-	id 'org.springframework.boot' version '2.3.4.RELEASE'
-}
+maxkey-web-manage/
 
-jib {
-	from {
-		image = 'adoptopenjdk:11-jre-openj9'
-	}
-	to {
-		image = "maxkey/maxkey"
-		tags = ["${project.version}".toString(), 'latest']
-	}
-	container {
-		jvmFlags = ['-Dfile.encoding=utf-8', '-Dserver.port=80']
-		ports = ['80']
-	}
-}
-</code></pre>
+maxkey-web-maxkey/
 
-2. 启动构建
+
+<h3>SpringBoot构建release</h3>
+
+1.SpringBoot Jar 构建配置
+
+release_cnf_jar.bat
+
+2.启动构建
 
 release.bat
 
 
-3. 构建的结果
+3.构建的结果
 
 maxkey-web-manage/
 
