@@ -3,7 +3,7 @@ layout: zh/default
 ---
 <h2>1、集成应用列表</h2>
 
-以下列出MaxKey实现单点登录的应用列表	
+以下列出MaxKey实现单点登录的应用列表，持续更新。。。	
 
 <table border="0" class="table table-striped table-bordered ">
 	<thead>
@@ -110,10 +110,17 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>15</td>
+			<td><img src="{{ "/static/images/inteapps/grafana.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt="" style="border:0;" width="65px" height="65px"/></td>
+			<td>企业应用</td>
+			<td>Grafana</td>
+		</tr>
+		<tr>
+			<td>16</td>
 			<td><img src="{{ "/static/images/inteapps/zentao_pm.gif" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt="" style="border:0;" width="65px" height="65px"/></td>
 			<td>企业应用</td>
 			<td>禅道项目管理</td>
 		</tr>
+		
 	</tbody>
 </table>
 
