@@ -21,7 +21,9 @@ start_maxkey.bat/start_maxkey.sh
 
 2、配置文件修改端口
 
-MaxKey-v*GA/maxkey/application.properties和在maxkey-web-maxkey*.jar中的application.properties
+http默认端口为80，https默认端口为443
+
+MaxKey-v*GA/maxkey/和在maxkey-web-maxkey*.jar中的application-(http/https).properties
 
 <pre><code class="ini hljs">
 #server port
@@ -30,10 +32,21 @@ server.port=443
 
 </code></pre>
 
+<h3>https停用</h3>
+
+http默认端口为80，https默认端口为443
+
+MaxKey-v*GA/maxkey/application.properties和在maxkey-web-maxkey*.jar中的application.properties，注释掉以下的内容
+
+<pre><code class="ini hljs">
+#spring.profiles.active=https
+spring.profiles.active=http
+</code></pre>
+
 
 <h3>修改上下文</h3>
 
-MaxKey-v*GA/maxkey/application.properties和在maxkey-web-maxkey*.jar中的application.properties
+MaxKey-v*GA/maxkey/和在maxkey-web-maxkey*.jar中的application-(http/https).properties
 
 <pre><code class="ini hljs">
 #web app context path
@@ -41,36 +54,7 @@ server.servlet.context-path=/maxkey
 
 </code></pre>
 
-修改相关的配置
-
-MaxKey-v*GA/maxkey/maxkey.properties和在maxkey-web-maxkey*.jar中的maxkey.properties
-
-<pre><code class="ini hljs">
-
-############################################################################
-#                        MaxKey
-############################################################################
-#                domain name configuration
-config.server.basedomain=maxkey.top
-config.server.domain=sso.${config.server.basedomain}
-config.server.name=https://${config.server.domain}
-config.server.uri=${config.server.name}/maxkey
-</code></pre>
-
-<h3>https停用</h3>
-
-MaxKey-v*GA/maxkey/application.properties和在maxkey-web-maxkey*.jar中的application.properties，注释掉以下的内容
-
-<pre><code class="ini hljs">
-#ssl
-server.ssl.key-store=classpath:maxkeyserver.keystore
-server.ssl.key-alias=maxkey
-server.ssl.enabled=true
-server.ssl.key-store-password=maxkey
-server.ssl.key-store-type=JKS
-</code></pre>
+修改相关的配置 /maxkey 为新的路径
 
 
-修改以下文件中的https改为http
 
-MaxKey-v*GA/maxkey/maxkey.properties和在maxkey-web-maxkey*.jar中的maxkey.properties

@@ -189,13 +189,6 @@ layout: zh/default
 		<tr>
 			<td></td>
 			<td></td>
-			<td>maxkey-protocol-desktop</td>
-			<td></td>
-			<td>桌面认证实现模拟键盘输入登录</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
 			<td>maxkey-protocol-extendapi</td>
 			<td></td>
 			<td>扩展API实现</td>
@@ -205,7 +198,7 @@ layout: zh/default
 			<td></td>
 			<td>maxkey-protocol-formbased</td>
 			<td></td>
-			<td>Formbased实现</td>
+			<td>Formbased实现，桌面认证实现开发浏览器插件实现</td>
 		</tr>
 		<tr>
 			<td></td>
