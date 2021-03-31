@@ -74,10 +74,10 @@ Apache License Version 2.0 鼓励代码共享和尊重原作者的著作权，�
 
 <h3><a name="Illegal "></a>违反 Apache 2.0新闻</h3>
 
-<a href="https://www.oschina.net/news/135377/spug-announce">致老男孩教育的维权声明 - Spug 运维-2021年03月31日</a>
+<a href="https://www.oschina.net/news/135377/spug-announce" target="_blank">致老男孩教育的维权声明 - Spug 运维-2021年03月31日</a>
 
 
-<a href="https://segmentfault.com/a/1190000022973105">博云违反 Apache 2.0 开源协议被要求整改，开源协议到底应该如何遵守？-2020年06月19日</a>
+<a href="https://segmentfault.com/a/1190000022973105"  target="_blank">博云违反 Apache 2.0 开源协议被要求整改，开源协议到底应该如何遵守？-2020年06月19日</a>
 
 
-<a href="https://www.oschina.net/news/100440/what-is-a-repo-license">开源作者痛斥京东重量级项目抄袭-2018年09月30日</a>
+<a href="https://www.oschina.net/news/100440/what-is-a-repo-license"  target="_blank">开源作者痛斥京东重量级项目抄袭-2018年09月30日</a>
