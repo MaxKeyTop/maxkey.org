@@ -21,7 +21,7 @@ QQ交流群：<b>434469201</b>
 邮箱EMAIL: <b>maxkeysupport@163.com</b>
 <br/>
 
-代码托管 <a href="https://github.com/MaxKeyTop/MaxKey" target="_blank"><b>GitHub</b></a> | <a href="https://gitee.com/maxkeytop/MaxKey" target="_blank"><b>码云(Gitee)</b></a>
+代码托管 <a href="https://github.com/dromara/MaxKey" target="_blank"><b>GitHub</b></a> | <a href="https://gitee.com/dromara/MaxKey" target="_blank"><b>码云(Gitee)</b></a>
 <br/>
   
 <h2>认证协议</h2>
@@ -112,8 +112,13 @@ QQ交流群：<b>434469201</b>
 			<td>Windows域认证</td>
 			<td>Kerberos/SPNEGO/AD域</td>
 		</tr>  
-		<tr class="a">
+		<tr class="b">
 			<td>6 </td>
+			<td>LDAP认证</td>
+			<td>OpenLDAP/ActiveDirectory/标准LDAP服务器</td>
+		</tr>  
+		<tr class="a">
+			<td>7 </td>
 			<td>社交账号</td>
 			<td>微信/QQ/微博/钉钉/Google/Facebook/其他</td>
 		</tr>

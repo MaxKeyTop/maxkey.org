@@ -13,7 +13,7 @@ layout: zh/default
 
 1.引导需要授权的用户到如下地址：
 <pre class="prettyprint">
-https://sso.maxkey.org/maxkey/oauth/v20/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=YOUR_REGISTERED_REDIRECT_URI 
+https://sso.maxkey.top/maxkey/authz/oauth/v20/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=YOUR_REGISTERED_REDIRECT_URI 
 </pre>
 
 2.页面跳转至 
@@ -23,7 +23,7 @@ YOUR_REGISTERED_REDIRECT_URI/?code=CODEsss
 
 3.换取Access Token
 <pre class="prettyprint">
-https://sso.maxkey.org/maxkey/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_secret=YOUR _SECRET&grant_type=authorization_code&redirect_uri=YOUR_REGISTERED_REDIRECT_URI&code=CODE
+https://sso.maxkey.top/maxkey/authz/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_secret=YOUR _SECRET&grant_type=authorization_code&redirect_uri=YOUR_REGISTERED_REDIRECT_URI&code=CODE
 </pre>
 
 返回值
@@ -46,13 +46,13 @@ https://sso.maxkey.org/maxkey/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_se
 			<th> <strong>调用方法 </strong> </th>
 		  </tr>
 		  <tr>
-			<td> /oauth/v20/authorize </td>
+			<td> /authz/oauth/v20/authorize </td>
 			<td> 请求用户授权Token </td>
-			<td> https://sso.maxkey.org/maxkey接收app sso认证请求,<br>client_id为需要认证的应用的id;</td>
+			<td> https://sso.maxkey.top/maxkey接收app sso认证请求,<br>client_id为需要认证的应用的id;</td>
 			<td> APP </td>
 		  </tr>
 		  <tr>
-			<td> /oauth/v20/token </td>
+			<td> /authz/oauth/v20/token </td>
 			<td> 获取授权过的 Access Token </td>
 			<td> 后台应用获取 tokencode ，调用接口进行 tokencode 校验；<br>校验成功获取访问 token </td>
 			<td> APP </td>
@@ -65,7 +65,7 @@ https://sso.maxkey.org/maxkey/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_se
 		  </tr>		  
  </table>
  
-<h4>1)/oauth/v20/authorize接口</h4>
+<h4>1)/authz/oauth/v20/authorize接口</h4>
 请求用户授权Token
 
 <table border="0" class="table table-striped table-bordered ">
@@ -75,7 +75,7 @@ https://sso.maxkey.org/maxkey/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_se
   </tr>
   <tr>
 	<td> url </td>
-	<td> https://sso.maxkey.org/maxkey/oauth/v20/authorize</td>
+	<td> https://sso.maxkey.top/maxkey/authz/oauth/v20/authorize</td>
   </tr>
   <tr>
 	<td> 请求方式 </td>
@@ -121,13 +121,13 @@ https://sso.maxkey.org/maxkey/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_se
   </tr>
   <tr>
 		<td>tokencode</td>
-		<td>用于调用oauth/token，接口获取授权后的访问token。</td>
+		<td>用于调用/authz/oauth/token，接口获取授权后的访问token。</td>
   </tr>
  </table> 	
 
-<h4>2 /oauth/v20/token接口</h4>
+<h4>2 /authz/oauth/v20/token接口</h4>
 
-通过/oauth/v20/token用tokencode换取访问token
+通过/authz/oauth/v20/token用tokencode换取访问token
 
  <table border="0" class="table table-striped table-bordered ">
    <tr>
@@ -136,7 +136,7 @@ https://sso.maxkey.org/maxkey/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_se
   </tr>
   <tr>
 	<td> url </td>
-	<td> https://sso.maxkey.org/maxkey/oauth/v20/token </td>
+	<td> https://sso.maxkey.top/maxkey/authz/oauth/v20/token </td>
   </tr>
   <tr>
 	<td> 请求方式 </td>
@@ -164,7 +164,7 @@ https://sso.maxkey.org/maxkey/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_se
   </tr>
   <tr>
 	<td>tokencode</td>
-	<td>调用/oauth/v20/authorize获得的tokencode值。</td>
+	<td>调用authz/oauth/v20/authorize获得的tokencode值。</td>
   </tr>
   <tr>
 	<td>grant_type</td>
@@ -187,7 +187,7 @@ https://sso.maxkey.org/maxkey/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_se
 实际请求如下：
 <pre><code class="http hljs"> 
 The actual request might look like:
-POST /oauth/v20/token token HTTP/1.1
+POST /authz/oauth/v20/token token HTTP/1.1
 Host: sso.maxkey.org/openapi
 Content-Type: application/x-www-form-urlencoded
 tokencode= PQ7q7W91a-oMsCeLvIaQm6bTrgtp7&
@@ -235,7 +235,7 @@ id_token      :  "id_token"
   	  </tr>
 	  <tr>
 	    <td> url </td>
-	    <td>https://sso.maxkey.org/maxkey/api/oauth/v20/me</td>
+	    <td>https://sso.maxkey.top/maxkey/api/oauth/v20/me</td>
 	  </tr>
 	  <tr>
 	    <td> 请求方式 </td>
@@ -314,9 +314,9 @@ error_description: 错误的描述信息
 
 错误信息的返回方式有两种：
 
-当请求授权Endpoint：https://sso.maxkey.org/maxkey/oauth/v20/authorize 时出现错误，返回方式是：跳转到redirect_uri,并在uri 的query parameter中附带错误的描述信息。
+当请求授权Endpoint：https://sso.maxkey.top/maxkey/authz/oauth/v20/authorize 时出现错误，返回方式是：跳转到redirect_uri,并在uri 的query parameter中附带错误的描述信息。
 
-当请求access token endpoint:https://sso.maxkey.org/maxkey/oauth/v20/token 时出现错误，返回方式：返回JSON文本。
+当请求access token endpoint:https://sso.maxkey.top/maxkey/authz/oauth/v20/token 时出现错误，返回方式：返回JSON文本。
 
 例如：
 <pre><code class="json hljs"> 

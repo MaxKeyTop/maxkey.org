@@ -32,15 +32,14 @@ layout: zh/default
 
 <h2>短信认证</h2>
 
-配置maxkey中maxkey.properties
+配置maxkey中maxkey/application-https(http).properties
 
 <pre><code class="ini hljs">
 #SmsOtpAuthnYunxin SmsOtpAuthnAliyun SmsOtpAuthnTencentCloud
-config.otp.sms=SmsOtpAuthnYunxin
+maxkey.otp.sms=SmsOtpAuthnYunxin
 </code></pre>
 
 <h3>腾讯云短信</h3>
-配置maxkey中maxkey.properties
 secretId 账号Appkey
 
 secretKey 密钥appSecret
@@ -52,14 +51,13 @@ templateId 短信模板ID
 sign 签名
 
 <pre><code class="ini hljs">
-config.otp.sms.aliyun.accesskeyid=94395d754eb55693043f5d6a2b772ef4
-config.otp.sms.aliyun.accesssecret=05d5485357bc
-config.otp.sms.aliyun.templatecode=14860095
-config.otp.sms.aliyun.signname=maxkey
+maxkey.otp.sms.aliyun.accesskeyid=94395d754eb55693043f5d6a2b772ef4
+maxkey.otp.sms.aliyun.accesssecret=05d5485357bc
+maxkey.otp.sms.aliyun.templatecode=14860095
+maxkey.otp.sms.aliyun.signname=maxkey
 </code></pre>
 
 <h3>阿里云短信</h3>
-配置maxkey中maxkey.properties
 
 accessKeyId 账号Appkey
 
@@ -70,15 +68,14 @@ templateCode 短信模板ID
 signName 签名
 
 <pre><code class="ini hljs">
-config.otp.sms.tencentcloud.secretid=94395d754eb55693043f5d6a2b772ef4
-config.otp.sms.tencentcloud.secretkey=05d5485357bc
-config.otp.sms.tencentcloud.smssdkappid=1486220095
-config.otp.sms.tencentcloud.templateid=14860095
-config.otp.sms.tencentcloud.sign=1486009522
+maxkey.otp.sms.tencentcloud.secretid=94395d754eb55693043f5d6a2b772ef4
+maxkey.otp.sms.tencentcloud.secretkey=05d5485357bc
+maxkey.otp.sms.tencentcloud.smssdkappid=1486220095
+maxkey.otp.sms.tencentcloud.templateid=14860095
+maxkey.otp.sms.tencentcloud.sign=1486009522
 </code></pre>
 
 <h3>网易云信</h3>
-配置maxkey中maxkey.properties
 
 appKey 网易云信分配的账号Appkey
 
@@ -87,17 +84,14 @@ appSecret 网易云信分配的密钥appSecret
 templateId 短信模板ID
 
 <pre><code class="ini hljs">
-config.otp.sms.yunxin.appkey=94395d754eb55693043f5d6a2b772ef4
-config.otp.sms.yunxin.appsecret=05d5485357bc
-config.otp.sms.yunxin.templateid=14860095
+maxkey.otp.sms.yunxin.appkey=94395d754eb55693043f5d6a2b772ef4
+maxkey.otp.sms.yunxin.appsecret=05d5485357bc
+maxkey.otp.sms.yunxin.templateid=14860095
 </code></pre>
 
 <h2>电子邮件</h2>
 
 配置邮箱地址
-
-文件
-maxkey/application.properties
 
 <pre><code class="ini hljs">
 spring.mail.default-encoding=utf-8
@@ -110,7 +104,6 @@ spring.mail.properties.ssl=true
 spring.mail.properties.sender=maxkey@163.com
 </code></pre>
 
-配置maxkey中application.properties
 
 subject 邮件主题
 
