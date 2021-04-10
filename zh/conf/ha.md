@@ -50,7 +50,7 @@ spring.session.redis.namespace=spring:session
 
   请参照Nginx官方网站完成配置
   
-  关键转发配置如下
+  nginx-1.19.9关键转发配置如下
   
   <pre><code class="ini hljs">
   
