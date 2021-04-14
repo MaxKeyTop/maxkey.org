@@ -12,6 +12,12 @@ layout: en/default
 			<th>下载地址</th>
 			<th>提取码</th>
 		</tr>
+		<tr class="b">
+			<td>v 2.7.0 GA </td>
+			<td>2021/04/15</td>
+			<td> <a href="https://pan.baidu.com/s/1shP3ld63r39ugyZCG5f1lQ" target="_blank">链接下载</a>  </td>
+			<td><b>hf73</b> </td>
+		</tr>
 		<tr class="a">
 			<td>v 2.6.0 GA </td>
 			<td>2021/03/05</td>
