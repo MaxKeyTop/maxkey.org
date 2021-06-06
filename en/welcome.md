@@ -4,7 +4,7 @@ layout: en/default
 <h1>MaxKey介绍</h1>
 <b>MaxKey</b>单点登录认证系统(Single Sign On System)，MaxKey中文谐音为马克思的钥匙，寓意是最大钥匙，是<b>业界领先的企业级IAM身份管理和身份认证产品</b>；支持OAuth 2.0/OpenID Connect、SAML 2.0、JWT、CAS、SCIM等标准协议；提供<b>简单、标准、安全和开放</b>的用户身份管理(IDM)、身份认证(AM)、单点登录(SSO)、资源管理和权限管理等。
 
-什么是**单点登录(Single Sign On）**，简称为**SSO**
+**单点登录(Single Sign On）**简称为**SSO**
 
 用户只需要登录认证中心一次就可以访问所有相互信任的应用系统，无需再次登录，主要功能：
   
