@@ -71,7 +71,7 @@ layout: zh/default
 		</tr>
 		<tr>
             <td>Gradle</td>
-			<td>6.*</td>
+			<td>7.*</td>
             <td>
 			Gradle is an open-source build automation tool focused on flexibility and performance. Gradle build scripts are written using a Groovy or Kotlin DSL. Read about Gradle features to learn what is possible with Gradle.
 

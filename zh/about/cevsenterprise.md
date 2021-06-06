@@ -54,19 +54,19 @@ layout: zh/default
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-Active Directory用户登录</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-OpenLDAP用户登录</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-Active Directory域身份认证</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>

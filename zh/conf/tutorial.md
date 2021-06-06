@@ -69,26 +69,27 @@ start_maxkey_wiki.bat
 	</thead>
 	<tbody>
 		<tr>
-			<td>1</td><td>jdk</td><td>运行时JDK</td>
+			<td>1</td><td>license</td><td>许可证</td>
 		</tr>
 		<tr>
-			<td>2</td><td>license</td><td>许可证</td>
+			<td>2</td><td>lib</td><td>公共包</td>
 		</tr>
 		<tr>
-			<td>3</td><td>maxkey</td><td>认证服务</td>
+			<td>3</td><td>jdk</td><td>运行时JDK</td>
 		</tr>
 		<tr>
-			<td>4</td><td>maxkey_mgt</td><td>管理服务</td>
+			<td>4</td><td>maxkey</td><td>认证服务</td>
 		</tr>
 		<tr>
-			<td>5</td><td>maxkey_mysql</td><td>数据库</td>
+			<td>5</td><td>maxkey_mgt</td><td>管理服务</td>
 		</tr>
 		<tr>
-			<td>6</td><td>maxkey_wiki</td><td>WIKI和样例</td>
+			<td>6</td><td>maxkey_mysql</td><td>数据库</td>
 		</tr>
 		<tr>
-			<td>7</td><td>maxkey_lib</td><td>公共包</td>
+			<td>7</td><td>maxkey_wiki</td><td>WIKI和样例</td>
 		</tr>
+		
 		<tr>
 			<td>8</td><td>start_maxkey.bat</td><td>启动认证服务器</td>
 		</tr>

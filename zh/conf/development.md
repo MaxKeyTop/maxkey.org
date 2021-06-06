@@ -22,7 +22,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>Gradle</td>
-			<td>6.5.1 +</td>
+			<td>7.0+ +</td>
 			<td>代码构建</td>
 		</tr>
 		<tr>
@@ -150,6 +150,13 @@ layout: zh/default
 			<td>maxkey-identity-scim</td>
 			<td></td>
 			<td>SCIM2.0身份管理接口</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-synchronizers</td>
+			<td></td>
+			<td>身份同步器</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -361,13 +368,7 @@ layout: zh/default
 			<td></td>
 			<td>设置IDE</td>
 		</tr>
-		<tr>
-			<td></td>
-			<td>eclipsePluginClean.bat</td>
-			<td></td>
-			<td></td>
-			<td>清除IDE的设置</td>
-		</tr>		
+			
 		</tbody>
 </table>
 

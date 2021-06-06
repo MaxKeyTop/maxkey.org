@@ -17,13 +17,19 @@ layout: zh/default
 <h3>验证码配置</h3>
 
 文件
-maxkey/maxkey.properties
+maxkey/application-https(http).properties
+
+当配置算术验证码时即 maxkey.login.captcha.type=arithmetic
+
+kaptcha的配置中必须为数字
+
+kaptcha.textproducer.char.string=0123456789
 
 <pre><code class="ini hljs">
 #是否支持验证码
-config.login.captcha=true
+maxkey.login.captcha=true
 #text 文本， arithmetic 算术验证码
-config.login.captcha.type=text
+maxkey.login.captcha.type=text
 </code></pre>
 
 <h3>验证码配置文件</h3>
@@ -50,9 +56,7 @@ kaptcha.noise.impl=com.google.code.kaptcha.impl.NoNoise
 </code></pre>
 
 
-当配置算术验证码时即 config.login.captcha.type=arithmetic
 
-kaptcha的配置中必须为数字
 
 <pre><code class="ini hljs">
 kaptcha.textproducer.char.string=0123456789
