@@ -112,7 +112,7 @@ layout: zh/default
             <td>test</td>
             <td>junit</td>
             <td>junit</td>
-            <td>4.11</td>
+            <td>{{site.junitVersion}}</td>
             <td>jar</td>
             <td>EPL 1.0</td></tr>
         <tr>
@@ -126,182 +126,203 @@ layout: zh/default
             <td>test</td>
             <td>org.mockito</td>
             <td>mockito-all</td>
-            <td>1.10.19</td>
+            <td>{{site.mockitoallVersion}}</td>
             <td>jar</td>
             <td>MIT</td></tr>
         <tr>
             <td>test</td>
             <td>xmlunit</td>
             <td>xmlunit</td>
-            <td>1.6</td>
+            <td>{{site.xmlunitVersion}}</td>
             <td>jar</td>
             <td>BSD</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-beanutils</td>
             <td>commons-beanutils</td>
-            <td>1.9.3</td>
+            <td>{{site.commonsbeanutilsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-codec</td>
             <td>commons-codec</td>
-            <td>1.14</td>
+            <td>{{site.commonscodecVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-collections</td>
             <td>commons-collections</td>
-            <td>3.2.2</td>
+            <td>{{site.commonscollectionsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>org.apache.commons</td>
+            <td>commons-collections4</td>
+            <td>{{site.commonscollections4Version}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>org.apache.commons</td>
+            <td>commons-compress</td>
+            <td>{{site.commonscompressVersion}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>	
         <tr>
             <td>compile</td>
             <td>org.apache.commons</td>
             <td>commons-csv</td>
-            <td>1.7</td>
+            <td>{{site.commonscsvVersion}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>org.apache.commons </td>
+            <td>commons-text</td>
+            <td>{{site.commonstextVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.commons</td>
             <td>commons-dbcp2</td>
-            <td>2.6.0</td>
+            <td>{{site.commonsdbcp2Version}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-dbutils</td>
             <td>commons-dbutils</td>
-            <td>1.7</td>
+            <td>{{site.commonsdbutilsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.commons</td>
             <td>commons-digester3</td>
-            <td>3.2</td>
+            <td>{{site.commonsdigester3Version}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-digester</td>
             <td>commons-digester</td>
-            <td>2.1</td>
+            <td>{{site.commonsdigesterVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-io</td>
             <td>commons-io</td>
-            <td>2.6</td>
+            <td>{{site.commonsioVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-lang</td>
             <td>commons-lang</td>
-            <td>2.6</td>
+            <td>{{site.commonslangVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.commons</td>
             <td>commons-lang3</td>
-            <td>3.9</td>
+            <td>{{site.commonslang3Version}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-logging</td>
             <td>commons-logging</td>
-            <td>1.2</td>
+            <td>{{site.commonsloggingVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.commons</td>
             <td>commons-pool2</td>
-            <td>2.6.2</td>
+            <td>{{site.commonspool2Version}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-httpclient</td>
             <td>commons-httpclient</td>
-            <td>3.1</td>
+            <td>{{site.commonshttpclientVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>commons-fileupload</td>
             <td>commons-fileupload</td>
-            <td>1.4</td>
+            <td>{{site.commonsfileuploadVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.commons</td>
             <td>commons-email</td>
-            <td>1.5</td>
+            <td>{{site.commonsemailVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.httpcomponents</td>
             <td>httpclient</td>
-            <td>4.5.12</td>
+            <td>{{site.httpcomponentsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.httpcomponents</td>
             <td>fluent-hc</td>
-            <td>4.5.12</td>
+            <td>{{site.httpcomponentsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.httpcomponents</td>
             <td>httpclient-cache</td>
-            <td>4.5.12</td>
+            <td>{{site.httpcomponentsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.httpcomponents</td>
             <td>httpmime</td>
-            <td>4.5.12</td>
+            <td>{{site.httpcomponentsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.httpcomponents</td>
             <td>httpcore</td>
-            <td>4.4.13</td>
+            <td>{{site.httpcoreVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.velocity</td>
             <td>velocity</td>
-            <td>1.7</td>
+            <td>{{site.velocityVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>velocity</td>
             <td>velocity-dep</td>
-            <td>1.4</td>
+            <td>{{site.velocitydepVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.freemarker</td>
             <td>freemarker</td>
-            <td>2.3.30</td>
+            <td>{{site.freemarkerVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
@@ -311,676 +332,527 @@ layout: zh/default
             <td>0.3.9</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
-        <tr>
+		<tr>
             <td>compile</td>
-            <td>org.apache.logging.log4j</td>
-            <td>log4j-1.2-api</td>
-            <td>2.13.3</td>
+            <td> org.apache.poi</td>
+            <td>
+				poi              <br/>
+				poi-scratchpad   <br/>
+				poi-ooxml        <br/>
+				poi-ooxml-schemas
+				</td>
+            <td>{{site.poiVersion}}</td>
             <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
+            <td>The Apache License, Version 2.0</td></tr>	
+
+		<tr>
             <td>compile</td>
-            <td>org.apache.logging.log4j</td>
-            <td>log4j-api</td>
-            <td>2.13.3</td>
+            <td> org.apache.xmlbeans</td>
+            <td>xmlbeans</td>
+            <td>{{site.xmlbeansVersion}}</td>
             <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
+            <td>The Apache License, Version 2.0</td></tr>	
+
         <tr>
             <td>compile</td>
             <td>org.apache.logging.log4j</td>
-            <td>log4j-core</td>
-            <td>2.13.3</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.apache.logging.log4j</td>
-            <td>log4j-jcl</td>
-            <td>2.13.3</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.apache.logging.log4j</td>
-            <td>log4j-jul</td>
-            <td>2.13.3</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.apache.logging.log4j</td>
-            <td>log4j-slf4j-impl</td>
-            <td>2.13.3</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.apache.logging.log4j</td>
-            <td>log4j-web</td>
-            <td>2.13.3</td>
+            <td>
+				log4j-1.2-api    <br/>
+				log4j-api        <br/>
+				log4j-core       <br/>
+				log4j-jcl        <br/>
+				log4j-jul        <br/>
+				log4j-slf4j-impl <br/> 
+				log4j-web
+			</td>
+            <td>{{site.log4jVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.slf4j</td>
             <td>slf4j-api</td>
-            <td>2.13.3</td>
+            <td>{{site.slf4jVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.jboss.logging</td>
             <td>jboss-logging</td>
-            <td>3.4.1.Final</td>
+            <td>{{site.jbossloggingVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.springframework</td>
-            <td>spring-aop</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-aspects</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-beans</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-core</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-context</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-context-indexer</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-context-support</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-expression</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>//org.springframework</td>
-            <td>spring-instrument</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>//org.springframework</td>
-            <td>spring-jcl</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-jdbc</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>//org.springframework</td>
-            <td>spring-jms</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-messaging</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>//org.springframework</td>
-            <td>spring-orm</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-oxm</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-tx</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-web</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>//org.springframework</td>
-            <td>spring-webflux</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework</td>
-            <td>spring-webmvc</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>//org.springframework</td>
-            <td>spring-websocket</td>
-            <td>5.2.7.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>testorg.springframework</td>
-            <td>spring-test</td>
-            <td>5.2.7.RELEASE</td>
+            <td>
+				spring-aop                  <br/>
+				spring-aspects              <br/>
+				spring-beans                <br/>
+				spring-core                 <br/>
+				spring-context              <br/>
+				spring-context-indexer      <br/>
+				spring-context-support      <br/>
+				spring-expression           <br/>
+				spring-instrument           <br/>
+				spring-jcl                  <br/>
+				spring-jdbc                 <br/>
+				spring-jms                  <br/>
+				spring-messaging            <br/>
+				spring-orm                  <br/>
+				spring-oxm                  <br/>
+				spring-tx                   <br/>
+				spring-web                  <br/>
+				spring-webflux              <br/>
+				spring-webmvc               <br/>
+				spring-websocket            <br/>
+				spring-test
+			</td>
+            <td>{{site.springVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.kafka</td>
             <td>kafka-clients</td>
-            <td>2.5.0</td>
+            <td>{{site.kafkaclientsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.springframework.kafka</td>
             <td>spring-kafka</td>
-            <td>2.5.2.RELEASE</td>
+            <td>{{site.springkafkaVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.springframework.retry</td>
             <td>spring-retry</td>
-            <td>1.3.0</td>
+            <td>{{site.springretryVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.springframework.security</td>
-            <td>spring-security-core</td>
-            <td>5.3.2.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework.security</td>
-            <td>spring-security-web</td>
-            <td>5.3.2.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework.security</td>
-            <td>spring-security-crypto</td>
-            <td>5.3.2.RELEASE</td>
+            <td>
+				spring-security-core<br/>
+				spring-security-web<br/>
+				spring-security-crypto
+			</td>
+            <td>{{ site.springSecurityVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.springframework.boot</td>
-            <td>spring-boot</td>
-            <td>2.3.1.RELEASE</td>
+            <td>
+				spring-boot<br/>
+				spring-boot-starter<br/>
+				spring-boot-actuator<br/>
+				spring-boot-autoconfigure<br/>
+				spring-boot-starter-freemarker<br/>
+				spring-boot-starter-log4j2<br/>
+				spring-boot-starter-web<br/>
+				spring-boot-starter-tomcat<br/>
+				spring-boot-starter-test
+			</td>
+            <td>{{ site.springBootVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
-        <tr>
+		<tr>
             <td>compile</td>
-            <td>org.springframework.boot</td>
-            <td>spring-boot-starter</td>
-            <td>2.3.1.RELEASE</td>
+            <td>org.springframework.data</td>
+            <td>
+				spring-data-commons<br/>
+				spring-data-keyvalue<br/>
+				spring-data-redis
+				</td>
+            <td>{{ site.springDataVersion}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>	
+		
+		<tr>
+            <td>compile</td>
+            <td>rg.springframework.plugin</td>
+            <td>spring-plugin-core</td>
+            <td>{{ site.springplugincoreVersion}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>		
+		<tr>
+            <td>compile</td>
+            <td>rg.springframework.plugin</td>
+            <td>spring-plugin-metadata</td>
+            <td>{{ site.springpluginmetadataVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
-        <tr>
+		<tr>
             <td>compile</td>
-            <td>org.springframework.boot</td>
-            <td>spring-boot-actuator</td>
-            <td>2.3.1.RELEASE</td>
+            <td>org.springframework.session</td>
+            <td>spring-session-core</td>
+            <td>{{ site.springSessionVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
-        <tr>
+	    <tr>
             <td>compile</td>
-            <td>org.springframework.boot</td>
-            <td>spring-boot-autoconfigure</td>
-            <td>2.3.1.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework.boot</td>
-            <td>spring-boot-starter-freemarker</td>
-            <td>2.3.1.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework.boot</td>
-            <td>spring-boot-starter-log4j2</td>
-            <td>2.3.1.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework.boot</td>
-            <td>spring-boot-starter-web</td>
-            <td>2.3.1.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.springframework.boot</td>
-            <td>spring-boot-starter-tomcat</td>
-            <td>2.3.1.RELEASE</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>testorg.springframework.boot</td>
-            <td>spring-boot-starter-test</td>
-            <td>2.3.1.RELEASE</td>
+            <td>org.springframework.session</td>
+            <td>spring-session-data-redis</td>
+            <td>{{ site.springSessionVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.opensaml</td>
             <td>opensaml</td>
-            <td>2.6.4</td>
+            <td>{{site.opensamlVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.opensaml</td>
             <td>openws</td>
-            <td>1.5.4</td>
+            <td>{{site.openwsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.opensaml</td>
             <td>xmltooling</td>
-            <td>1.4.4</td>
+            <td>{{site.xmltoolingVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>net.shibboleth.utilities</td>
+            <td>java-support</td>
+            <td>{{site.javasupportVersion}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>	
         <tr>
             <td>compile</td>
             <td>com.nimbusds</td>
             <td>nimbus-jose-jwt</td>
-            <td>8.10</td>
+            <td>{{site.nimbusjosejwtVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>net.jcip</td>
             <td>jcip-annotations</td>
-            <td>1.0</td>
+            <td>{{site.jcipannotationsVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>net.minidev</td>
             <td>json-smart</td>
-            <td>2.3</td>
+            <td>{{site.minidevjsonsmartVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>net.minidev</td>
             <td>asm</td>
-            <td>1.0.2</td>
+            <td>{{site.minidevasmVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.xkcoding.http</td>
             <td>simple-http</td>
-            <td>1.0</td>
+            <td>{{site.simplehttpVersion}}</td>
             <td>jar</td>
             <td>LGPL 3.0</td></tr>
         <tr>
             <td>compile</td>
             <td>me.zhyd.oauth</td>
             <td>JustAuth</td>
-            <td>1.15.1</td>
+            <td>{{site.JustAuthVersion}}</td>
             <td>jar</td>
             <td>MIT</td></tr>
         <tr>
             <td>compile</td>
             <td>org.javassist</td>
             <td>javassist</td>
-            <td>3.23.0-GA</td>
+            <td>{{site.javassistVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.owasp.esapi</td>
             <td>esapi</td>
-            <td>2.2.0.0</td>
+            <td>{{site.esapiVersion}}</td>
             <td>jar</td>
             <td>BSD 2-clause</td></tr>
         <tr>
             <td>compile</td>
             <td>com.sun.mail</td>
             <td>javax.mail</td>
-            <td>1.6.2</td>
+            <td>{{site.javaxmailVersion}}</td>
             <td>jar</td>
             <td>GPL 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.eclipse.persistence</td>
             <td>javax.persistence</td>
-            <td>2.2.1</td>
+            <td>{{site.javaxpersistenceVersion}}</td>
             <td>jar</td>
             <td>Eclipse Public License v. 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>javax.activation</td>
             <td>activation</td>
-            <td>1.1.1</td>
+            <td>{{site.activationVersion}}</td>
             <td>jar</td>
             <td>CDDL 1.0</td></tr>
         <tr>
             <td>compile</td>
             <td>javax.annotation</td>
             <td>javax.annotation-api</td>
-            <td>1.3.2</td>
+            <td>{{site.javaxannotationapiVersion}}</td>
             <td>jar</td>
             <td>GPLv2</td></tr>
         <tr>
             <td>compile</td>
             <td>javax.transaction</td>
             <td>jta</td>
-            <td>1.1</td>
+            <td>{{site.jtaVersion}}</td>
             <td>jar</td>
             <td>GPLv2</td></tr>
         <tr>
             <td>compile</td>
             <td>javax.transaction</td>
             <td>javax.transaction-api</td>
-            <td>1.3</td>
+            <td>{{site.javaxtransactionapiVersion}}</td>
             <td>jar</td>
             <td>GPLv2</td></tr>
         <tr>
             <td>compile</td>
             <td>javax.validation</td>
             <td>validation-api</td>
-            <td>2.0.1.Final</td>
+            <td>{{site.validationapiVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>javax.xml</td>
             <td>jsr173</td>
-            <td>1.0</td>
+            <td>{{site.jsr173Version}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>javax.xml.bind</td>
             <td>jaxb-api</td>
-            <td>2.3.1</td>
+            <td>{{site.jaxbapiVersion}}</td>
             <td>jar</td>
             <td>CDDL 1.1</td></tr>
         <tr>
             <td>compile</td>
             <td>com.sun.xml.bind</td>
             <td>jaxb-core</td>
-            <td>2.3.0.1</td>
+            <td>{{site.jaxbcoreVersion}}</td>
             <td>jar</td>
             <td>Eclipse Distribution License - v 1.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.sun.xml.bind</td>
             <td>jaxb-impl</td>
-            <td>2.3.2</td>
+            <td>{{site.jaxbimplVersion}}</td>
             <td>jar</td>
             <td>Eclipse Distribution License - v 1.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.sun.xml.bind</td>
             <td>jaxb-xjc</td>
-            <td>2.3.2</td>
+            <td>{{site.jaxbxjcVersion}}</td>
             <td>jar</td>
             <td>Eclipse Distribution License - v 1.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.bouncycastle</td>
             <td>bcpkix-jdk15on</td>
-            <td>1.64</td>
+            <td>{{site.bouncycastleVersion}}</td>
             <td>jar</td>
             <td>Bouncy Castle Licence</td></tr>
         <tr>
             <td>compile</td>
             <td>org.bouncycastle</td>
             <td>bcprov-jdk15on</td>
-            <td>1.64</td>
+            <td>{{site.bouncycastleVersion}}</td>
             <td>jar</td>
             <td>Bouncy Castle Licence</td></tr>
         <tr>
             <td>compile</td>
             <td>org.bouncycastle</td>
             <td>bcprov-ext-jdk15on</td>
-            <td>1.64</td>
+            <td>{{site.bouncycastleVersion}}</td>
             <td>jar</td>
             <td>Bouncy Castle Licence</td></tr>
         <tr>
             <td>compile</td>
             <td>com.google.crypto.tink</td>
             <td>tink</td>
-            <td>1.2.2</td>
+            <td>{{site.tinkVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.jhlabs</td>
             <td>filters</td>
-            <td>2.0.235-1</td>
+            <td>{{site.jhlabsfiltersVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.github.penggle</td>
             <td>kaptcha</td>
-            <td>2.3.2</td>
+            <td>{{site.kaptchaVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.google.code.gson</td>
             <td>gson</td>
-            <td>2.8.6</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>org.codehaus.jackson</td>
-            <td>jackson-all</td>
-            <td>1.8.5</td>
+            <td>{{site.gsonVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.fasterxml.jackson.core</td>
-            <td>jackson-databind</td>
-            <td>2.11.0</td>
+            <td>
+				jackson-annotations <br/>
+				jackson-core        <br/>
+				jackson-databind
+			</td>
+            <td>{{site.jacksonVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>com.fasterxml.jackson.core</td>
-            <td>jackson-core</td>
-            <td>2.11.0</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
-        <tr>
-            <td>compile</td>
-            <td>com.fasterxml.jackson.core</td>
-            <td>jackson-annotations</td>
-            <td>2.11.0</td>
-            <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
+       
         <tr>
             <td>compile</td>
             <td>com.fasterxml</td>
             <td>classmate</td>
-            <td>1.5.0</td>
+            <td>{{site.classmateVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.alibaba</td>
             <td>fastjson</td>
-            <td>1.2.66</td>
+            <td>{{site.fastjsonVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.reactivestreams</td>
             <td>reactive-streams</td>
-            <td>1.0.2</td>
+            <td>{{site.reactivestreamsVersion}}</td>
             <td>jar</td>
             <td>CC0 1.0</td></tr>
         <tr>
             <td>compile</td>
             <td>io.projectreactor</td>
             <td>reactor-core</td>
-            <td>3.2.10.RELEASE</td>
+            <td>{{site.reactorcoreVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>eu.tekul</td>
             <td>szxcvbn_2.9.2</td>
-            <td>0.2</td>
+            <td>{{site.szxcvbnVersion}}</td>
             <td>jar</td>
             <td>MIT</td></tr>
         <tr>
             <td>compile</td>
             <td>org.quartz-scheduler</td>
             <td>quartz</td>
-            <td>2.3.2</td>
+            <td>{{site.quartzVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>mysql</td>
             <td>mysql-connector-java</td>
-            <td>5.1.48</td>
+            <td>{{site.mysqlconnectorjavaVersion}}</td>
             <td>jar</td>
             <td>GPL 2.0</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>org.postgresql</td>
+            <td>postgresql</td>
+            <td>{{site.postgresqlVersion}}</td>
+            <td>jar</td>
+            <td>BSD-2-Clause</td></tr>	
         <tr>
             <td>compile</td>
             <td>com.alibaba</td>
             <td>druid</td>
-            <td>1.1.21</td>
+            <td>{{site.druidVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.alibaba</td>
             <td>druid-spring-boot-starter</td>
-            <td>1.1.21</td>
+            <td>{{site.druidspringbootstarterVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>redis.clients</td>
             <td>jedis</td>
-            <td>3.2.0</td>
+            <td>{{site.jedisVersion}}</td>
             <td>jar</td>
             <td>MIT</td></tr>
         <tr>
             <td>compile</td>
             <td>org.ehcache</td>
             <td>ehcache</td>
-            <td>3.8.1</td>
+            <td>{{site.ehcacheVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.mybatis</td>
             <td>mybatis</td>
-            <td>3.5.5</td>
+            <td>{{site.mybatisVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.mybatis</td>
             <td>mybatis-spring</td>
-            <td>2.0.5</td>
+            <td>{{site.mybatisspringVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.hibernate.validator</td>
             <td>hibernate-validator</td>
-            <td>6.1.2.Final</td>
+            <td>{{site.hibernateVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.hibernate</td>
             <td>hibernate-validator-cdi</td>
-            <td>6.1.2.Final</td>
+            <td>{{site.hibernateVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.hibernate.validator</td>
             <td>hibernate-validator-annotation-processor</td>
-            <td>6.1.2.Final</td>
+            <td>{{site.hibernateVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>joda-time</td>
             <td>joda-time</td>
-            <td>2.10.5</td>
+            <td>{{site.jodatimeVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
@@ -988,154 +860,259 @@ layout: zh/default
             <td>org.yaml</td>
             <td>snakeyaml</td>
             <td>1.26</td>
-            <td>jar</td>
+            <td>{{site.snakeyamlVersion}}</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>net.sourceforge.nekohtml</td>
             <td>nekohtml</td>
-            <td>1.9.22</td>
+            <td>{{site.nekohtmlVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.jdom</td>
             <td>jdom</td>
-            <td>2.0.2</td>
+            <td>{{site.jdomVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.google.zxing</td>
             <td>core</td>
-            <td>3.4.0</td>
+            <td>{{site.zxingcoreVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.google.guava</td>
             <td>guava</td>
-            <td>28.2-jre</td>
+            <td>{{site.guavaVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>ognl</td>
             <td>ognl</td>
-            <td>3.2.14</td>
+            <td>{{site.ognlVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>cglib</td>
             <td>cglib</td>
-            <td>3.3.0</td>
+            <td>{{site.cglibVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.ow2.asm</td>
             <td>asm</td>
-            <td>7.3.1</td>
+            <td>{{site.asmVersion}}</td>
             <td>jar</td>
             <td>BSD 3-clause</td></tr>
         <tr>
             <td>compile</td>
             <td>aopalliance</td>
             <td>aopalliance</td>
-            <td>1.0</td>
+            <td>{{site.aopallianceVersion}}</td>
             <td>jar</td>
             <td>Public</td></tr>
         <tr>
             <td>compile</td>
             <td>org.aspectj</td>
             <td>aspectjtools</td>
-            <td>1.9.4</td>
+            <td>{{site.aspectjtoolsVersion}}</td>
             <td>jar</td>
             <td>EPL 1.0</td></tr>
         <tr>
             <td>compile</td>
             <td>dom4j</td>
             <td>dom4j</td>
-            <td>1.6.1</td>
+            <td>{{site.dom4jVersion}}</td>
             <td>jar</td>
             <td>BSD</td></tr>
         <tr>
             <td>compile</td>
             <td>xalan</td>
             <td>serializer</td>
-            <td>2.7.2</td>
+            <td>{{site.serializerVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>xml-resolver</td>
             <td>xml-resolver</td>
-            <td>1.2</td>
+            <td>{{site.xmlresolverVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.santuario</td>
             <td>xmlsec</td>
-            <td>1.5.8</td>
+            <td>{{site.xmlsecVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.ogce</td>
             <td>xpp3</td>
-            <td>1.1.6</td>
+            <td>{{site.xpp3Version}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>com.thoughtworks.xstream</td>
             <td>xstream</td>
-            <td>1.4.10</td>
+            <td>{{site.xstreamVersion}}</td>
             <td>jar</td>
             <td>BSD 3-clause</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>org.passay</td>
+            <td>passay</td>
+            <td>{{site.passayVersion}}</td>
+            <td>jar</td>
+            <td>Apache 2.0 & LGPL 3.0</td></tr>	
+		<tr>
+            <td>compile</td>
+            <td>io.micrometer</td>
+            <td> micrometer-core</td>
+            <td>{{site.micrometercoreVersion}}</td>
+            <td>jar</td>
+            <td>Apache 2.0 </td></tr>	
+		<tr>
+            <td>compile</td>
+            <td>org.latencyutils</td>
+            <td> LatencyUtils</td>
+            <td>{{site.LatencyUtilsVersion}}</td>
+            <td>jar</td>
+            <td>CC0 1.0 </td></tr>	
+		<tr>
+            <td>compile</td>
+            <td>org.codehaus.woodstox</td>
+            <td> stax2-api</td>
+            <td>{{site.stax2apiVersion}}</td>
+            <td>jar</td>
+            <td>	BSD 2-clause </td></tr>	
+		<tr>
+            <td>compile</td>
+            <td>org.mapstruct</td>
+            <td> mapstruct</td>
+            <td>{{site.mapstructVersion}}</td>
+            <td>jar</td>
+            <td>Apache 2.0 </td></tr>	
         <tr>
             <td>compile</td>
             <td>com.aliyun</td>
             <td>aliyun-java-sdk-core</td>
-            <td>4.5.1</td>
+            <td>{{site.aliyunjavasdkcoreVersion}}</td>
             <td>jar</td>
             <td>Aliyun </td></tr>
         <tr>
             <td>compile</td>
             <td>com.tencentcloudapi</td>
             <td>tencentcloud-sdk-java</td>
-            <td>3.1.33</td>
+            <td>{{site.tencentcloudsdkjavaVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.tomcat.embed</td>
             <td>tomcat-embed-core</td>
-            <td>9.0.35</td>
+            <td>{{site.tomcatVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
         <tr>
             <td>compile</td>
             <td>org.apache.tomcat.embed</td>
             <td>tomcat-embed-logging-juli</td>
-            <td>8.5.2</td>
+            <td>{{site.tomcatembedloggingjuliVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
 		 <tr>
             <td>compile</td>
             <td>mybatis-jpa-extra</td>
             <td>mybatis-jpa-extra</td>
-            <td>2.1</td>
+            <td>2.3</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
 		<tr>
             <td>compile</td>
             <td>mybatis-jpa-extra</td>
             <td>mybatis-jpa-extra-spring-boot-starter</td>
-            <td>2.1</td>
+            <td>6.0.4.jre8</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>com.highgo</td>
+            <td>HgdbJdbc</td>
+            <td>2.3</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>gradle.plugin.com.google.cloud.tools</td>
+            <td>jib-gradle-plugin</td>
+            <td>{{site.jibGradlePluginVersion}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>io.swagger</td>
+            <td>swagger-annotations<br/>
+				swagger-models</td>
+            <td>{{site.swaggerVersion}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>
+		<tr>
+            <td>compile</td>
+            <td>io.swagger.core.v3</td>
+            <td>
+				swagger-annotations<br/>
+				swagger-core<br/>
+				swagger-integration<br/>
+				swagger-models<br/>
+			</td>
+            <td>{{site.swaggerV3Version}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>	
+		<tr>
+            <td>compile</td>
+            <td>io.springfox</td>
+            <td>
+				springfox-bean-validators<br/>
+				springfox-core<br/>
+				springfox-data-rest<br/>
+				springfox-spi<br/>
+				springfox-oas<br/>
+				springfox-schema<br/>
+				springfox-swagger2<br/>
+				springfox-swagger-ui<br/>
+				springfox-swagger-common<br/>
+				springfox-spring-webmvc<br/>
+				springfox-spring-web<br/>
+				springfox-spring-webflux<br/>
+				springfox-boot-starter
+			</td>
+            <td>{{site.springfoxVersion}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>		
+		<tr>
+            <td>compile</td>
+            <td>com.github.xiaoymin</td>
+            <td>
+				knife4j-annotations<br/>
+				knife4j-core<br/>
+				knife4j-spring-mvc<br/>
+				knife4j-spring<br/>
+				knife4j-spring-ui<br/>
+				knife4j-spring-boot-starter<br/>
+				knife4j-spring-boot-autoconfigure
+			</td>
+            <td>{{site.knife4jVersion}}</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td></tr>	
     </tbody>
 </table>
