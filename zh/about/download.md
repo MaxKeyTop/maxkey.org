@@ -15,7 +15,7 @@ layout: zh/default
 		<tr class="b">
 			<td>v 2.8.1 GA </td>
 			<td>2021/06/25</td>
-			<td> <a href="https://pan.baidu.com/s/1XXzqEMZqBIaUAzRIDm9iSg" target="_blank">链接下载</a>  </td>
+			<td> <a href="https://pan.baidu.com/s/1fhUXmxEcfgmJY_Dejd615A" target="_blank">链接下载</a>  </td>
 			<td><b>dplq</b> </td>
 		</tr>
 		<tr class="a">
