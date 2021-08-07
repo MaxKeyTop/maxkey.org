@@ -160,6 +160,34 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td></td>
+			<td></td>
+			<td>maxkey-synchronizers-activedirectory</td>
+			<td></td>
+			<td>activedirectory同步器</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-synchronizers-ldap</td>
+			<td></td>
+			<td>ldap同步器</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-synchronizers-dingding</td>
+			<td></td>
+			<td>钉钉同步器</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-synchronizers-workweixin</td>
+			<td></td>
+			<td>企业微信同步器</td>
+		</tr>
+		<tr>
+			<td></td>
 			<td>maxkey-lib</td>
 			<td></td>
 			<td></td>
@@ -237,17 +265,31 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td></td>
-			<td>maxkey-web-manage</td>
+			<td>maxkey-webs</td>
 			<td></td>
+			<td></td>
+			<td>web服务</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-web-manage</td>
 			<td></td>
 			<td>管理系统</td>
 		</tr>
 		<tr>
 			<td></td>
+			<td></td>
 			<td>maxkey-web-maxkey</td>
 			<td></td>
-			<td></td>
 			<td>认证系统</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-web-resources</td>
+			<td></td>
+			<td>静态资源</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -376,11 +418,11 @@ layout: zh/default
 
 MaxKey统一认证系统
 
-maxkey-web-maxkey/src/main/java/org/maxkey/MaxKeyApplication.java 
+maxkey-webs/maxkey-web-maxkey/src/main/java/org/maxkey/MaxKeyApplication.java 
 
 MaxKey身份安全管理系统
 
-maxkey-web-manage/src/main/java/org/maxkey/MaxKeyMgtApplication.java
+maxkey-webs/maxkey-web-manage/src/main/java/org/maxkey/MaxKeyMgtApplication.java
 
 
 <h3>标准构建Release</h3>
@@ -440,9 +482,9 @@ release.bat
 
 3.构建的结果
 
-maxkey-web-manage/
+maxkey-webs/maxkey-web-manage/
 
-maxkey-web-maxkey/
+maxkey-webs/maxkey-web-maxkey/
 
 
 

@@ -19,48 +19,54 @@ layout: zh/default
 			<td>认证服务</td>
 			<td>用户登录-图片验证码</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-短信验证码</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-TOTP动态令牌</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td>插件</td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-邮件验证码</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-社交账号登陆</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td>插件</td>
+			<td>定制开发</td>
+		</tr>
+		<tr>
+			<td>认证服务</td>
+			<td>用户登录-企业微信、钉钉扫码登陆</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-双因素认证</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td>插件</td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-Active Directory用户登录</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>用户登录-OpenLDAP用户登录</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -79,7 +85,7 @@ layout: zh/default
 			<td>认证服务</td>
 			<td> 应用访问权限控制</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -97,7 +103,7 @@ layout: zh/default
 			<td>认证服务</td>
 			<td>认证协议-JWT协议支持</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -109,25 +115,25 @@ layout: zh/default
 			<td>认证服务</td>
 			<td>认证协议-TOKEN令牌支持</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>认证协议-密码代填(FORMBASED)支持</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>认证协议-API扩展支持</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>认证协议-扩展定制支持</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
+			<td>定制开发</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -386,8 +392,14 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>生命周期管理服务</td>
-			<td>同步日志审计</td>
+			<td>连接器日志审计</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>生命周期管理服务</td>
+			<td>同步器日志审计</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -479,7 +491,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>授权标识</td>
-			<td><a href="{{site.baseurl}}/zh/licenses.html">许可证声明</a></td>
+			<td><a href="{{site.baseurl}}/zh/about/licenses.html">许可证声明</a></td>
 			<td><div class="icon">不可忽略/授权友好</div></td>
 			<td><div class="icon">不可忽略</div></td>
 		</tr>

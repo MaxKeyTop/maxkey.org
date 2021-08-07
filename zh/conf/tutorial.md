@@ -232,7 +232,7 @@ chkconfig mysqld on
 
 MaxKey对应的版本SQL文件，参见
 
-https://gitee.com/maxkeytop/MaxKey/tree/master/sql
+https://gitee.com/dromara/MaxKey/tree/master/sql
 
 登陆LINUX MYSQL并创建schema maxkey，字符集utf8,数据文件导入到maxkey schema中，
 
