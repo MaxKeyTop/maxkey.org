@@ -12,6 +12,12 @@ layout: zh/default
 			<th>下载地址</th>
 			<th>提取码</th>
 		</tr>
+		<tr class="a">
+			<td>v 2.9.0 RC1 </td>
+			<td>2021/08/10</td>
+			<td> <a href="https://pan.baidu.com/s/1cfe8NHH_yqUn2uk4VR-AvQ" target="_blank">链接下载</a>  </td>
+			<td><b>63v1</b> </td>
+		</tr>
 		<tr class="b">
 			<td>v 2.8.1 GA </td>
 			<td>2021/06/25</td>
