@@ -11,14 +11,14 @@ layout: zh/default
 	<tbody>
 		<tr>
 			<td>标准协议</td>
-			<td>OpenID Connect协议支持</td>
+			<td>OpenID Connect</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td>插件</td>
 		</tr>
 		<tr>
 			<td>标准协议</td>
-			<td>OAuth v2协议支持</td>
+			<td>OAuth v2</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
@@ -26,7 +26,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>标准协议</td>
-			<td>SAML V2协议支持</td>
+			<td>SAML V2</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td>插件</td>
@@ -34,7 +34,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>标准协议</td>
-			<td>CAS 1.0/2.0/3.0协议支持</td>
+			<td>CAS 1.0/2.0/3.0</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
@@ -42,7 +42,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>标准协议</td>
-			<td>JWT协议支持</td>
+			<td>JWT</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td>定制开发</td>
 			<td>定制开发</td>
@@ -440,83 +440,90 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>生命周期管理</td>
-			<td>Kafka同步支持</td>
+			<td>KAFKA同步支持</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			
 		</tr>
 		<tr>
-			<td>生命周期管理</td>
-			<td>Active Directory连接器(MaxKey->AD)</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+			<td >生命周期管理</td><td colspan="5">同步器把存在上游系统的机构和账号同步到MaxKey</td>
 		</tr>
 		<tr>
 			<td>生命周期管理</td>
-			<td>标准LDAP连接器(MaxKey->LDAP)</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-		</tr>
-		<tr>
-			<td>生命周期管理</td>
-			<td>企业微信连接器(MaxKey->企业微信)</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-		</tr>
-		<tr>
-			<td>生命周期管理</td>
-			<td>钉钉连接器(MaxKey->钉钉)</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-		</tr>
-		<tr>
-			<td>生命周期管理</td>
-			<td>飞书连接器(MaxKey->飞书)</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-		</tr>
-		<tr>
-			<td>生命周期管理</td>
-			<td>华为WeLink连接器(MaxKey->WeLink)</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td>Active Directory同步器</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
 		
 		<tr>
 			<td>生命周期管理</td>
-			<td>Active Directory同步器(AD->MaxKey)</td>
+			<td>标准LDAP同步器</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+		</tr>
+		<tr>
+			<td>生命周期管理</td>
+			<td>企业微信同步器</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+		</tr>
+		<tr>
+			<td>生命周期管理</td>
+			<td>钉钉同步器</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+		</tr>
+		<tr>
+			<td >生命周期管理</td><td colspan="5">连接器把MaxKey的机构和账号同步到下游系统</td>
+		</tr>
+		<tr>
+			<td>生命周期管理</td>
+			<td>Active Directory连接器</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
 		<tr>
 			<td>生命周期管理</td>
-			<td>标准LDAP同步器(LDAP->MaxKey)</td>
+			<td>标准LDAP连接器</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
 		<tr>
 			<td>生命周期管理</td>
-			<td>企业微信同步器(企业微信->MaxKey)</td>
+			<td>企业微信连接器</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
 		<tr>
 			<td>生命周期管理</td>
-			<td>钉钉同步器(钉钉->MaxKey)</td>
+			<td>钉钉连接器</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
+		<tr>
+			<td>生命周期管理</td>
+			<td>飞书连接器</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+		</tr>
+		<tr>
+			<td>生命周期管理</td>
+			<td>华为WeLink连接器</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+		</tr>
+		
 		<tr>
 			<td colspan="5"></td>
 		</tr>
