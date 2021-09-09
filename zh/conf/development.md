@@ -22,7 +22,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>Gradle</td>
-			<td>7.0+ +</td>
+			<td>7.0+ </td>
 			<td>代码构建</td>
 		</tr>
 		<tr>
@@ -72,14 +72,28 @@ layout: zh/default
 			<td>LICENSE</td>
 			<td></td>
 			<td></td>
-			<td>许可证</td>
+			<td>Apache License v2许可证</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>NOTICE</td>
+			<td></td>
+			<td></td>
+			<td>MaxKey版权声明</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>ReleaseNotes.txt</td>
+			<td></td>
+			<td></td>
+			<td>GA版本发布记录描述</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td>config</td>
 			<td></td>
 			<td></td>
-			<td>构建的三种方式配置bootjar,docker,standard</td>
+			<td>构建方式配置Jar,Docker,Standard</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -273,10 +287,11 @@ layout: zh/default
 		<tr>
 			<td></td>
 			<td></td>
-			<td>maxkey-web-manage</td>
+			<td>maxkey-boot-monitor</td>
 			<td></td>
-			<td>管理系统</td>
+			<td>基于Spring Boot Admin监控</td>
 		</tr>
+		
 		<tr>
 			<td></td>
 			<td></td>
@@ -284,6 +299,14 @@ layout: zh/default
 			<td></td>
 			<td>认证系统</td>
 		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-web-mgt</td>
+			<td></td>
+			<td>管理系统</td>
+		</tr>
+		
 		<tr>
 			<td></td>
 			<td></td>
@@ -303,7 +326,7 @@ layout: zh/default
 			<td>sql</td>
 			<td></td>
 			<td></td>
-			<td>数据库MYSQL脚步,GA版本对应SQL</td>
+			<td>数据库MYSQL脚本,GA版本对应SQL</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -317,28 +340,14 @@ layout: zh/default
 			<td>build.gradle</td>
 			<td></td>
 			<td></td>
-			<td>工程构建及版本控制</td>
+			<td>默认工程构建及版本控制</td>
 		</tr>
 		<tr>
 			<td></td>
-			<td>build_cnf_docker.gradle</td>
+			<td>build_cnf.gradle</td>
 			<td></td>
 			<td></td>
-			<td>docker工程构建及版本控制</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>build_cnf_jar.gradle</td>
-			<td></td>
-			<td></td>
-			<td>bootjar工程构建及版本控制</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>build_cnf_standard.gradle</td>
-			<td></td>
-			<td></td>
-			<td>standard工程构建及版本控制</td>
+			<td>工程构建配置脚本</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -356,52 +365,53 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td></td>
-			<td>ReleaseNotes.txt</td>
-			<td></td>
-			<td></td>
-			<td>GA版本描述</td>
-		</tr>
-		<tr>
-			<td></td>
 			<td>gradle</td>
 			<td></td>
 			<td></td>
 			<td>gradle的配置</td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td>release.bat</td>
+			<td></td>
+			<td></td>
+			<td>标准和Jar构建版本</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>release_docker.bat</td>
+			<td></td>
+			<td></td>
+			<td>docker构建版本</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td>setEnvVars.bat</td>
 			<td></td>
 			<td></td>
-			<td>JDK及Gradle路径配置，用于构建脚本，需要开发人员自行配置</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>release.bat</td>
-			<td></td>
-			<td></td>
-			<td>构建版本</td>
+			<td>JDK及Gradle路径配置,开发人员配置</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td>release_cnf_docker.bat</td>
 			<td></td>
 			<td></td>
-			<td>构建docker版本配置</td>
+			<td>构建Docker配置</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td>release_cnf_jar.bat</td>
 			<td></td>
 			<td></td>
-			<td>构建bootjar版本配置</td>
+			<td>构建Jar配置</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td>release_cnf_standard.bat</td>
 			<td></td>
 			<td></td>
-			<td>构建standard版本配置</td>
+			<td>构建Standard配置</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -422,7 +432,7 @@ maxkey-webs/maxkey-web-maxkey/src/main/java/org/maxkey/MaxKeyApplication.java
 
 MaxKey身份安全管理系统
 
-maxkey-webs/maxkey-web-manage/src/main/java/org/maxkey/MaxKeyMgtApplication.java
+maxkey-webs/maxkey-web-mgt/src/main/java/org/maxkey/MaxKeyMgtApplication.java
 
 
 <h3>标准构建Release</h3>
@@ -433,12 +443,12 @@ setEnvVars.bat
 
 set JAVA_HOME=D:\JavaIDE\jdk1.8.0_91
 
-set GRADLE_HOME=D:\JavaIDE\gradle-5.4.1
+set GRADLE_HOME=D:\IDE\gradle-7.2
 
 
 2.启动构建
 
-release.bat
+gradlew build -x test或者release.bat
 
 
 3.构建结果
@@ -460,7 +470,7 @@ release_cnf_docker.bat
 
 2.启动构建
 
-release.bat
+gradlew build jib -x test或者release_docker.bat
 
 3.构建的结果
 
@@ -477,7 +487,7 @@ release_cnf_jar.bat
 
 2.启动构建
 
-release.bat
+gradlew build -x test或者release.bat
 
 
 3.构建的结果
