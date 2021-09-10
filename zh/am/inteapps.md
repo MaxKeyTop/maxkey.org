@@ -120,7 +120,18 @@ layout: zh/default
 			<td>企业应用</td>
 			<td>禅道项目管理</td>
 		</tr>
-		
+		<tr>
+			<td>17</td>
+			<td><img src="{{ "/static/images/inteapps/atlassian_confluence.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt="" style="border:0;" width="65px" height="65px"/></td>
+			<td>企业应用</td>
+			<td>Atlassian Confluence</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td><img src="{{ "/static/images/inteapps/atlassian_jira.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt="" style="border:0;" width="65px" height="65px"/></td>
+			<td>企业应用</td>
+			<td>Atlassian Jira</td>
+		</tr>
 	</tbody>
 </table>
 
