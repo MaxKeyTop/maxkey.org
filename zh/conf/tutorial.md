@@ -183,7 +183,7 @@ lower_case_table_names=1
  
 2.5 设置访问权限及密码
 
-<pre><code class="bash hljs">
+<pre><code class="sql hljs">
 mysql -u root -p;
 
 输入密码
@@ -235,6 +235,24 @@ MaxKey对应的版本SQL文件，参见
 https://gitee.com/dromara/MaxKey/tree/master/sql
 
 登陆LINUX MYSQL并创建schema maxkey，字符集utf8,数据文件导入到maxkey schema中，
+
+
+<pre><code class="sql hljs">
+mysql -u root -p;
+
+输入密码
+
+CREATE DATABASE  IF NOT EXISTS `maxkey` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+USE `maxkey`;
+
+-- 使用source命令，后面参数为脚本文件(如这里用到的.sql),其中v2.9.0是对应的版本号
+
+source your sql path/maxkey_v2.9.0.GA.sql;
+
+source your sql path/maxkey_v2.9.0.GA_data.sql
+
+</code></pre>
 
 
 3.3 启动
