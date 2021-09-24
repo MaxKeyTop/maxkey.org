@@ -1,7 +1,8 @@
 ---
 layout: zh/default
 ---
-<h1>下载</h1>
+
+<h2>下载</h2>
 
 百度网盘下载
 <table border="0" class="table table-striped table-bordered ">
@@ -116,3 +117,7 @@ layout: zh/default
 		</tr>
 	</tbody>
 </table>
+
+<h2>Rainbond应用商店快速安装</h2>
+
+[Rainbond](https://github.com/goodrain/rainbond) 是云原生且易用的云原生应用管理平台。通过<a href="https://www.maxkey.top/zh/conf/rainbond.html" target="_blank">Rainbond快速安装</a>
