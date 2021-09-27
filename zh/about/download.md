@@ -13,6 +13,12 @@ layout: zh/default
 			<th>下载地址</th>
 			<th>提取码</th>
 		</tr>
+		<tr class="a">
+			<td>v 3.0.0 GA </td>
+			<td>2021/09/29</td>
+			<td> <a href="https://pan.baidu.com/s/1UtEgLD1Pz7FQXZePZaP9Tw" target="_blank">链接下载</a>  </td>
+			<td><b>mxk9</b> </td>
+		</tr>
 		<tr class="b">
 			<td>v 2.9.0 GA </td>
 			<td>2021/08/24</td>
