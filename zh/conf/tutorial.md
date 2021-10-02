@@ -54,7 +54,16 @@ start_maxkey_wiki.bat
 				<td>3</td><td>集成指南</td><td><a href="http://sso.maxkey.top:9521/wiki" target="blank">http://sso.maxkey.top:9521/wiki</a></td>
 			</tr>
 			<tr>
-				<td>4</td><td>账户密码</td><td>admin/maxkey</td>
+				<td>4</td><td>监控平台</td><td><a href="http://sso.maxkey.top:9528/login" target="blank">http://sso.maxkey.top:9528/login</a></td>
+			</tr>
+			<tr>
+				<td>5</td><td>认证平台接口文档</td><td><a href="https://sso.maxkey.top/maxkey/doc.html" target="blank">https://sso.maxkey.top/maxkey/doc.html</a></td>
+			</tr>
+			<tr>
+				<td>6</td><td>账户密码</td><td>admin/maxkey</td>
+			</tr>
+			<tr>
+				<td>7</td><td>监控账户密码</td><td>monitor/maxkey</td>
 			</tr>
 		</tbody>
 </table>		
@@ -62,74 +71,85 @@ start_maxkey_wiki.bat
 
 <h2>目录结构</h2>
 <table border="0" class="table table-striped table-bordered ">
-	<thead>
-		<tr>
-			<th>序号</th><th>目录/文件</th><th>备注</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1</td><td>license</td><td>许可证</td>
-		</tr>
-		<tr>
-			<td>2</td><td>lib</td><td>公共包</td>
-		</tr>
-		<tr>
-			<td>3</td><td>jdk</td><td>运行时JDK</td>
-		</tr>
-		<tr>
-			<td>4</td><td>maxkey</td><td>认证服务</td>
-		</tr>
-		<tr>
-			<td>5</td><td>maxkey_mgt</td><td>管理服务</td>
-		</tr>
-		<tr>
-			<td>6</td><td>maxkey_mysql</td><td>数据库</td>
-		</tr>
-		<tr>
-			<td>7</td><td>maxkey_wiki</td><td>WIKI和样例</td>
-		</tr>
-		
-		<tr>
-			<td>8</td><td>start_maxkey.bat</td><td>启动认证服务器</td>
-		</tr>
-		<tr>
-			<td>9</td><td>start_maxkey_mgt.bat</td><td>启动管理服务器</td>
-		</tr>
-		<tr>
-			<td>10</td><td>start_maxkey_db.bat</td><td>启动数据库</td>
-		</tr>
-		<tr>
-			<td>11</td><td>start_maxkey_wiki.bat</td><td>启动WIKI和样例</td>
-		</tr>
-		<tr>
-			<td>12</td><td>set_maxkey_env.bat</td><td>环境设置脚本</td>
-		</tr>
-	</tbody>
-</table>
+		<thead>
+			<tr>
+				<th>序号</th><th>目录/文件</th><th>备注</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td><td>MaxKey单点登陆认证系统介绍-CE-***.pdf</td><td>系统介绍</td>
+			</tr>
+			<tr>
+				<td>2</td><td>getting-started.html</td><td>快速使用文档</td>
+			</tr>
+			<tr>
+				<td>3</td><td>LICENSE</td><td>许可证</td>
+			</tr>
+			<tr>
+				<td>4</td><td>NOTICE</td><td>许可证NOTICE</td>
+			</tr>
+			<tr>
+				<td>5</td><td>jdk/jre</td><td>运行时JDK</td>
+			</tr>
+			<tr>
+				<td>6</td><td>lib</td><td>公共包</td>
+			</tr>
+			<tr>
+				<td>7</td><td>maxkey</td><td>认证服务</td>
+			</tr>
+			<tr>
+				<td>8</td><td>maxkey_mgt</td><td>管理服务</td>
+			</tr>
+			<tr>
+				<td>9</td><td>maxkey_monitor</td><td>监控平台</td>
+			</tr>
+			<tr>
+				<td>10</td><td>mysql_***</td><td>MySQL数据库</td>
+			</tr>
+			<tr>
+				<td>11</td><td>maxkey_wiki</td><td>WIKI和样例</td>
+			</tr>
+			<tr>
+				<td>12</td><td>start_maxkey.bat</td><td>启动认证服务器</td>
+			</tr>
+			<tr>
+				<td>13</td><td>start_maxkey_mgt.bat</td><td>启动管理服务器</td>
+			</tr>
+			<tr>
+				<td>14</td><td>start_maxkey_db.bat</td><td>启动数据库</td>
+			</tr>
+			<tr>
+				<td>15</td><td>start_maxkey_monitor.bat</td><td>启动监控服务器</td>
+			</tr>
+			<tr>
+				<td>16</td><td>start_maxkey_wiki.bat</td><td>启动WIKI和样例</td>
+			</tr>
+			<tr>
+				<td>17</td><td>set_maxkey_env.bat</td><td>环境设置脚本</td>
+			</tr>
+		</tbody>
+	</table>
 
 <h2>LINUX 7 版本</h2>
 
-1 OpenJDK 14 安装
+1 OracleJDK 17 安装
 
 1.1 下载地址
-http://jdk.java.net/archive/
+https://www.oracle.com/java/technologies/downloads/#JDK17
 
-OpenJDK 14
-14 GA (build 14+36)
+Java SE Development Kit 17
 
-    Linux	64-bit	tar.gz (sha256) 190M
+    x64 RPM Package
 	
 <pre><code class="bash hljs">	
-wget --no-check-certificate --no-cookies https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz
+wget --no-check-certificate --no-cookies wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
 </code></pre>
  
 1.2 解压缩及安装
 
 <pre><code class="bash hljs">
-tar -zxvf openjdk-14_linux-x64_bin.tar.gz
-
-rpm -Uvh jdk-14_linux-x64_bin.rpm
+rpm -Uvh jdk-17_linux-x64_bin.rpm
 </code></pre>
 
 
@@ -248,16 +268,24 @@ USE `maxkey`;
 
 -- 使用source命令，后面参数为脚本文件(如这里用到的.sql),其中v2.9.0是对应的版本号
 
-source your sql path/maxkey_v2.9.0.GA.sql;
+source your sql path/maxkey_v3.0.0.GA.sql;
 
-source your sql path/maxkey_v2.9.0.GA_data.sql
+source your sql path/maxkey_v3.0.0.GA_data.sql
 
 </code></pre>
 
 
 3.3 启动
+修改set_maxkey_env.sh以下参数
 <pre><code class="bash hljs">
-  ./start_maxkey_db.sh &
+JAVA_HOME=/usr/java/jdk-17
+
+export JAVA_HOME=/usr/java/jdk-17
+</code></pre>
+
+
+<pre><code class="bash hljs">
+  ./start_maxkey_db.sh & #自行编写
   
   ./start_maxkey.sh &
   
