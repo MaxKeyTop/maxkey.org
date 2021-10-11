@@ -17,12 +17,12 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>eclipse-jee</td>
-			<td>2020-06 +</td>
+			<td>2021-09 +</td>
 			<td>推荐JAVA开发工具</td>
 		</tr>
 		<tr>
 			<td>Gradle</td>
-			<td>7.0+ </td>
+			<td>7.2+ </td>
 			<td>代码构建</td>
 		</tr>
 		<tr>
@@ -31,7 +31,7 @@ layout: zh/default
 			<td>应用服务器</td>
 		</tr>
 		<tr>
-			<td>MySQL Server</td>
+			<td>MySQL</td>
 			<td>8.0.21 +</td>
 			<td>数据库服务器</td>
 		</tr>
@@ -261,7 +261,7 @@ layout: zh/default
 			<td></td>
 			<td>maxkey-protocol-oauth-2.0</td>
 			<td></td>
-			<td>oauth-2.0实现</td>
+			<td>oauth-2.x实现</td>
 		</tr>
 		<tr>
 			<td></td>
