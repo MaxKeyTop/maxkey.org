@@ -1,7 +1,8 @@
 ---
 layout: en/default
 ---
-<h1>下载</h1>
+
+<h2>下载</h2>
 
 百度网盘下载
 <table border="0" class="table table-striped table-bordered ">
@@ -11,6 +12,42 @@ layout: en/default
 			<th>日期</th>
 			<th>下载地址</th>
 			<th>提取码</th>
+		</tr>
+		<tr class="b">
+			<td>v 3.1.0 GA </td>
+			<td>2021/11/03</td>
+			<td> <a href="https://pan.baidu.com/s/19_waeSGXN7k-0lK9O8uxng" target="_blank">链接下载</a>  </td>
+			<td><b>mxk9</b> </td>
+		</tr>
+		<tr class="a">
+			<td>v 3.0.0 GA </td>
+			<td>2021/09/29</td>
+			<td> <a href="https://pan.baidu.com/s/1UtEgLD1Pz7FQXZePZaP9Tw" target="_blank">链接下载</a>  </td>
+			<td><b>mxk9</b> </td>
+		</tr>
+		<tr class="b">
+			<td>v 2.9.0 GA </td>
+			<td>2021/08/24</td>
+			<td> <a href="https://pan.baidu.com/s/1fYkTHDk2PQ9iAP05PmuPAg" target="_blank">链接下载</a>  </td>
+			<td><b>mxk9</b> </td>
+		</tr>
+		<tr class="a">
+			<td>v 2.9.0 RC1 </td>
+			<td>2021/08/10</td>
+			<td> <a href="https://pan.baidu.com/s/1cfe8NHH_yqUn2uk4VR-AvQ" target="_blank">链接下载</a>  </td>
+			<td><b>63v1</b> </td>
+		</tr>
+		<tr class="b">
+			<td>v 2.8.1 GA </td>
+			<td>2021/06/25</td>
+			<td> <a href="https://pan.baidu.com/s/1fhUXmxEcfgmJY_Dejd615A" target="_blank">链接下载</a>  </td>
+			<td><b>dplq</b> </td>
+		</tr>
+		<tr class="a">
+			<td>v 2.8.0 GA </td>
+			<td>2021/06/01</td>
+			<td> <a href="https://pan.baidu.com/s/1fMr45bhahVWpdcTxXDxP9Q" target="_blank">链接下载</a>  </td>
+			<td><b>06ms</b> </td>
 		</tr>
 		<tr class="b">
 			<td>v 2.7.0 GA </td>
@@ -92,3 +129,7 @@ layout: en/default
 		</tr>
 	</tbody>
 </table>
+
+<h2>Rainbond应用商店快速安装</h2>
+
+[Rainbond](https://github.com/goodrain/rainbond) 是云原生且易用的云原生应用管理平台。通过<a href="https://www.maxkey.top/zh/conf/rainbond.html" target="_blank">Rainbond快速安装</a>
