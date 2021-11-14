@@ -15,18 +15,18 @@ MaxKey支持LDAP包括Active Directory。
 ############################################################################ 
 #LDAP Login support configuration                                          #
 ############################################################################
-maxkey.support.ldap.enable=false
-maxkey.support.ldap.jit=false
+maxkey.login.ldap.enable=false
+maxkey.login.ldap.jit=false
 #openldap,activedirectory,normal
-maxkey.support.ldap.product=openldap
-maxkey.support.ldap.ssl=false
-maxkey.support.ldap.providerurl=ldap://localhost:389
-maxkey.support.ldap.principal=cn=Manager,dc=maxcrc,dc=com
-maxkey.support.ldap.credentials=secret
-maxkey.support.ldap.basedn=dc=maxcrc,dc=com
-maxkey.support.ldap.filter=(uid=%s)
-maxkey.support.ldap.truststore=maxkey
-maxkey.support.ldap.truststorepassword=maxkey
+maxkey.login.ldap.product=openldap
+maxkey.login.ldap.ssl=false
+maxkey.login.ldap.providerurl=ldap://localhost:389
+maxkey.login.ldap.principal=cn=Manager,dc=maxcrc,dc=com
+maxkey.login.ldap.credentials=secret
+maxkey.login.ldap.basedn=dc=maxcrc,dc=com
+maxkey.login.ldap.filter=(uid=%s)
+maxkey.login.ldap.truststore=maxkey
+maxkey.login.ldap.truststorepassword=maxkey
 </code></pre>
 
 <h3>Active Directory支持</h3>
@@ -35,19 +35,19 @@ maxkey.support.ldap.truststorepassword=maxkey
 ############################################################################ 
 #LDAP Login support configuration                                          #
 ############################################################################
-maxkey.support.ldap.enable=false
-maxkey.support.ldap.jit=false
+maxkey.login.ldap.enable=false
+maxkey.login.ldap.jit=false
 #openldap,activedirectory,normal
-maxkey.support.ldap.product=activedirectory
-maxkey.support.ldap.ssl=false
-maxkey.support.ldap.providerurl=ldap://localhost:389
-maxkey.support.ldap.principal=cn=Manager,dc=maxcrc,dc=com
-maxkey.support.ldap.credentials=secret
-maxkey.support.ldap.basedn=dc=maxcrc,dc=com
-maxkey.support.ldap.filter=(uid=%s)
-maxkey.support.ldap.truststore=maxkey
-maxkey.support.ldap.truststorepassword=maxkey
+maxkey.login.ldap.product=activedirectory
+maxkey.login.ldap.ssl=false
+maxkey.login.ldap.providerurl=ldap://localhost:389
+maxkey.login.ldap.principal=cn=Manager,dc=maxcrc,dc=com
+maxkey.login.ldap.credentials=secret
+maxkey.login.ldap.basedn=dc=maxcrc,dc=com
+maxkey.login.ldap.filter=(uid=%s)
+maxkey.login.ldap.truststore=maxkey
+maxkey.login.ldap.truststorepassword=maxkey
 #activedirectory effective
-maxkey.support.ldap.activedirectory.domain=MAXKEY.ORG
+maxkey.login.ldap.activedirectory.domain=MAXKEY.ORG
 </code></pre>
 
