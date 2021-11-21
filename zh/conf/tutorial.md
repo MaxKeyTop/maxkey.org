@@ -295,6 +295,77 @@ export JAVA_HOME=/usr/java/jdk-17
 </code></pre>
 
 
+<h2>Docker快速部署</h2>
+LINUX 7 基于Docker快速部署
+
+1、创建MySQL数据文件和日志文件目录
+
+<pre><code class="bash hljs">
+mkdir /root/mysql/data
+
+mkdir /root/mysql/logs
+</code></pre>
+
+2、把 https://gitee.com/dromara/MaxKey/tree/master/docker 或者https://github.com/dromara/MaxKey/tree/master/docker目录上传到/root目录下
+
+3、启动MySQL服务
+<pre><code class="bash hljs">
+docker pull mysql:8.0.27
+
+docker 	run -p 3306:3306  \
+-v /root/mysql/data:/var/lib/mysql \
+-v /root/mysql/logs:/var/log/mysql \
+-v /root/docker-mysql:/etc/mysql/conf.d \
+-v /root/docker-mysql/sql:/docker-entrypoint-initdb.d \
+--name mysql \
+-e MYSQL_ROOT_PASSWORD=maxkey \
+-d mysql:8.0.27
+</code></pre>
+
+4、启动MaxKey服务
+<pre><code class="bash hljs">
+docker pull maxkeytop/maxkey:latest
+
+docker 	run -p 443:443  \
+-e DATABASE_HOST=192.168.0.102 \
+-e DATABASE_PORT=3306 \
+-e DATABASE_NAME=maxkey \
+-e DATABASE_USER=root \
+-e DATABASE_PWD=maxkey \
+--name maxkey \
+-d maxkeytop/maxkey:latest
+</code></pre>
+
+5、启动MaxKey管理服务
+<pre><code class="bash hljs">
+maxkeytop/maxkey-mgt:latest
+
+docker 	run -p 9527:9527  \
+-e DATABASE_HOST=192.168.0.102 \
+-e DATABASE_PORT=3306 \
+-e DATABASE_NAME=maxkey \
+-e DATABASE_USER=root \
+-e DATABASE_PWD=maxkey \
+--name maxkey-mgt \
+-d maxkeytop/maxkey-mgt:latest
+</code></pre>
+
+<h2>Docker Compose快速部署</h2>
+LINUX 7 基于Docker Compose快速部署
+
+1、创建MySQL数据文件和日志文件目录
+
+<pre><code class="bash hljs">
+mkdir /root/mysql/data
+
+mkdir /root/mysql/logs
+</code></pre>
+
+2、启动MaxKey服务
+<pre><code class="bash hljs">
+docker-compose up --build -d
+</code></pre>
+
 <h2>Rainbond应用商店快速安装</h2>
 
 [Rainbond](https://github.com/goodrain/rainbond) 是云原生且易用的云原生应用管理平台。通过<a href="https://www.maxkey.top/zh/conf/rainbond.html" target="_blank">Rainbond快速安装</a>
