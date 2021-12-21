@@ -1,5 +1,5 @@
-publishDate: 2021-11-30
-publishVesion: v3.1.1GA
+publishDate: 2021-12-21
+publishVesion: v3.2.0GA
 
 #maxkeyusedjarsversion
 #Apache
@@ -28,27 +28,27 @@ velocitydepVersion: 1.4
 freemarkerVersion: 2.3.31
 xmlbeansVersion: 3.0.1
 commonscompressVersion: 1.20
-log4jVersion: 2.14.1
+log4jVersion: 2.17.0
 kafkaclientsVersion: 2.6.1
 poiVersion: 4.1.2
 tomcatVersion: 9.0.46
 tomcatembedloggingjuliVersion: 8.5.2
 #spring
-springVersion: 5.3.8
-springBootVersion: 2.5.1
-springSecurityVersion: 5.5.0
-springDataVersion: 2.5.1
-springSessionVersion: 2.5.0
-springkafkaVersion: 2.7.1
+springVersion: 5.3.14
+springBootVersion: 2.6.1
+springSecurityVersion: 5.6.0
+springDataVersion: 5.6.0
+springSessionVersion: 5.6.0
+springkafkaVersion: 2.8.0
 springretryVersion: 1.3.0
 springplugincoreVersion: 2.0.0.RELEASE
 springpluginmetadataVersion: 2.0.0.RELEASE
 springfoxVersion: 3.0.0
 #google
-jibGradlePluginVersion: 2.7.1
+jibGradlePluginVersion: 3.1.4
 kaptchaVersion: 2.3.2
-gsonVersion: 2.8.6
-guavaVersion: 30.1.1-jre
+gsonVersion: 2.8.8
+guavaVersion: 31.0.1-jre
 tinkVersion: 1.4.0
 zxingcoreVersion: 3.4.1
 #jboss
@@ -56,16 +56,16 @@ jbossloggingVersion: 3.4.1.Final
 hibernateVersion: 6.2.0.Final
 #doc
 swaggerVersion: 1.6.2
-swaggerV3Version: 2.1.6
+swaggerV3Version: 2.1.11
 knife4jVersion: 3.0.2
 #database
 postgresqlVersion: 42.2.20
-mysqlconnectorjavaVersion: 8.0.21
-druidVersion: 1.2.5
-druidspringbootstarterVersion: 1.2.5
-jedisVersion: 3.6.0
+mysqlconnectorjavaVersion: 8.0.26
+druidVersion: 1.2.8
+druidspringbootstarterVersion: 1.2.8
+jedisVersion: 3.7.1
 ehcacheVersion: 3.9.0
-mybatisVersion: 3.5.7
+mybatisVersion: 3.5.8
 mybatisspringVersion: 2.0.6
 #saml
 opensamlVersion: 2.6.6
