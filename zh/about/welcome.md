@@ -1,16 +1,8 @@
 ---
 layout: zh/default
 ---
-<h1>MaxKey介绍</h1>
-<b>MaxKey</b>单点登录认证系统，中文谐音为马克思的钥匙寓意是最大钥匙，是<b>业界领先的企业级IAM身份管理和认证产品</b>；支持OAuth 2.x/OpenID Connect、SAML 2.0、JWT、CAS、SCIM等标准协议；提供<b>简单、标准、安全和开放</b>的用户身份管理(IDM)、身份认证(AM)、单点登录(SSO)、资源管理和权限管理等。
-
-**单点登录(Single Sign On）**简称为**SSO**
-
-用户只需要登录认证中心一次就可以访问所有相互信任的应用系统，无需再次登录，主要功能：
-  
-1.所有应用系统共享一个身份认证系统
-
-2.所有应用系统能够识别和提取ticket信息
+<h1>MaxKey概述</h1>
+<b>MaxKey</b>单点登录认证系统，谐音为马克思的钥匙寓意是最大钥匙，是<b>业界领先的企业级IAM身份管理和认证产品</b>；支持OAuth 2.x/OpenID Connect、SAML 2.0、JWT、CAS、SCIM等标准协议；提供<i>简单、标准、安全和开放</i>的用户身份管理(IDM)、身份认证(AM)、单点登录(SSO)、资源管理和权限管理等。
 
 QQ交流群：<b>434469201</b> 
 
@@ -19,7 +11,18 @@ QQ交流群：<b>434469201</b>
 
 代码托管 <a href="https://github.com/dromara/MaxKey" target="_blank"><b>GitHub</b></a> | <a href="https://gitee.com/dromara/MaxKey" target="_blank"><b>码云(Gitee)</b></a>
 <br/>
-  
+
+
+><i>**单点登录(Single Sign On)**简称为**SSO**</i>
+>
+>用户只需要登录认证中心一次就可以访问所有相互信任的应用系统，无需再次登录，主要功能：
+>  
+>1.所有应用系统共享一个身份认证系统
+>
+>2.所有应用系统能够识别和提取ticket信息
+
+
+
 <h2>认证协议</h2>
 
 <table border="0" class="table table-striped table-bordered ">
@@ -137,9 +140,11 @@ QQ交流群：<b>434469201</b>
 
 4. 多种认证机制并存，各应用系统可保留原有认证机制，同时集成认证中心的认证；应用具有高度独立性，不依赖认证中心，又可用使用认证中心的认证，实现单点登录。
 
-5. 基于Java平台开发，采用Spring、MySQL、Tomcat、Apache Kafka、Redis等开源技术，支持微服务，扩展性强。  
+5. 认证多租户功能，支持集团下多企业独立管理或企业下不同部门数据隔离的，降低运维成本。
 
-6. 开源、安全、自主可控，许可证 Apache License Version 2.0。 
+6. 基于Java平台开发，采用Spring、MySQL、Tomcat、Apache Kafka、Redis等开源技术，支持微服务，扩展性强。  
+
+7. 开源、安全、自主可控，许可证 Apache License Version 2.0。 
 
 <h2>最有价值开源项目</h2>
 Gitee-最有价值开源项目

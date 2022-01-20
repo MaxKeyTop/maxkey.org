@@ -51,3 +51,77 @@ layout: zh/default
 双因素身份认证就是通过你所知道再加上你所能拥有的这二个要素组合到一起才能发挥作用的身份认证系统。双因素认证是一种采用时间同步技术的系统，采用了基于时间、事件和密钥三变量而产生的一次性密码来代替传统的静态密码。每个动态密码卡都有一个唯一的密钥，该密钥同时存放在服务器端，每次认证时动态密码卡与服务器分别根据同样的密钥，同样的随机参数（时间、事件）和同样的算法计算了认证的动态密码，从而确保密码的一致性，从而实现了用户的认证。就像我们去银行办卡送的口令牌.
 多因素认证（MFA），是一种计算机访问控制的方法，用户要通过两种以上的认证机制之后，才能得到授权，使用计算机资源。MFA的目的是建立一个多层次的防御，使未经授权的人访问计算机系统或网络更加困难，从而提高安全性。
 
+<h2>密码存储</h2>
+
+基于Spring Security实现密码加密和验证，规则是通过对密码明文添加<b>{noop}</b>前缀
+
+MaxKey默认密码加密策略BCrypt，用户表(userinfo)->密码字段(password),存储方式<b>{类型}密文</b>
+
+
+<table border="0" class="table table-striped table-bordered ">
+	<tbody>
+		<tr class="a">
+			<th>类型</th>
+			<th>密码</th>
+		</tr>
+				
+		<tr class="b">
+			<td>plain </td>
+			<td>明文</td>
+		</tr>
+		<tr class="a">
+			<td>bcrypt</td>
+			<td>默认</td>
+		</tr>  
+		<tr class="b">
+			<td>pbkdf2</td>
+			<td>PBKDF2 </td>
+		</tr>
+		<tr class="a">
+			<td>md4</td>
+			<td>MD4 </td>
+		</tr>
+		<tr class="b">
+			<td>md5</td>
+			<td>MD5 </td>
+		</tr>
+		<tr class="a">
+			<td>sha1</td>
+			<td>SHA-1 </td>
+		</tr>
+		<tr class="b">
+			<td>sha256</td>
+			<td>SHA-256</td>
+		</tr>
+		<tr class="a">
+			<td>sha384</td>
+			<td>SHA-384 </td>
+		</tr>
+		<tr class="b">
+			<td>sha512</td>
+			<td>SHA-512 </td>
+		</tr>
+		<tr class="a">
+			<td>sm3</td>
+			<td>国产哈希算法GM/T 0004-2012 </td>
+		</tr>
+		<tr class="b">
+			<td>ldap</td>
+			<td>LDAP </td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>bcrypt 编码算法</h4>
+bcrypt使用的是布鲁斯·施内尔在1993年发布的 <code>Blowfish</code> 加密算法。bcrypt 算法将salt随机并混入最终加密后的密码，验证时也无需单独提供之前的salt，从而无需单独处理salt问题。加密后的格式一般为：
+<pre><code class="java hljs">$2a$10$/bTVvqqlH9UiE0ZJZ7N2Me3RIgUCdgMheyTgV0B4cMCSokPa.6oCa</code></pre> 
+其中：<code>$</code>是分割符，无意义;<code>2a</code>是<code>bcrypt</code>加密版本号；<code>10</code>是<code>cost</code>的值；而后的前<code>22</code>位是<code>salt</code>值；再然后的字符串就是密码的密文了。
+
+<h4>bcrypt 特点</h4>
+bcrypt有个特点就是非常慢。这大大提高了使用彩虹表进行破解的难度。也就是说该类型的密码暗文拥有让破解者无法忍受的时间成本。同时对于开发者来说也需要注意该时长是否能超出系统忍受范围内。通常是MD5的数千倍。
+同样的密码每次使用bcrypt编码，密码暗文都是不一样的。 也就是说你有两个网站如果都使用了bcrypt 它们的暗文是不一样的，这不会因为一个网站泄露密码暗文而使另一个网站也泄露密码暗文。
+所以从bcrypt的特点上来看，其安全强度还是非常有保证的。
+
+
+<h4>不推荐使用md5</h4>
+首先md5 不是加密算法，是哈希摘要。以前通常使用其作为密码哈希来保护密码。由于彩虹表的出现，md5 和sha1之类的摘要算法都已经不安全了。如果有不相信的同学 可以到一些解密网站 如 cmd5 网站尝试解密 你会发现 md5 和 sha1 是真的非常容易被破解。
