@@ -5,8 +5,12 @@ layout: zh/default
 
 架构Architecture
 
-<img src="{{ "/static/images/maxkey_ha.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt=""/>
+<img src="{{ "/static/images/maxkey_ha.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt="" style="max-width: 700px;"/>
 
+
+微服务架构Microservice Architecture
+
+<img src="{{ "/static/images/maxkey_ha_micro.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt="" style="max-width: 700px;"/>
 
 
 <h2>高可用性配置</h2>

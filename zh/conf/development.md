@@ -189,7 +189,7 @@ layout: zh/default
 		<tr>
 			<td></td>
 			<td></td>
-			<td>maxkey-synchronizers-dingding</td>
+			<td>maxkey-synchronizers-dingtalk</td>
 			<td></td>
 			<td>钉钉同步器</td>
 		</tr>
