@@ -203,11 +203,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   font-size: 64px;
   font-weight: 700;
+  letter-spacing: 10px;
 }
 
 #intro .intro-content h2 span {
   color: #FFD700;
-  text-decoration: underline;
 }
 
 @media (max-width: 767px) {
