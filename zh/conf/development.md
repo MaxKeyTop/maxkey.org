@@ -167,36 +167,50 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td></td>
-			<td></td>
 			<td>maxkey-synchronizers</td>
+			<td></td>
 			<td></td>
 			<td>身份同步器</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td>maxkey-synchronizers-activedirectory</td>
+			<td>maxkey-synchronizer</td>
 			<td></td>
-			<td>activedirectory同步器</td>
+			<td>同步器接口</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td>maxkey-synchronizers-ldap</td>
+			<td>maxkey-synchronizer-activedirectory</td>
 			<td></td>
-			<td>ldap同步器</td>
+			<td>微软Active Directory同步器</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td>maxkey-synchronizers-dingtalk</td>
+			<td>maxkey-synchronizer-feishu</td>
+			<td></td>
+			<td>飞书同步器</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-synchronizer-ldap</td>
+			<td></td>
+			<td>标准LDAP同步器</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-synchronizer-dingtalk</td>
 			<td></td>
 			<td>钉钉同步器</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td>maxkey-synchronizers-workweixin</td>
+			<td>maxkey-synchronizer-workweixin</td>
 			<td></td>
 			<td>企业微信同步器</td>
 		</tr>
@@ -261,14 +275,14 @@ layout: zh/default
 			<td></td>
 			<td>maxkey-protocol-oauth-2.0</td>
 			<td></td>
-			<td>oauth-2.x实现</td>
+			<td>OAuth 2.x，OpenID Connect实现</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
 			<td>maxkey-protocol-saml-2.0</td>
 			<td></td>
-			<td>saml-2.0实现</td>
+			<td>SAML 2.0实现</td>
 		</tr>
 		<tr>
 			<td></td>
