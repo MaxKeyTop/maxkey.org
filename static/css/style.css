@@ -625,6 +625,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-img {
   overflow: hidden;
+  text-align: center;
 }
 
 #about .about-img img {
