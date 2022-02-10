@@ -74,6 +74,8 @@ Apache License Version 2.0 鼓励代码共享和尊重原作者的著作权，�
 
 <h3><a name="Illegal "></a>违反开源协议新闻</h3>
 
+<a href="https://www.oschina.net/news/180750/volcengine-apache-skywalking" target="_blank">违规再分发 SkyWalking，火山引擎回应并道歉-2022年01月29日</a>
+
 <a href="/zh/about/licenses_zqjy.html" target="_blank">关于Authing.cn在百度搜索关键字“MaxKey单点登录认证系统”侵权的通告-2021年12月15日</a>
 
 <a href="https://www.oschina.net/news/159435" target="_blank">首例！违反 GPL 协议致侵权，被判赔偿 50 万元-2021年09月09日</a>
