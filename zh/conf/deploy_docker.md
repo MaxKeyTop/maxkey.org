@@ -50,7 +50,7 @@ docker 	run -p 443:443  \
 
 5、启动MaxKey管理服务
 <pre><code class="bash hljs">
-maxkeytop/maxkey-mgt:latest
+docker pull maxkeytop/maxkey-mgt:latest
 
 docker 	run -p 9527:9527  \
 -e DATABASE_HOST=192.168.0.102 \

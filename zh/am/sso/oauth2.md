@@ -502,14 +502,12 @@ request.getSession().setAttribute("oauthv20service", service);
 &lt;%@ page language="java" import="org.maxkey.client.oauth.model.*" %&gt;
 &lt;%@ page language="java" import="org.maxkey.client.oauth.*" %&gt;
 &lt;%@ page language="java" import="org.maxkey.client.oauth.domain.*" %&gt;
-
 &lt;%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 
 OAuthService service = (OAuthService)request.getSession().getAttribute("oauthv20service");
-
-if(service==null){
+if(service == null){
 	String callback="http://oauth.demo.maxkey.top:8080/demo-oauth/oauth20callback.jsp";
 	service = new ServiceBuilder()
      .provider(MaxkeyApi20.class)
@@ -524,17 +522,13 @@ Verifier verifier = new Verifier(request.getParameter("code"));
 Token accessToken = service.getAccessToken(EMPTY_TOKEN, verifier);
  
 OAuthClient restClient=new OAuthClient("https://sso.maxkey.top/maxkey/api/oauth/v20/me");
- 
- UserInfo userInfo=restClient.getUserInfo(accessToken.getAccess_token());
- 
- 
-%&gt;
+UserInfo userInfo=restClient.getUserInfo(accessToken.getAccess_token());
 
+%&gt;
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;base href="&lt;%=basePath%&gt;"&gt;
-    
    &lt;title&gt;OAuth V2.0 Demo&lt;/title&gt;
 	&lt;meta http-equiv="pragma" content="no-cache"&gt;
 	&lt;meta http-equiv="cache-control" content="no-cache"&gt;
@@ -545,17 +539,13 @@ OAuthClient restClient=new OAuthClient("https://sso.maxkey.top/maxkey/api/oauth/
 	&lt;script type="text/javascript" src="&lt;%=basePath %&gt;/jquery-3.5.0.min.js"&gt;&lt;/script&gt;
 	&lt;script type="text/javascript" src="&lt;%=basePath %&gt;/jsonformatter.js"&gt;&lt;/script&gt;
 	&lt;link   type="text/css" rel="stylesheet"  href="&lt;%=basePath %&gt;/demo.css"/&gt;
-	
   &lt;/head&gt;
-  
   &lt;body&gt;
   		&lt;div class="container"&gt;
 	  		&lt;table class="datatable"&gt;
 	  			&lt;tr&gt;
-	  				
 	  				&lt;td colspan="2" class="title"&gt;OAuth V2.0 Demo&lt;/td&gt;
 	  			&lt;/tr&gt;
-	  			
 	  			&lt;tr&gt;
 	  				&lt;td width="50%"&gt;OAuth V2.0 Logo&lt;/td&gt;
 	  				&lt;td width="50%"&gt; &lt;img src="&lt;%=basePath %&gt;/images/oauth-2-sm.png"  width="124px" height="124px"/&gt;&lt;/td&gt;
@@ -599,7 +589,6 @@ OAuthClient restClient=new OAuthClient("https://sso.maxkey.top/maxkey/api/oauth/
 
 本文使用JAVA 程序为例
 <pre><code class="java hljs">
-
 package org.maxkey.client.oauth.test;
 
 import org.maxkey.client.http.Response;
@@ -609,13 +598,10 @@ import org.maxkey.client.oauth.model.Token;
 import org.maxkey.client.oauth.oauth.OAuthPasswordService;
 
 public class MaxkeyPasswordDemo {
-
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		 
 		String accessTokenUrl="http://sso.maxkey.top/maxkey/oauth/v20/token";
 		String clientId = "b32834accb544ea7a9a09dcae4a36403";
 		String clientSerect = "E9UO53P3JH52aQAcnLP2FlLv8olKIB7u";
@@ -623,18 +609,14 @@ public class MaxkeyPasswordDemo {
 		String callback = "http://oauth.demo.maxkey.top:8080/demo-oauth/oauth20callback.jsp";
 		String responseType ="token";
 		String approvalprompt = "auto";
-		OAuthConfig oauthServiceConfig=new OAuthConfig(clientId,clientSerect,callback);
-	
-		MaxkeyPasswordApi20	passwordApi20=new MaxkeyPasswordApi20(accessTokenUrl);
 		
+		OAuthConfig oauthServiceConfig=new OAuthConfig(clientId,clientSerect,callback);
+		MaxkeyPasswordApi20	passwordApi20=new MaxkeyPasswordApi20(accessTokenUrl);
 		OAuthPasswordService oAuthPasswordService=new OAuthPasswordService(oauthServiceConfig,passwordApi20);
 		Token accessToken = null;
 		Response response = null;
 		accessToken = oAuthPasswordService.getAccessToken("admin", "maxkey"); 
-
 	}
-	
-
 }
 </code></pre>
 
