@@ -6,6 +6,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 
 本教程介绍在Docker中如何快速配置和部署MaxKey，在此之前请提前<a target="_blank" href="https://docs.docker.com/engine/install/">安装Docker</a>
 
+MaxKey官方镜像仓库：<a href="https://hub.docker.com/u/maxkeytop" target="_blank">访问</a>
 
 <h2>Docker快速部署</h2>
 LINUX 7 基于Docker快速部署
@@ -18,7 +19,9 @@ mkdir /root/mysql/data
 mkdir /root/mysql/logs
 </code></pre>
 
-2、把 https://gitee.com/dromara/MaxKey/tree/master/docker 或者https://github.com/dromara/MaxKey/tree/master/docker目录上传到/root目录下
+2、Docker文件下载
+
+把 https://gitee.com/dromara/MaxKey/tree/master/docker 或者https://github.com/dromara/MaxKey/tree/master/docker目录上传到/root目录下
 
 3、启动MySQL服务
 <pre><code class="bash hljs">
@@ -35,6 +38,9 @@ docker 	run -p 3306:3306  \
 </code></pre>
 
 4、启动MaxKey服务
+
+请把<b>DATABASE_HOST</b>为实际地址
+
 <pre><code class="bash hljs">
 docker pull maxkeytop/maxkey:latest
 
@@ -49,6 +55,9 @@ docker 	run -p 443:443  \
 </code></pre>
 
 5、启动MaxKey管理服务
+
+请把<b>DATABASE_HOST</b>为实际地址
+
 <pre><code class="bash hljs">
 docker pull maxkeytop/maxkey-mgt:latest
 
@@ -73,7 +82,63 @@ mkdir /root/mysql/data
 mkdir /root/mysql/logs
 </code></pre>
 
-2、把 https://gitee.com/dromara/MaxKey/tree/master/docker 或者https://github.com/dromara/MaxKey/tree/master/docker目录上传到/root目录下
+2、上传并修改Docker配置文件
+
+把 https://gitee.com/dromara/MaxKey/tree/master/docker 或者https://github.com/dromara/MaxKey/tree/master/docker目录上传到/root目录下
+
+以下配置文件中<b>DATABASE_HOST</b>为实际地址
+
+	docker-compose.yml
+	
+	docker-maxkey/Dockerfile
+	
+	docker-maxkey-mgt/Dockerfile
+	
+<pre><code class="bash hljs">
+version: '3'
+services:
+  mysql:
+    image: maxkey:mysql
+    container_name: mysql
+    build: ./docker-mysql
+    volumes:
+      - /root/mysql/data:/var/lib/mysql 
+      - /root/mysql/logs:/var/log/mysql 
+      - /root/docker-mysql:/etc/mysql/conf.d 
+      - /root/docker-mysql/sql:/docker-entrypoint-initdb.d 
+    environment:
+      - MYSQL_ROOT_PASSWORD=maxkey
+    ports:
+      - "3306:3306"
+    restart: always
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    
+  maxkey:
+    image: maxkey:maxkey
+    container_name: maxkey
+    build: ./docker-maxkey
+    environment:
+      - DATABASE_HOST:192.168.0.102
+      - DATABASE_PORT:3306
+      - DATABASE_NAME:maxkey
+      - DATABASE_USER:root
+      - DATABASE_PWD:maxkey
+    ports:
+      - "443:443"
+
+  maxkey-mgt:
+    image: maxkey:maxkey-mgt
+    container_name: maxkey-mgt
+    build: ./docker-maxkey-mgt
+    environment:
+      - DATABASE_HOST:192.168.0.102
+      - DATABASE_PORT:3306
+      - DATABASE_NAME:maxkey
+      - DATABASE_USER:root
+      - DATABASE_PWD:maxkey
+    ports:
+      - "9527:9527"
+</code></pre>
 
 3、启动MaxKey服务
 <pre><code class="bash hljs">
