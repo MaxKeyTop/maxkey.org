@@ -12,8 +12,13 @@ layout: zh/default
 			<th>日期</th>
 			<th>下载地址</th>
 		</tr>
+		<tr class="a">
+			<td><i class="fa fa-flag fa-2 " aria-hidden="true" style="color:red"></i>v 3.3.2 GA </td>
+			<td>2022/02/17</td>
+			<td> <a href="https://pan.baidu.com/s/1WHN3o0V2ua-aU8rbjBP22g" target="_blank">链接下载</a>  </td>
+		</tr>
 		<tr class="b">
-			<td><i class="fa fa-flag fa-2 " aria-hidden="true" style="color:red"></i> v 3.3.1 GA </td>
+			<td> v 3.3.1 GA </td>
 			<td>2022/02/10</td>
 			<td> <a href="https://pan.baidu.com/s/1pW4_XOZYwvTW48EXiMDV8g" target="_blank">链接下载</a>  </td>
 		</tr>
