@@ -65,7 +65,7 @@ layout: zh/default
 		<tr class="a">
 			<td>v 2.8.0 GA </td>
 			<td>2021/06/01</td>
-			<td> 2022/12/31</td>
+			<td> End Of Life (EOL)</td>
 		</tr>
 		<tr class="b">
 			<td>v 2.7.0 GA </td>
