@@ -2,7 +2,7 @@
 layout: zh/default
 ---
 <h1>MaxKey概述</h1>
-<b>MaxKey</b>单点登录认证系统，谐音为马克思的钥匙寓意是最大钥匙，是<b>业界领先的企业级IAM身份管理和认证产品</b>；支持OAuth 2.x/OpenID Connect、SAML 2.0、JWT、CAS、SCIM等标准协议；提供<i>简单、标准、安全和开放</i>的用户身份管理(IDM)、身份认证(AM)、单点登录(SSO)、资源管理和权限管理等。
+<b>MaxKey</b>单点登录认证系统，谐音为马克思的钥匙寓意是最大钥匙，是<b>业界领先的IAM身份管理和认证产品</b>；支持OAuth 2.x/OpenID Connect、SAML 2.0、JWT、CAS、SCIM等标准协议；提供<i>简单、标准、安全和开放</i>的用户身份管理(IDM)、身份认证(AM)、单点登录(SSO)、资源管理和权限管理等。
 
 QQ交流群：<b>434469201</b> 
 
@@ -23,7 +23,7 @@ QQ交流群：<b>434469201</b>
 
 
 
-<h2>认证协议</h2>
+<h2>标准协议</h2>
 
 <table border="0" class="table table-striped table-bordered ">
 	<tbody>
@@ -124,7 +124,7 @@ QQ交流群：<b>434469201</b>
 		<tr class="b">
 			<td>8 </td>
 			<td>扫码登录</td>
-			<td>企业微信/钉钉扫码登录</td>
+			<td>企业微信/钉钉/飞书扫码登录</td>
 		</tr>
 	</tbody>
 </table>
