@@ -46,30 +46,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 String token=request.getParameter("jwt");
 System.out.println("jwt "+token);
 SignedJWT signedJWT=null;
-
-//JWKSetKeyStore jwkSetKeyStore=new JWKSetKeyStore();
-
 File jwksFile=new File(PathUtils.getInstance().getClassPath()+"jwk.jwks");
 JWKSet jwkSet=JWKSet.load(jwksFile);
-
 RSASSAVerifier rsaSSAVerifier = new RSASSAVerifier(((RSAKey) jwkSet.getKeyByKeyId("maxkey_rsa")).toRSAPublicKey());
 try {
-
     signedJWT = SignedJWT.parse(token);
 } catch (java.text.ParseException e) {
     // Invalid signed JWT encoding
 }
-
 System.out.println("signedJWT "+signedJWT);
 JWTClaimsSet jwtClaims =signedJWT.getJWTClaimsSet();
- 
 %&gt;
-
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;base href="&lt;%=basePath%&gt;"&gt;
-    
    &lt;title&gt;JWT 1.0 Demo&lt;/title&gt;
 	&lt;meta http-equiv="pragma" content="no-cache"&gt;
 	&lt;meta http-equiv="cache-control" content="no-cache"&gt;
@@ -79,18 +70,14 @@ JWTClaimsSet jwtClaims =signedJWT.getJWTClaimsSet();
 	&lt;link rel="shortcut icon" type="image/x-icon" href="&lt;%=basePath %&gt;/images/favicon.ico"/&gt;
 	&lt;script type="text/javascript" src="&lt;%=basePath %&gt;/jquery-3.5.0.min.js"&gt;&lt;/script&gt;
 	&lt;script type="text/javascript" src="&lt;%=basePath %&gt;/jsonformatter.js"&gt;&lt;/script&gt;
-	&lt;link   type="text/css" rel="stylesheet"  href="&lt;%=basePath %&gt;/demo.css"/&gt;
-	
+	&lt;link   type="text/css" rel="stylesheet"  href="&lt;%=basePath %&gt;/demo.css"/&gt;	
   &lt;/head&gt;
-  
   &lt;body&gt;
   		&lt;div class="container"&gt;
 	  		&lt;table class="datatable"&gt;
 	  			&lt;tr&gt;
-	  				
 	  				&lt;td colspan="2" class="title"&gt;JSON Web Token (JWT) 1.0 Demo&lt;/td&gt;
 	  			&lt;/tr&gt;
-	  			
 	  			&lt;tr&gt;
 	  				&lt;td&gt;JWT 1.0 Logo&lt;/td&gt;
 	  				&lt;td&gt; &lt;img src="&lt;%=basePath %&gt;/images/jwt.png"  width="124px" height="124px"/&gt;&lt;/td&gt;
@@ -107,7 +94,6 @@ JWTClaimsSet jwtClaims =signedJWT.getJWTClaimsSet();
 	  				&lt;td&gt;Audience&lt;/td&gt;
 	  				&lt;td&gt;&lt;%=jwtClaims.getAudience() %&gt;&lt;/td&gt;
 	  			&lt;/tr&gt;
-	  			
 	  			&lt;tr&gt;
 	  				&lt;td&gt;ExpirationTime&lt;/td&gt;
 	  				&lt;td&gt;&lt;%=jwtClaims.getExpirationTime() %&gt;&lt;/td&gt;
@@ -127,7 +113,6 @@ JWTClaimsSet jwtClaims =signedJWT.getJWTClaimsSet();
 	  			&lt;tr&gt;
 	  				&lt;td&gt;JWTClaims&lt;/td&gt;
 	  				&lt;td style="word-wrap: break-word;"&gt;
-					
 						&lt;textarea cols="68" rows="20" v-model="text2"&gt;&lt;%=signedJWT.getPayload() %&gt;&lt;/textarea&gt;
 					&lt;/td&gt;
 	  			&lt;/tr&gt;
@@ -138,4 +123,44 @@ JWTClaimsSet jwtClaims =signedJWT.getJWTClaimsSet();
 		&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
+</code></pre>
+
+
+<h2>PHP客户端集成</h2>
+
+<h3> 第一步，引入firebase/php-jwt</h3>
+<pre><code>composer require firebase/php-jwt
+</code></pre>
+
+<h3> 第二步，验证签名</h3>
+<pre><code class="php hljs">
+&lt;?php
+require 'vendor/autoload.php';
+use \Firebase\JWT\JWT;
+use \Firebase\JWT\Key;
+
+$publicKey = &lt;&lt;&lt;EOD
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvyfZwQuBLNvJDhmziUCF
+uAfIv+bC6ivodcR6PfanTt8XLd6G63Yx10YChAdsDACjoLz1tEU56WPp/ee/vcTS
+sEZT3ouWJYghuGI2j4XclXlEj0S7DzdpcBBpI4n5dr8K3iKY+3JUMZR1AMBHI50U
+aMST9ZTZJAjUPIYxkhRdca5lWBo4wGUh1yj/80+Bq6al0ia9S5NTzNLaJ18jSxFq
+Z79BAkBm+KjkP248YUk6WBGtYEAV5Fws4dpse4hrqJ3RRHiMZV1o1iTmPHz/l55Z
+SDP3vpYf6iKqKzoK2RmdjfH5mGpbc4+PclTs4GKfwZ7cWfrny6B7sMnQfzujCH99
+6QIDAQAB
+-----END PUBLIC KEY-----
+EOD;
+
+$jwt = $_POST["jwt"];
+echo "jwt:\n" .$jwt. "\n";
+
+$decoded = JWT::decode($jwt, new Key($publicKey, 'RS256'));
+
+/*
+ * NOTE: This will now be an object instead of an associative array. 
+ *	   To get an associative array, you will need to cast it as such:
+ */
+$decoded_array = (array) $decoded;
+echo "Decode:\n" . print_r($decoded_array, true) . "\n";
+?&gt;
 </code></pre>
