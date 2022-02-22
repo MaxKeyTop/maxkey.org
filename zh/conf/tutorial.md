@@ -30,7 +30,7 @@ start_maxkey.bat
 <pre><code class="bash hljs">
 start_maxkey_mgt.bat
 </code></pre>
-4)启动样例及WIKI
+4)启动样例
 <pre><code class="bash hljs">
 start_maxkey_wiki.bat
 </code></pre>
@@ -51,7 +51,7 @@ start_maxkey_wiki.bat
 				<td>2</td><td>管理平台</td><td><a href="http://sso.maxkey.top:9527/maxkey-mgt/login" target="blank">http://sso.maxkey.top:9527/maxkey-mgt/login</a></td>
 			</tr>
 			<tr>
-				<td>3</td><td>集成指南</td><td><a href="http://sso.maxkey.top:9521/wiki" target="blank">http://sso.maxkey.top:9521/wiki</a></td>
+				<td>3</td><td>集成指南</td><td><a href="https://doc.maxkey.top/#/" target="blank">https://doc.maxkey.top/#/</a></td>
 			</tr>
 			<tr>
 				<td>4</td><td>监控平台</td><td><a href="http://sso.maxkey.top:9528/login" target="blank">http://sso.maxkey.top:9528/login</a></td>
@@ -123,7 +123,7 @@ start_maxkey_wiki.bat
 				<td>15</td><td>start_maxkey_monitor.bat</td><td>启动监控服务器</td>
 			</tr>
 			<tr>
-				<td>16</td><td>start_maxkey_wiki.bat</td><td>启动WIKI和样例</td>
+				<td>16</td><td>start_maxkey_wiki.bat</td><td>启动样例</td>
 			</tr>
 			<tr>
 				<td>17</td><td>set_maxkey_env.bat</td><td>环境设置脚本</td>
@@ -133,16 +133,36 @@ start_maxkey_wiki.bat
 
 <h2>LINUX 7 版本</h2>
 
-1 OracleJDK 17 安装
+1 JDK 安装
+
+<table border="0" class="table table-striped table-bordered ">
+	<thead>
+		<tr>
+			<th>推荐</th><th>版本</th><th>更新至</th><th>地址</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td>Oracle JDK 8</td>
+			<td>December 2030</td>
+			<td><a href="https://www.oracle.com/java/technologies/downloads/#JDK17">访问</a></td>
+			
+		</tr>
+		<tr>
+			<td></td>
+			<td>JDK OracleJDK 17</td>
+			<td>October 2029</td>
+			<td><a href="https://www.oracle.com/java/technologies/downloads/#java8">访问</a></td>
+		</tr>
+	</tbody>
+</table>
 
 1.1 下载地址
-https://www.oracle.com/java/technologies/downloads/#JDK17
 
-Java SE Development Kit 17
-
-    x64 RPM Package
+Java SE Development Kit 17  x64 RPM Package
 	
-<pre><code class="bash hljs">	
+<pre><code class="bash hljs">
 wget --no-check-certificate --no-cookies wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
 </code></pre>
  
