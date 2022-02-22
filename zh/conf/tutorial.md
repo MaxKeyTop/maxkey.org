@@ -165,7 +165,7 @@ start_maxkey_wiki.bat
 		<tr>
 			<td></td>
 			<td>Eclipse Temurin 17</td>
-			<td>December 2029</td>
+			<td>October 2029</td>
 			<td><a href="https://adoptium.net/?variant=openjdk17&jvmVariant=hotspot">访问</a></td>
 			
 		</tr>
