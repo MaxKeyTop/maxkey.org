@@ -150,10 +150,24 @@ start_maxkey_wiki.bat
 			
 		</tr>
 		<tr>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td>Eclipse Temurin 8</td>
+			<td>December 2030</td>
+			<td><a href="https://adoptium.net/?variant=openjdk8&jvmVariant=hotspot">访问</a></td>
+			
+		</tr>
+		<tr>
 			<td></td>
-			<td>JDK OracleJDK 17</td>
+			<td>OracleJDK 17</td>
 			<td>October 2029</td>
 			<td><a href="https://www.oracle.com/java/technologies/downloads/#java8">访问</a></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Eclipse Temurin 17</td>
+			<td>December 2029</td>
+			<td><a href="https://adoptium.net/?variant=openjdk17&jvmVariant=hotspot">访问</a></td>
+			
 		</tr>
 	</tbody>
 </table>
