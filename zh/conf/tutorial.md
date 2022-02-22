@@ -108,7 +108,7 @@ start_maxkey_wiki.bat
 				<td>10</td><td>mysql_***</td><td>MySQL数据库</td>
 			</tr>
 			<tr>
-				<td>11</td><td>maxkey_wiki</td><td>WIKI和样例</td>
+				<td>11</td><td>maxkey_wiki</td><td>样例</td>
 			</tr>
 			<tr>
 				<td>12</td><td>start_maxkey.bat</td><td>启动认证服务器</td>
