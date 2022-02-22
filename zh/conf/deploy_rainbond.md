@@ -68,5 +68,6 @@ Rainbond 帮助企业解决如下四类应用管理场景：
 
 * 进入 MaxKey认证服务中，点击`禅道项目管理`，即可跳转至禅道页面并自动登录。
 
-![maxkey-zentao](https://static.goodrain.com/images/maxkey-zentao.gif)
+<img src="https://static.goodrain.com/images/maxkey-zentao.gif" style ="max-width: 900px;">
+
 

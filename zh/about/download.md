@@ -6,12 +6,14 @@ layout: zh/default
 
 百度网盘下载，提取码全部都是<b>mxk9</b>
 <table border="0" class="table table-striped table-bordered ">
-	<tbody>
+	<thead>
 		<tr class="a">
 			<th>版本</th>
 			<th>日期</th>
 			<th>下载地址</th>
 		</tr>
+	</thead>
+	<tbody>
 		<tr class="a">
 			<td><i class="fa fa-flag fa-2 " aria-hidden="true" style="color:red"></i>v 3.3.2 GA </td>
 			<td>2022/02/17</td>

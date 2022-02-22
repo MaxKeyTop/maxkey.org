@@ -27,9 +27,16 @@ maxkey/application-https(http).properties
 <pre><code class="ini hljs">
 #enable social sign on
 maxkey.login.socialsignon=true
-
 </code></pre>
 
+<h3>后台参数配置</h3>
+
+后台管理 -> "配置管理" ->"社交服务" 
+<img src="{{ "/static/images/authn/authn_sa_1.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt=""/>
+
+选中 "微博" -> "编辑" ，微博的app key和app secret填入凭证和密钥
+
+<img src="{{ "/static/images/authn/authn_sa_2.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt=""/>
 
 <h3>账号绑定</h3>
 登录MaxKey，并绑定新浪微博账号
