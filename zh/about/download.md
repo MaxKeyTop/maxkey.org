@@ -14,6 +14,11 @@ layout: zh/default
 		</tr>
 	</thead>
 	<tbody>
+		<tr class="b">
+			<td> v 3.3.3 GA </td>
+			<td>2022/03/03</td>
+			<td> <a href="https://pan.baidu.com/s/13hNZo2YoS7bNzX4loSQx8A" target="_blank">链接下载</a>  </td>
+		</tr>
 		<tr class="a">
 			<td><i class="fa fa-flag fa-2 " aria-hidden="true" style="color:red"></i>v 3.3.2 GA </td>
 			<td>2022/02/17</td>
