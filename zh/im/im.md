@@ -8,7 +8,7 @@ layout: zh/default
 
 计算机处理有关人的数据记录。此类记录包含为其创建和管理帐户的系统所需的技术信息。
 
-**（数字）身份**
+**数字身份**
 
 由一个数字主体对其自身提出的一组主张的表现。 确认是你！
 
@@ -23,7 +23,7 @@ layout: zh/default
 
 <h3>MaxKey身份管理架构</h3>
 
-基于**Apache Kafka**和MaxKey身份连接器(**Connector**)的管理架构
+基于**MQ(Message Queue消息中间件)**和MaxKey身份连接器(**Connector**)的管理架构
 
 <img src="{{ "/static/images/im/maxkey_im.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt=""/>
 
