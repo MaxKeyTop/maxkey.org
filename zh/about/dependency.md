@@ -24,6 +24,15 @@ layout: zh/default
             <td>GNU General Public License v2.0</td>
 		</tr>
 		<tr>
+            <td>PostgreSQL </td>
+			<td>13.6.*</td>
+            <td>
+			PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
+			</td>
+            <td>https://www.postgresql.org/</td>
+            <td>PostgreSQL License</td>
+		</tr>
+		<tr>
             <td>OpenJDK</td>
 			<td>14</td>
             <td>
@@ -31,6 +40,16 @@ layout: zh/default
 			</td>
             <td>http://openjdk.java.net/</td>
             <td>GNU General Public License v2.0</td>
+		</tr>
+		<tr>
+            <td>Node.js</td>
+			<td>Node.js v16.13.1</td>
+            <td>
+			Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+
+			</td>
+            <td>https://nodejs.org/</td>
+            <td>MIT License</td>
 		</tr>
 		<tr>
             <td>Tomcat/Tomcat-embed</td>
@@ -41,6 +60,16 @@ layout: zh/default
             <td>https://tomcat.apache.org/</td>
             <td>Apache License 2.0</td>
 		</tr>
+		<tr>
+            <td>nginx</td>
+			<td>1.21.*</td>
+            <td>
+			nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server, originally written by Igor Sysoev.
+			</td>
+            <td>http://nginx.org/</td>
+            <td>2-clause BSD-like license</td>
+		</tr>
+		
 		<tr>
             <td>Redis</td>
 			<td>6.0.*</td>
@@ -70,6 +99,16 @@ layout: zh/default
             <td>Apache License 2.0</td>
 		</tr>
 		<tr>
+            <td>Apache RocketMQ</td>
+			<td>4.9.*</td>
+            <td>
+			Apache RocketMQ™ is a unified messaging engine, lightweight data processing platform.
+
+			</td>
+            <td>https://rocketmq.apache.org/</td>
+            <td>Apache License 2.0</td>
+		</tr>
+		<tr>
             <td>Gradle</td>
 			<td>7.*</td>
             <td>
@@ -89,6 +128,17 @@ layout: zh/default
             <td>https://www.eclipse.org/</td>
             <td>Eclipse Public License - v 2.0</td>
 		</tr>
+		<tr>
+            <td>Visual Studio Code</td>
+			<td>VSCode Version 1.66</td>
+            <td>
+			Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux
+
+			</td>
+            <td>https://code.visualstudio.com/</td>
+            <td>MIT license </td>
+		</tr>
+		
     </tbody>
 </table>	
 
@@ -1113,6 +1163,182 @@ layout: zh/default
 			</td>
             <td>{{site.knife4jVersion}}</td>
             <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>	
+            <td>The Apache License, Version 2.0</td>
+		</tr>	
+		
+		
+    </tbody>
+</table>
+
+前端组件依赖
+
+<table border="0" class="table table-striped table-bordered ">
+    <thead>
+        <tr>
+            <th>Dependency</th>
+            <th>Component</th>
+            <th>Version</th>
+            <th>Type</th>
+            <th>License</th></tr>
+    </thead>
+    <tbody>
+		<tr>
+            <td><b>~v3.5.0+</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>Angular</td>
+            <td>13.3.3</td>
+            <td>typescript</td>
+            <td>MIT-style License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>Ant Design of Angular(NG-ZORRO)</td>
+            <td>v13.1.1</td>
+            <td>typescript</td>
+            <td>MIT</td>
+		</tr>	
+		<tr>
+            <td>compile</td>
+            <td>NG ALAIN</td>
+            <td>v13.4.2</td>
+            <td>typescript</td>
+            <td>MIT</td>
+		</tr>	
+		<tr>
+            <td>compile</td>
+            <td>ng-ant-admin</td>
+            <td>v13.4.2</td>
+            <td>typescript</td>
+            <td>MIT License</td>
+		</tr>	
+		<tr>
+            <td>compile</td>
+            <td>CryptoJS</td>
+            <td>4.1.1</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td><b>~pre v3.5.0</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>jQuery</td>
+            <td>v3.6.0</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>Bootstrap</td>
+            <td>v5.1.2</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>bootstrap-table</td>
+            <td>1.18.3</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>zTree</td>
+            <td>3.5.46</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>metisMenu</td>
+            <td>3.0.7</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>datetimepicker</td>
+            <td>2.5.20</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>font-awesome</td>
+            <td>4.7.0</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>CKEditor</td>
+            <td>5</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>artDialog</td>
+            <td>5.0.4</td>
+            <td>javascript</td>
+            <td>GNU GPL</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>popperjs</td>
+            <td>v2.10.2</td>
+            <td>javascript</td>
+            <td>MIT License</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>jQuery serializeObject</td>
+            <td>2.4.3</td>
+            <td>javascript</td>
+            <td>BSD</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>jQuery Form Plugin</td>
+            <td>3.51.0</td>
+            <td>javascript</td>
+            <td>LGPLv2.1 (or later) or MIT</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>jQuery blockUI plugin</td>
+            <td>2.70.0</td>
+            <td>javascript</td>
+            <td>MIT</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>jQuery Cookie</td>
+            <td>v1.4.1</td>
+            <td>javascript</td>
+            <td>MIT</td>
+		</tr>
+		
+		<tr>
+            <td>compile</td>
+            <td>Chart.js</td>
+            <td>v3.4.1</td>
+            <td>javascript</td>
+            <td>MIT</td>
+		</tr>
+		 
+		
+		
     </tbody>
 </table>
