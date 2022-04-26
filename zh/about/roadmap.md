@@ -35,8 +35,8 @@ layout: zh/default
 		
 		<tr >
 			<td>2022Q2</td>
-			<td>React, and Ant Design</td>
-			<td></td>
+			<td>Ant Design of Angular</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		
 		<tr >
