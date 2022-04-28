@@ -1213,7 +1213,7 @@ layout: zh/default
 		<tr>
             <td>compile</td>
             <td>ng-ant-admin</td>
-            <td>v13.4.2</td>
+            <td>v12.2+</td>
             <td>typescript</td>
             <td>MIT License</td>
 		</tr>	
