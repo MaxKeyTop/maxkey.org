@@ -12,6 +12,7 @@ C:\Windows\System32\drivers\etc
 新增如下内容
 <pre><code class="ini hljs">
 127.0.0.1  sso.maxkey.top
+127.0.0.1  mgt.maxkey.top
 127.0.0.1  tokenbased.demo.maxkey.top
 127.0.0.1  cas.demo.maxkey.top
 127.0.0.1  oauth.demo.maxkey.top
@@ -22,17 +23,35 @@ C:\Windows\System32\drivers\etc
 <pre><code class="bash hljs">
 start_maxkey_db.bat
 </code></pre>
+
 2)启动认证服务
 <pre><code class="bash hljs">
 start_maxkey.bat
 </code></pre>
+
 3)启动管理服务
 <pre><code class="bash hljs">
 start_maxkey_mgt.bat
 </code></pre>
-4)启动样例
+
+4)启动认证前端服务
 <pre><code class="bash hljs">
-start_maxkey_wiki.bat
+start_maxkey_frontend.bat
+</code></pre>
+                
+5)启动管理前端服务
+<pre><code class="bash hljs">
+start_maxkey_mgt_frontend.bat
+</code></pre>
+
+6)启动代理
+<pre><code class="bash hljs">
+start_maxkey_proxy.bat
+</code></pre>
+				
+7)启动样例
+<pre><code class="bash hljs">
+start_maxkey_demo.bat
 </code></pre>
 	
 <h2>访问</h2>
@@ -44,28 +63,40 @@ start_maxkey_wiki.bat
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>1</td><td>认证平台</td><td><a href="https://sso.maxkey.top/maxkey/login" target="blank">https://sso.maxkey.top/maxkey/login</a></td>
-			</tr>
-			<tr>
-				<td>2</td><td>管理平台</td><td><a href="http://sso.maxkey.top:9527/maxkey-mgt/login" target="blank">http://sso.maxkey.top:9527/maxkey-mgt/login</a></td>
-			</tr>
-			<tr>
-				<td>3</td><td>集成指南</td><td><a href="https://doc.maxkey.top/#/" target="blank">https://doc.maxkey.top/#/</a></td>
-			</tr>
-			<tr>
-				<td>4</td><td>监控平台</td><td><a href="http://sso.maxkey.top:9528/login" target="blank">http://sso.maxkey.top:9528/login</a></td>
-			</tr>
-			<tr>
-				<td>5</td><td>认证平台接口文档</td><td><a href="https://sso.maxkey.top/maxkey/doc.html" target="blank">https://sso.maxkey.top/maxkey/doc.html</a></td>
-			</tr>
-			<tr>
-				<td>6</td><td>账户密码</td><td>admin/maxkey</td>
-			</tr>
-			<tr>
-				<td>7</td><td>监控账户密码</td><td>monitor/maxkey</td>
-			</tr>
-		</tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>认证平台</td>
+                            <td><a href="http://sso.maxkey.top/maxkey/"
+                                    target="blank">http://sso.maxkey.top/maxkey/login</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>管理平台</td>
+                            <td><a href="http://mgt.maxkey.top/maxkey-mgt/"
+                                    target="blank">http://mgt.maxkey.top/maxkey-mgt/login</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>集成指南</td>
+                            <td><a href="http://doc.maxkey.top/" target="blank">http://doc.maxkey.top/</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>监控平台</td>
+                            <td><a href="http://sso.maxkey.top:9528/login"
+                                    target="blank">http://sso.maxkey.top:9528/login</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>账户密码</td>
+                            <td>admin/maxkey</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>监控账户密码</td>
+                            <td>monitor/maxkey</td>
+                        </tr>
+                    </tbody>
 </table>		
 
 
@@ -77,58 +108,122 @@ start_maxkey_wiki.bat
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>1</td><td>MaxKey单点登陆认证系统介绍-CE-***.pdf</td><td>系统介绍</td>
-			</tr>
-			<tr>
-				<td>2</td><td>getting-started.html</td><td>快速使用文档</td>
-			</tr>
-			<tr>
-				<td>3</td><td>LICENSE</td><td>许可证</td>
-			</tr>
-			<tr>
-				<td>4</td><td>NOTICE</td><td>许可证NOTICE</td>
-			</tr>
-			<tr>
-				<td>5</td><td>jdk/jre</td><td>运行时JDK</td>
-			</tr>
-			<tr>
-				<td>6</td><td>lib</td><td>公共包</td>
-			</tr>
-			<tr>
-				<td>7</td><td>maxkey</td><td>认证服务</td>
-			</tr>
-			<tr>
-				<td>8</td><td>maxkey_mgt</td><td>管理服务</td>
-			</tr>
-			<tr>
-				<td>9</td><td>maxkey_monitor</td><td>监控平台</td>
-			</tr>
-			<tr>
-				<td>10</td><td>mysql_***</td><td>MySQL数据库</td>
-			</tr>
-			<tr>
-				<td>11</td><td>maxkey_wiki</td><td>样例</td>
-			</tr>
-			<tr>
-				<td>12</td><td>start_maxkey.bat</td><td>启动认证服务器</td>
-			</tr>
-			<tr>
-				<td>13</td><td>start_maxkey_mgt.bat</td><td>启动管理服务器</td>
-			</tr>
-			<tr>
-				<td>14</td><td>start_maxkey_db.bat</td><td>启动数据库</td>
-			</tr>
-			<tr>
-				<td>15</td><td>start_maxkey_monitor.bat</td><td>启动监控服务器</td>
-			</tr>
-			<tr>
-				<td>16</td><td>start_maxkey_wiki.bat</td><td>启动样例</td>
-			</tr>
-			<tr>
-				<td>17</td><td>set_maxkey_env.bat</td><td>环境设置脚本</td>
-			</tr>
-		</tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>MaxKey单点登陆认证系统介绍-CE-***.pdf</td>
+                            <td>系统介绍</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>getting-started.html</td>
+                            <td>快速使用文档</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>LICENSE</td>
+                            <td>许可证</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>NOTICE</td>
+                            <td>许可证NOTICE</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>jdk/jre</td>
+                            <td>运行时JDK</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>lib</td>
+                            <td>公共包</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>maxkey</td>
+                            <td>认证服务,端口9527</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>maxkey_frontend</td>
+                            <td>认证前端服务,端口8527</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>maxkey_mgt</td>
+                            <td>管理服务,端口9526</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>maxkey_mgt_frontend</td>
+                            <td>管理前端服务,端口8526</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>nginx-1.20.1-proxy</td>
+                            <td>nginx反向代理服务,端口80</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>maxkey_monitor</td>
+                            <td>监控平台,端口9528</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>mysql_***</td>
+                            <td>MySQL数据库,端口3306</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>maxkey_demo</td>
+                            <td>样例,端口9521</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>start_maxkey.bat</td>
+                            <td>启动认证服务器</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>start_maxkey_frontend.bat</td>
+                            <td>启动认证前端服务器</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>start_maxkey_mgt.bat</td>
+                            <td>启动管理服务器</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>start_maxkey_mgt_frontend.bat</td>
+                            <td>启动管理前端服务器</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>start_maxkey_db.bat</td>
+                            <td>启动数据库</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>start_maxkey_proxy.bat</td>
+                            <td>启动代理服务器</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>start_maxkey_monitor.bat</td>
+                            <td>启动监控服务器</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>start_maxkey_demo.bat</td>
+                            <td>启动样例</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>set_maxkey_env.bat</td>
+                            <td>环境设置脚本</td>
+                        </tr>
+                    </tbody>
 	</table>
 
 <h2>LINUX 7 版本</h2>
@@ -286,7 +381,7 @@ chkconfig mysqld on
 
 MaxKey对应的版本SQL文件，参见
 
-https://gitee.com/dromara/MaxKey/tree/master/sql
+https://gitee.com/dromara/MaxKey/tree/master/sql/v3.5.0.ga/
 
 登陆LINUX MYSQL并创建schema maxkey，字符集utf8,数据文件导入到maxkey schema中，
 
@@ -300,11 +395,11 @@ CREATE DATABASE  IF NOT EXISTS `maxkey` /*!40100 DEFAULT CHARACTER SET utf8 */ /
 
 USE `maxkey`;
 
--- 使用source命令，后面参数为脚本文件(如这里用到的.sql),其中v2.9.0是对应的版本号
+-- 使用source命令，后面参数为脚本文件(如这里用到的.sql),其中v3.5.0是对应的版本号
 
-source your sql path/maxkey_v3.0.0.GA.sql;
+source your sql path/maxkey_v3.5.0.GA.sql;
 
-source your sql path/maxkey_v3.0.0.GA_data.sql
+source your sql path/maxkey_v3.5.0.GA_data.sql
 
 </code></pre>
 
@@ -325,9 +420,16 @@ export JAVA_HOME=/usr/java/jdk-17
   
   ./start_maxkey_mgt.sh &
   
-  ./start_maxkey_wiki.sh &
+  ./start_maxkey_demo.sh &
 </code></pre>
 
+<h2>前端服务部署</h2>
+
+安装nginx,再把编译的前端放入对应的nginx目录下
+
+<h2>代理服务部署</h2>
+
+安装nginx,参考windows的代理配置
 
 <h2>Docker快速部署</h2>
 <a href="https://www.maxkey.top/zh/conf/deploy_docker.html" target="_blank">基于Docker快速部署</a>
@@ -336,3 +438,6 @@ export JAVA_HOME=/usr/java/jdk-17
 <h2>Rainbond应用商店快速安装</h2>
 
 <a href="https://www.maxkey.top/zh/conf/deploy_rainbond.html" target="_blank">Rainbond快速安装</a>，[Rainbond](https://github.com/goodrain/rainbond) 是云原生且易用的云原生应用管理平台。
+
+
+<h2><a href="./tutorial_v3.3.html">v3.3 部署介绍</a></h2>

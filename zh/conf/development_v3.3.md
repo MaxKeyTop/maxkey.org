@@ -3,8 +3,6 @@ layout: zh/default
 ---
 <h2>开发指南</h2>
 
-
-
 <h3>开发工具及相关软件</h3>
 
 <table border="0" class="table table-striped table-bordered ">
@@ -18,24 +16,9 @@ layout: zh/default
 			<td>JAVA运行及开发工具包</td>
 		</tr>
 		<tr>
-			<td>Node.js</td>
-			<td>v 16.15.0 LTS +</td>
-			<td>Node.js开发工具包</td>
-		</tr>
-		<tr>
 			<td>eclipse-jee</td>
-			<td>2022-03 +</td>
+			<td>2021-09 +</td>
 			<td>推荐JAVA开发工具</td>
-		</tr>
-		<tr>
-			<td>Visual Studio Code</td>
-			<td>Version 1.60 +</td>
-			<td>推荐前端开发工具</td>
-		</tr>
-		<tr>
-			<td>MySQL</td>
-			<td>8.0.21 +</td>
-			<td>数据库服务器</td>
 		</tr>
 		<tr>
 			<td>Gradle</td>
@@ -45,22 +28,27 @@ layout: zh/default
 		<tr>
 			<td>Tomcat/tomcat-embed</td>
 			<td> 9 +</td>
-			<td>应用服务器(内置)</td>
+			<td>应用服务器</td>
+		</tr>
+		<tr>
+			<td>MySQL</td>
+			<td>8.0.21 +</td>
+			<td>数据库服务器</td>
 		</tr>
 		<tr>
 			<td>Kafka</td>
 			<td>2.5.0 +</td>
-			<td>用户生命周期管理同步中间件(可选)</td>
+			<td>用户生命周期管理同步中间件</td>
 		</tr>
 		<tr>
 			<td>Redis</td>
 			<td>6 +</td>
-			<td>高速缓存内存数据库(可选)</td>
+			<td>高速缓存内存数据库</td>
 		</tr>
 		<tr>
 			<td>OpenLDAP</td>
 			<td>2.2 +</td>
-			<td>企业目录服务器(可选)</td>
+			<td>企业目录服务器</td>
 		</tr>
 	</tbody>
 </table>		
@@ -305,33 +293,18 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td></td>
-			<td>maxkey-web-frontend</td>
-			<td></td>
-			<td></td>
-			<td>web前端</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>maxkey-web-app</td>
-			<td></td>
-			<td>认证服务前端</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>maxkey-web-mgt-app</td>
-			<td></td>
-			<td>管理服务前端</td>
-		</tr>
-		<tr>
-			<td></td>
 			<td>maxkey-webs</td>
 			<td></td>
 			<td></td>
 			<td>web服务</td>
 		</tr>
-		
+		<tr>
+			<td></td>
+			<td></td>
+			<td>maxkey-boot-monitor</td>
+			<td></td>
+			<td>基于Spring Boot Admin监控</td>
+		</tr>
 		
 		<tr>
 			<td></td>
@@ -347,19 +320,13 @@ layout: zh/default
 			<td></td>
 			<td>管理系统</td>
 		</tr>
+		
 		<tr>
 			<td></td>
 			<td></td>
-			<td>maxkey-gataway</td>
+			<td>maxkey-web-resources</td>
 			<td></td>
-			<td>基于Spring Cloud套件的网关服务</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>maxkey-boot-monitor</td>
-			<td></td>
-			<td>基于Spring Boot Admin监控</td>
+			<td>静态资源</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -460,31 +427,26 @@ layout: zh/default
 			<td></td>
 			<td>构建Standard配置</td>
 		</tr>
+		<tr>
+			<td></td>
+			<td>eclipsePluginApply.bat</td>
+			<td></td>
+			<td></td>
+			<td>设置IDE</td>
+		</tr>
 			
 		</tbody>
 </table>
 
 <h3>开发环境应用启动</h3>
 
-1)MaxKey统一认证系统
+MaxKey统一认证系统
 
 maxkey-webs/maxkey-web-maxkey/src/main/java/org/maxkey/MaxKeyApplication.java 
 
-2)MaxKey身份安全管理系统
+MaxKey身份安全管理系统
 
 maxkey-webs/maxkey-web-mgt/src/main/java/org/maxkey/MaxKeyMgtApplication.java
-
-3)MaxKey统一认证前端
-
-maxkey-web-frontend/maxkey-web-app
-
-yarn start
-
-4)MaxKey身份安全管理前端
-
-maxkey-web-frontend/maxkey-web-mgt-app
-
-yarn start
 
 
 <h3>标准构建Release</h3>
@@ -550,25 +512,10 @@ maxkey-webs/maxkey-web-maxkey/
 
 
 
-<h3>前端构建Build</h3>
-
-1)MaxKey统一认证前端
-
-maxkey-web-frontend/maxkey-web-app
-
-ng build --prod --base-href /maxkey/
-
-2)MaxKey身份安全管理前端
-
-maxkey-web-frontend/maxkey-web-mgt-app
-
-ng build --prod --base-href /maxkey-mgt/
-
-
 <h3>问题及解决</h3>
 问题1
 
-<code>“A cycle was detected in the build path of project: XXX” </code>
+“A cycle was detected in the build path of project: XXX” 
 
 解决方法：
  
@@ -576,26 +523,8 @@ Eclipse Menu -> Window -> Preferences... -> Java -> Compiler -> Building -> Buil
 
 问题2
 
-<code>Access restriction</code>
+Access restriction
 
 解决方案：
 
 Eclipse Menu -> Window -> Preferences... -> Java -> Compiler ->  Errors/Warnings界面的Deprecated and restricted API下。把Forbidden reference (access rules): 的规则由默认的Error改为Warning即可。
-
-
-问题3
-
- yarn start
- 
-<code>
-CategoryInfo          : SecurityError: ，PSSecurityException<br>
-FullyQualifiedErrorId : UnauthorizedAccess
-</code>
-
-解决方案：
-	
-Set-ExecutionPolicy RemoteSigned -Scope Process
-
-
-
-<h3><a href="./development_v3.3.html">v3.3开发指南</a></h3>

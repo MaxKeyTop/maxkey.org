@@ -42,16 +42,16 @@ docker 	run -p 3306:3306  \
 请把<b>DATABASE_HOST</b>为实际地址
 
 <pre><code class="bash hljs">
-docker pull maxkeytop/maxkey:latest
+docker pull maxkeytop/maxkey:3.3.3
 
-docker 	run -p 9527:9527  \
+docker 	run -p 443:443  \
 -e DATABASE_HOST=192.168.0.102 \
 -e DATABASE_PORT=3306 \
 -e DATABASE_NAME=maxkey \
 -e DATABASE_USER=root \
 -e DATABASE_PWD=maxkey \
 --name maxkey \
--d maxkeytop/maxkey:latest
+-d maxkeytop/maxkey:3.3.3
 </code></pre>
 
 5、启动MaxKey管理服务
@@ -59,50 +59,16 @@ docker 	run -p 9527:9527  \
 请把<b>DATABASE_HOST</b>为实际地址
 
 <pre><code class="bash hljs">
-docker pull maxkeytop/maxkey-mgt:latest
+docker pull maxkeytop/maxkey-mgt:3.3.3
 
-docker 	run -p 9526:9526  \
+docker 	run -p 9527:9527  \
 -e DATABASE_HOST=192.168.0.102 \
 -e DATABASE_PORT=3306 \
 -e DATABASE_NAME=maxkey \
 -e DATABASE_USER=root \
 -e DATABASE_PWD=maxkey \
 --name maxkey-mgt \
--d maxkeytop/maxkey-mgt:latest
-</code></pre>
-
-
-6、启动MaxKey认证前端服务
-
-<pre><code class="bash hljs">
-docker pull maxkeytop/maxkey-frontend:latest
-
-docker 	run -p 8527:8527  \
---name maxkey-frontend \
--d maxkeytop/maxkey-frontend:latest
-</code></pre>
-
-7、启动MaxKey管理前端服务
-
-<pre><code class="bash hljs">
-docker pull maxkeytop/maxkey-mgt-frontend:latest
-
-docker 	run -p 8526:8526  \
---name maxkey-mgt-frontend \
--d maxkeytop/maxkey-mgt-frontend:latest
-</code></pre>
-
-
-7、启动MaxKey代理服务
-
-进入docker-nginx
-
-<pre><code class="bash hljs">
-docker build -f Dockerfile -t maxkeytop/maxkey-proxy
-
-docker 	run -p 80:80  \
---name maxkey-proxy \
--d maxkeytop/maxkey-proxy
+-d maxkeytop/maxkey-mgt:3.3.3
 </code></pre>
 
 <h2>Docker Compose快速部署</h2>
@@ -127,14 +93,8 @@ mkdir /root/mysql/logs
 	docker-maxkey/Dockerfile
 	
 	docker-maxkey-mgt/Dockerfile
-	
-	docker-nginx/nginx.conf
 
 3、启动MaxKey服务
 <pre><code class="bash hljs">
 docker-compose up --build -d
 </code></pre>
-
-
-
-<h2><a href="./deploy_docker_v3.3.html">v3.3 Docker快速部署</a></h2>
