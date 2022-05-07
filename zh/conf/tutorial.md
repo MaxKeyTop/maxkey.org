@@ -460,13 +460,14 @@ export JAVA_HOME=/root/jdk8u332-b09
 
 <h2>前端服务部署</h2>
 
-安装nginx,再把编译的前端放入对应的nginx目录下
+安装nginx,参考windows版本配置，再把windows版本前端文件放入对应的nginx目录下
 
 <h2>代理服务部署</h2>
 
-安装nginx,参考windows的代理配置
+安装nginx,参考windows版本的代理配置
 
 <h2>Docker快速部署</h2>
+
 <a href="https://www.maxkey.top/zh/conf/deploy_docker.html" target="_blank">基于Docker快速部署</a>
 
 
