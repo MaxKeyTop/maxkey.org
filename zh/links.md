@@ -61,7 +61,7 @@ layout: zh/default
 		<a href="https://codoc.rthinkingsoft.cn/" target="_blank">	CollectiveOAuth	</a>
 	</div>
 	<div class="col-md-2 flinks" >
-		<img style="padding-left: 45px;" src ="http://aizuda.com/img/azd.png" />
+		<img style="padding-left: 45px;" src ="	https://portrait.gitee.com/uploads/avatars/namespace/2879/8637007_aizuda_1636162864.png" />
 		<a href="http://aizuda.com/?from=MaxKey" target="_blank">爱组搭AiZuDa</a>
 	</div>
 	<div class="col-md-2 flinks">
