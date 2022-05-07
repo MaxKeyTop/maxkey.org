@@ -4,6 +4,7 @@ layout: zh/default
 <h2>介绍</h2>
 为了你更好的使用MaxKey，本教程介绍在Windows中如何快速配置和使用MaxKey，在开始本文档前，请先<a href="https://www.maxkey.top/zh/about/download.html" target="_blank">下载MaxKey</a>并解压到C:盘。
 
+<h2>Windows 版本</h2>
 <h2>配置</h2>
 hosts配置文件目录
 <pre class="prettyprint">
@@ -269,25 +270,34 @@ start_maxkey_demo.bat
 
 1.1 下载地址
 
-Java SE Development Kit 17  x64 RPM Package
+Eclipse Temurin 8  x64 RPM Package
+
+假设当前安装目录/root
 	
 <pre><code class="bash hljs">
-wget --no-check-certificate --no-cookies wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
+curl -L "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u332b09.tar.gz" -H "Cookie: oraclelicense=accept-securebackup-cookie"  -H "Connection: keep-alive" -O  
 </code></pre>
  
 1.2 解压缩及安装
 
 <pre><code class="bash hljs">
-rpm -Uvh jdk-17_linux-x64_bin.rpm
+tar -zxf OpenJDK8U-jdk_x64_linux_hotspot_8u332b09.tar.gz
 </code></pre>
 
+完成后本地目录
+
+<pre><code class="bash hljs">
+jdk8u332-b09
+</code></pre>
 
 2.1 安装MySQL 8.0
+
+假如本地安装过mariadb，请先卸载
 
 2.1.1 安装MySQL官方的yum repository
 
 <pre><code class="bash hljs">
-wget -i -c https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+curl -L  "https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm"  -O 
  </code></pre>
  
 2.1.2 下载rpm包：
@@ -302,7 +312,17 @@ yum -y install mysql80-community-release-el7-3.noarch.rpm
 yum -y install mysql-community-server
  </code></pre>
 
- 
+2.1.4 安装MySQL问题
+
+<pre><code class="bash hljs">
+Failing package is: mysql-community-libs-compat-8.0.28-1.el7.x86_64  GPG Keys are configured as: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+</code></pre>
+
+解决方案
+<pre><code class="bash hljs">
+rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+</code></pre>
+
 2.2 调整配置
 
 编辑 /etc/my.cnf 文件
@@ -314,10 +334,9 @@ lower_case_table_names=1
  
 2.3. 启动mysql服务
 
-    > systemctl start mysqld
+    systemctl start mysqld
 	
-	
-	停止
+	--停止
 	
 	systemctl stop mysqld  --无需执行
 	
@@ -336,6 +355,8 @@ lower_case_table_names=1
 mysql -u root -p;
 
 输入密码
+
+--以下步骤可能要求先修改初始化密码为复杂密码 SET PASSWORD = 'UDF(ez/8Lufi';
 
 set global validate_password.policy=0; --改变密码等级
 
@@ -404,12 +425,26 @@ source your sql path/maxkey_v3.5.0.GA_data.sql
 </code></pre>
 
 
-3.3 启动
-修改set_maxkey_env.sh以下参数
-<pre><code class="bash hljs">
-JAVA_HOME=/usr/java/jdk-17
+3.3 配置
+hosts配置文件目录
+<pre class="prettyprint">
+vi /etc/hosts
+</pre>
+新增如下内容
+<pre><code class="ini hljs">
+127.0.0.1  sso.maxkey.top
+127.0.0.1  mgt.maxkey.top
+127.0.0.1  tokenbased.demo.maxkey.top
+127.0.0.1  cas.demo.maxkey.top
+127.0.0.1  oauth.demo.maxkey.top
+</code></pre>
 
-export JAVA_HOME=/usr/java/jdk-17
+3.4 启动
+修改set_maxkey_env.sh以下参数，/root/为安装路径
+<pre><code class="bash hljs">
+JAVA_HOME=/root/jdk8u332-b09
+
+export JAVA_HOME=/root/jdk8u332-b09
 </code></pre>
 
 
