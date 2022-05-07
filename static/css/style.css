@@ -151,6 +151,10 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
+#header #logo h1 a:hover {
+  text-decoration-color:#FFD700;
+}
+
 #header #logo h1 a span {
   color: #FFD700;
 }
