@@ -762,11 +762,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #clients img {
-  max-width: 100%;
+  max-width: 120px;
   transition: 0.3s;
   padding: 15px 0;
-  width: 120px;
-  max-height: 100px;
+  height: 60px;
 }
 
 #clients img:hover {
@@ -1176,4 +1175,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 	display: block;
 	height: auto;
 	max-width: 100%;
+}
+
+main{
+	min-height: 450px;
 }

@@ -98,7 +98,7 @@ docker 	run -p 8526:8526  \
 进入docker-nginx
 
 <pre><code class="bash hljs">
-docker build -f Dockerfile -t maxkeytop/maxkey-proxy
+docker build -f Dockerfile -t maxkeytop/maxkey-proxy .
 
 docker 	run -p 80:80  \
 --name maxkey-proxy \
