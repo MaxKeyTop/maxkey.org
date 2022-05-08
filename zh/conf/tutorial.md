@@ -130,6 +130,51 @@ layout: zh/default
                 </tbody>
     </table>
     
+<h2>访问</h2>
+在完成安装部署后，打开浏览器，访问以下地址
+<table border="0" class="table table-striped table-bordered ">
+		<thead>
+			<tr>
+				<th>序号</th><th>名称</th><th>访问地址</th>
+			</tr>
+		</thead>
+		<tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>认证平台</td>
+                            <td><a href="http://sso.maxkey.top/maxkey/"
+                                    target="blank">http://sso.maxkey.top/maxkey/login</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>管理平台</td>
+                            <td><a href="http://mgt.maxkey.top/maxkey-mgt/"
+                                    target="blank">http://mgt.maxkey.top/maxkey-mgt/login</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>集成指南</td>
+                            <td><a href="http://doc.maxkey.top/" target="blank">http://doc.maxkey.top/</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>监控平台</td>
+                            <td><a href="http://sso.maxkey.top:9528/login"
+                                    target="blank">http://sso.maxkey.top:9528/login</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>账户密码</td>
+                            <td>admin/maxkey</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>监控账户密码</td>
+                            <td>monitor/maxkey</td>
+                        </tr>
+                    </tbody>
+</table>		
+
 <a  name="windows"></a>
 
 <h2>Windows 版本</h2>
@@ -183,51 +228,6 @@ start_maxkey_proxy.bat
 start_maxkey_demo.bat
 </code></pre>
 	
-<h2>访问</h2>
-打开浏览器，访问以下地址
-<table border="0" class="table table-striped table-bordered ">
-		<thead>
-			<tr>
-				<th>序号</th><th>名称</th><th>访问地址</th>
-			</tr>
-		</thead>
-		<tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>认证平台</td>
-                            <td><a href="http://sso.maxkey.top/maxkey/"
-                                    target="blank">http://sso.maxkey.top/maxkey/login</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>管理平台</td>
-                            <td><a href="http://mgt.maxkey.top/maxkey-mgt/"
-                                    target="blank">http://mgt.maxkey.top/maxkey-mgt/login</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>集成指南</td>
-                            <td><a href="http://doc.maxkey.top/" target="blank">http://doc.maxkey.top/</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>监控平台</td>
-                            <td><a href="http://sso.maxkey.top:9528/login"
-                                    target="blank">http://sso.maxkey.top:9528/login</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>账户密码</td>
-                            <td>admin/maxkey</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>监控账户密码</td>
-                            <td>monitor/maxkey</td>
-                        </tr>
-                    </tbody>
-</table>		
-
 
 <a name="linux"></a>
 
