@@ -93,7 +93,7 @@ docker 	run -p 8526:8526  \
 </code></pre>
 
 
-7、启动MaxKey代理服务
+8、启动MaxKey代理服务
 
 进入docker-nginx
 
