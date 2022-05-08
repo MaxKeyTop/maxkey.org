@@ -37,7 +37,7 @@ spring.redis.lettuce.pool.max-active=-1
 spring.redis.lettuce.pool.min-idle=0
 </code></pre>
 
-启动Sessions存储在Redis配置
+启动Sessions存储在Redis配置(v3.5.0之前版本)
 
 <pre><code class="ini hljs">
 # Session store type.
@@ -90,3 +90,12 @@ spring.session.redis.namespace=spring:session
     }
 	
   </code></pre>
+
+
+  5、证书签发
+
+请参照如何用acme.sh申请证书
+
+<a href ="https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert">英文 </a>
+
+<a href ="https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E" >中文 </a>

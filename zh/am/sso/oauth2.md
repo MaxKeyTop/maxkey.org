@@ -13,7 +13,7 @@ layout: zh/default
 
 1.引导需要授权的用户到如下地址：
 <pre class="prettyprint">
-https://sso.maxkey.top/maxkey/authz/oauth/v20/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=YOUR_REGISTERED_REDIRECT_URI 
+http://sso.maxkey.top/sign/authz/oauth/v20/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=YOUR_REGISTERED_REDIRECT_URI 
 </pre>
 
 2.页面跳转至 
@@ -23,7 +23,7 @@ YOUR_REGISTERED_REDIRECT_URI/?code=CODEsss
 
 3.换取Access Token
 <pre class="prettyprint">
-https://sso.maxkey.top/maxkey/authz/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_secret=YOUR _SECRET&grant_type=authorization_code&redirect_uri=YOUR_REGISTERED_REDIRECT_URI&code=CODE
+http://sso.maxkey.top/sign/authz/oauth/v20/token?client_id=YOUR_CLIENT_ID&client_secret=YOUR _SECRET&grant_type=authorization_code&redirect_uri=YOUR_REGISTERED_REDIRECT_URI&code=CODE
 </pre>
 
 返回值
@@ -48,7 +48,7 @@ https://sso.maxkey.top/maxkey/authz/oauth/v20/token?client_id=YOUR_CLIENT_ID&cli
 		  <tr>
 			<td> /authz/oauth/v20/authorize </td>
 			<td> 请求用户授权Token </td>
-			<td> https://sso.maxkey.top/maxkey接收app sso认证请求,<br>client_id为需要认证的应用的id;</td>
+			<td> http://sso.maxkey.top/sign接收app sso认证请求,<br>client_id为需要认证的应用的id;</td>
 			<td> APP </td>
 		  </tr>
 		  <tr>
@@ -75,7 +75,7 @@ https://sso.maxkey.top/maxkey/authz/oauth/v20/token?client_id=YOUR_CLIENT_ID&cli
   </tr>
   <tr>
 	<td> url </td>
-	<td> https://sso.maxkey.top/maxkey/authz/oauth/v20/authorize</td>
+	<td> http://sso.maxkey.top/sign/authz/oauth/v20/authorize</td>
   </tr>
   <tr>
 	<td> 请求方式 </td>
@@ -136,7 +136,7 @@ https://sso.maxkey.top/maxkey/authz/oauth/v20/token?client_id=YOUR_CLIENT_ID&cli
   </tr>
   <tr>
 	<td> url </td>
-	<td> https://sso.maxkey.top/maxkey/authz/oauth/v20/token </td>
+	<td> http://sso.maxkey.top/sign/authz/oauth/v20/token </td>
   </tr>
   <tr>
 	<td> 请求方式 </td>
@@ -235,7 +235,7 @@ id_token      :  "id_token"
   	  </tr>
 	  <tr>
 	    <td> url </td>
-	    <td>https://sso.maxkey.top/maxkey/api/oauth/v20/me</td>
+	    <td>http://sso.maxkey.top/sign/api/oauth/v20/me</td>
 	  </tr>
 	  <tr>
 	    <td> 请求方式 </td>
@@ -314,9 +314,9 @@ error_description: 错误的描述信息
 
 错误信息的返回方式有两种：
 
-当请求授权Endpoint：https://sso.maxkey.top/maxkey/authz/oauth/v20/authorize 时出现错误，返回方式是：跳转到redirect_uri,并在uri 的query parameter中附带错误的描述信息。
+当请求授权Endpoint：http://sso.maxkey.top/sign/authz/oauth/v20/authorize 时出现错误，返回方式是：跳转到redirect_uri,并在uri 的query parameter中附带错误的描述信息。
 
-当请求access token endpoint:https://sso.maxkey.top/maxkey/authz/oauth/v20/token 时出现错误，返回方式：返回JSON文本。
+当请求access token endpoint:http://sso.maxkey.top/sign/authz/oauth/v20/token 时出现错误，返回方式：返回JSON文本。
 
 例如：
 <pre><code class="json hljs"> 
@@ -521,7 +521,7 @@ Token EMPTY_TOKEN = null;
 Verifier verifier = new Verifier(request.getParameter("code"));
 Token accessToken = service.getAccessToken(EMPTY_TOKEN, verifier);
  
-OAuthClient restClient=new OAuthClient("https://sso.maxkey.top/maxkey/api/oauth/v20/me");
+OAuthClient restClient=new OAuthClient("http://sso.maxkey.top/sign/api/oauth/v20/me");
 UserInfo userInfo=restClient.getUserInfo(accessToken.getAccess_token());
 
 %&gt;
@@ -602,7 +602,7 @@ public class MaxkeyPasswordDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String accessTokenUrl="http://sso.maxkey.top/maxkey/oauth/v20/token";
+		String accessTokenUrl="http://sso.maxkey.top/sign/authz/oauth/v20/token";
 		String clientId = "b32834accb544ea7a9a09dcae4a36403";
 		String clientSerect = "E9UO53P3JH52aQAcnLP2FlLv8olKIB7u";
 		

@@ -213,7 +213,7 @@ try {
 }
 ;
 
-OAuthClient restClient=new OAuthClient("https://sso.maxkey.top/maxkey/api/connect/v10/userinfo",accessToken.getToken());
+OAuthClient restClient=new OAuthClient("http://sso.maxkey.top/sign/api/connect/v10/userinfo",accessToken.getToken());
  
 OIDCUserInfo userInfo=restClient.getOIDCUserInfo(accessToken.getToken());
  

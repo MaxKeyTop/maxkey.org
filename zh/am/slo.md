@@ -63,7 +63,7 @@ MaxKey注销时向SP发送注销请求，请求包含注销的令牌，SP获取�
 
 
 <h5>3.2、SP接口注销</h5>
-SP向MaxKey的接口定时发送请求，检查令牌的有效性，如果令牌失效，则应用退出登录，验证在线token地址maxkey/onlineticket/validate,参数为ticket为令牌id
+SP向MaxKey的接口定时发送请求，检查令牌的有效性，如果令牌失效，则应用退出登录，验证在线token地址sign/onlineticket/validate,参数为ticket为令牌id
 
 <h5>3.3、Cookie有效性注销</h5>
 登录完成后在线令牌存储在.maxkey.top的域名下，Cookie名称为online_ticket，SP应用和MaxKey使用**子域名.maxkey.top**，应用根据令牌有效性判断是否注销。
