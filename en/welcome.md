@@ -12,7 +12,7 @@ layout: en/default
 
 2.所有应用系统能够识别和提取ticket信息
 
-社区交流  QQ：<b>1054466084</b> | 邮箱EMAIL: <b>maxkeysupport@163.com</b>
+社区交流  QQ：<b>1054466084</b> | 邮箱EMAIL: <b>support@maxsso.net</b>
 <br/>
 
 代码托管 <a href="https://github.com/MaxKeyTop/MaxKey" target="_blank"><b>GitHub</b></a> | <a href="https://gitee.com/maxkeytop/MaxKey" target="_blank"><b>码云(Gitee)</b></a>
