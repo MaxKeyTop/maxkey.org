@@ -143,13 +143,13 @@ layout: zh/default
                             <td>1</td>
                             <td>认证平台</td>
                             <td><a href="http://sso.maxkey.top/maxkey/"
-                                    target="blank">http://sso.maxkey.top/maxkey/login</a></td>
+                                    target="blank">http://sso.maxkey.top/maxkey/</a></td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>管理平台</td>
                             <td><a href="http://mgt.maxkey.top/maxkey-mgt/"
-                                    target="blank">http://mgt.maxkey.top/maxkey-mgt/login</a></td>
+                                    target="blank">http://mgt.maxkey.top/maxkey-mgt/</a></td>
                         </tr>
                         <tr>
                             <td>3</td>
