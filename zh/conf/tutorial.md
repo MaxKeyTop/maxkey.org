@@ -246,31 +246,33 @@ start_maxkey_demo.bat
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td>Oracle JDK 8</td>
 			<td>December 2030</td>
-			<td><a href="https://www.oracle.com/java/technologies/downloads/#JDK17">访问</a></td>
+			<td><a href="https://www.oracle.com/java/technologies/downloads/#JDK17" target="blank">访问</a></td>
 			
 		</tr>
 		<tr>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td>Eclipse Temurin 8</td>
 			<td>December 2030</td>
-			<td><a href="https://adoptium.net/?variant=openjdk8&jvmVariant=hotspot">访问</a></td>
+			<td><a href="https://adoptium.net/?variant=openjdk8&jvmVariant=hotspot" target="blank">访问</a></td>
 			
 		</tr>
 		<tr>
 			<td></td>
 			<td>OracleJDK 17</td>
 			<td>October 2029</td>
-			<td><a href="https://www.oracle.com/java/technologies/downloads/#java8">访问</a></td>
+			<td><a href="https://www.oracle.com/java/technologies/downloads/#java8" target="blank">访问</a></td>
 		</tr>
 		<tr>
 			<td></td>
 			<td>Eclipse Temurin 17</td>
 			<td>October 2029</td>
-			<td><a href="https://adoptium.net/?variant=openjdk17&jvmVariant=hotspot">访问</a></td>
+			<td><a href="https://adoptium.net/?variant=openjdk17&jvmVariant=hotspot" target="blank">访问</a></td>
 			
 		</tr>
 	</tbody>
 </table>
+
+<a href="https://www.oracle.com/java/technologies/java-se-support-roadmap.html" target="blank">Oracle Java SE 支持路线图</a>
 
 1.1 下载地址
 
