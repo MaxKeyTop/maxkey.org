@@ -21,7 +21,7 @@ mkdir /root/mysql/logs
 
 2、Docker文件下载
 
-把 https://gitee.com/dromara/MaxKey/tree/master/docker 或者https://github.com/dromara/MaxKey/tree/master/docker目录上传到/root目录下
+把 https://gitee.com/dromara/MaxKey/tree/main/docker 或者https://github.com/dromara/MaxKey/tree/main/docker目录上传到/root目录下
 
 3、启动MySQL服务
 <pre><code class="bash hljs">
@@ -118,7 +118,7 @@ mkdir /root/mysql/logs
 
 2、上传并修改Docker配置文件
 
-把 https://gitee.com/dromara/MaxKey/tree/master/docker 或者https://github.com/dromara/MaxKey/tree/master/docker目录上传到/root目录下
+把 https://gitee.com/dromara/MaxKey/tree/main/docker 或者https://github.com/dromara/MaxKey/tree/main/docker目录上传到/root目录下
 
 以下配置文件中<b>DATABASE_HOST</b>为实际地址
 
