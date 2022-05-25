@@ -634,8 +634,8 @@ layout: zh/default
 		<tr>
 			<td>客户服务</td>
 			<td>在线技术支持</td>
-			<td>社区QQ群</td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+			<td>官方QQ</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
 		
@@ -687,7 +687,7 @@ layout: zh/default
 		<tr>
 			<td>授权标识</td>
 			<td><a href="{{site.baseurl}}/zh/about/licenses.html">许可证声明</a></td>
-			<td><div class="icon">不可忽略或授权友好</div></td>
+			<td><div class="icon">不可忽略/授权许可</div></td>
 			<td><div class="icon">不可忽略</div></td>
 			<td><div class="icon">不可忽略</div></td>
 		</tr>

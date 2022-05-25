@@ -560,13 +560,19 @@ layout: zh/default
 			<td>开源社区</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
+		
 		<tr>
 			<td>客户服务</td>
-			<td>专属QQ群在线技术支持</td>
-			<td>开源社区</td>
+			<td>官方QQ支持</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
-		
+		<tr>
+			<td>客户服务</td>
+			<td>专属QQ群在线支持</td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
 		<tr>
 			<td>客户服务</td>
 			<td>集成解决方案咨询</td>
