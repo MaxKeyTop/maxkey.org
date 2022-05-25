@@ -231,7 +231,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>认证服务</td>
-			<td> 用户登录日志</td>
+			<td> 系统登录日志</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			
@@ -243,13 +243,7 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			
 		</tr>
-		<tr>
-			<td>认证服务</td>
-			<td> 管理日志</td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			
-		</tr>
+		
 		<tr>
 			<td colspan="5"></td>
 			
@@ -279,7 +273,6 @@ layout: zh/default
 			<td>应用管理</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			
 		</tr>
 		
 		
@@ -298,12 +291,13 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>管理服务</td>
-			<td>访问控制管理-组访问权限管理</td>
+			<td>访问控制管理-访问权限管理</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
-		
-		
+		<tr>
+			<td colspan="5"></td>
+		</tr>
 		<tr>
 			<td>管理服务</td>
 			<td>角色权限管理-角色管理</td>
@@ -318,15 +312,25 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>管理服务</td>
-			<td>角色权限管理-角色权限管理</td>
+			<td>角色权限管理-资源管理</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
 			<td>管理服务</td>
-			<td>角色权限管理-资源管理</td>
+			<td>角色权限管理-权限管理</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>管理服务</td>
+			<td>角色权限管理-细粒度权限</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+
+		<tr>
+			<td colspan="5"></td>
 		</tr>
 		<tr>
 			<td>管理服务</td>
@@ -358,9 +362,12 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
-		
-		
-		
+		<tr>
+			<td>管理服务</td>
+			<td>分级授权</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
 		<tr>
 			<td colspan="5"></td>
 		</tr>
@@ -382,7 +389,9 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
-		
+		<tr>
+			<td colspan="5"></td>
+		</tr>
 		<tr>
 			<td >生命周期管理</td><td colspan="4">同步器把存在上游系统的机构和账号同步到MaxKey</td>
 		</tr>
@@ -415,6 +424,9 @@ layout: zh/default
 			<td>北森HR同步器</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td colspan="5"></td>
 		</tr>
 		<tr>
 			<td >生命周期管理</td><td colspan="4">连接器把MaxKey的机构和账号同步到下游系统</td>
@@ -460,29 +472,14 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>日志审计</td>
-			<td>统计报表</td>
+			<td>仪表盘报表</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			
 		</tr>
 		<tr>
 			<td>日志审计</td>
-			<td>管理日志审计</td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			
-		</tr>
-		
-		<tr>
-			<td>日志审计</td>
-			<td>登录日志审计</td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			
-		</tr>
-		<tr>
-			<td>日志审计</td>
-			<td>应用访问日志审计</td>
+			<td>系统管理日志</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			
@@ -490,13 +487,27 @@ layout: zh/default
 		
 		<tr>
 			<td>日志审计</td>
-			<td>连接器日志审计</td>
+			<td>系统登录日志</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			
+		</tr>
+		<tr>
+			<td>日志审计</td>
+			<td>应用登录日志</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			
+		</tr>
+		<tr>
+			<td>日志审计</td>
+			<td>同步器日志</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
 			<td>日志审计</td>
-			<td>同步器日志审计</td>
+			<td>连接器日志</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
@@ -551,8 +562,8 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>客户服务</td>
-			<td>在线技术支持</td>
-			<td>社区QQ群</td>
+			<td>专属QQ群在线技术支持</td>
+			<td>开源社区</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		
@@ -598,7 +609,7 @@ layout: zh/default
 		<tr>
 			<td>授权标识</td>
 			<td><a href="{{site.baseurl}}/zh/about/licenses.html">许可证声明</a></td>
-			<td><div class="icon">不可忽略或授权友好</div></td>
+			<td><div class="icon">不可忽略/授权许可</div></td>
 			<td><div class="icon">友好</div></td>
 		</tr>
 	</tbody>
