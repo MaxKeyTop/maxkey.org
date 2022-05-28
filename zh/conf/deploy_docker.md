@@ -14,6 +14,9 @@ LINUX 7 基于Docker快速部署
 1、创建MySQL数据文件和日志文件目录
 
 <pre><code class="bash hljs">
+
+mkdir /root/mysql
+
 mkdir /root/mysql/data
 
 mkdir /root/mysql/logs
@@ -27,14 +30,14 @@ mkdir /root/mysql/logs
 <pre><code class="bash hljs">
 docker pull mysql:8.0.27
 
-docker 	run -p 3306:3306  \
+docker run -p 3306:3306   \
 -v /root/mysql/data:/var/lib/mysql \
 -v /root/mysql/logs:/var/log/mysql \
--v /root/docker-mysql:/etc/mysql/conf.d \
--v /root/docker-mysql/sql:/docker-entrypoint-initdb.d \
---name mysql \
--e MYSQL_ROOT_PASSWORD=maxkey \
--d mysql:8.0.27
+-v /root/docker-mysql:/etc/mysql/conf.d  \
+-v /root/docker-mysql/sql:/docker-entrypoint-initdb.d  \
+--name mysql  \
+-e MYSQL_ROOT_PASSWORD=maxkey  \
+-d mysql:8.0.27 
 </code></pre>
 
 4、启动MaxKey服务
@@ -98,6 +101,8 @@ docker 	run -p 8526:8526  \
 进入docker-nginx
 
 <pre><code class="bash hljs">
+cd docker-nginx
+
 docker build -f Dockerfile -t maxkeytop/maxkey-proxy .
 
 docker 	run -p 80:80  \
@@ -111,6 +116,8 @@ LINUX 7 基于Docker Compose快速部署
 1、创建MySQL数据文件和日志文件目录
 
 <pre><code class="bash hljs">
+mkdir /root/mysql
+
 mkdir /root/mysql/data
 
 mkdir /root/mysql/logs
