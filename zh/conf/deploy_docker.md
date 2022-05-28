@@ -14,7 +14,6 @@ LINUX 7 基于Docker快速部署
 1、创建MySQL数据文件和日志文件目录
 
 <pre><code class="bash hljs">
-
 mkdir /root/mysql
 
 mkdir /root/mysql/data
