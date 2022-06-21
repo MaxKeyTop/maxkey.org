@@ -116,6 +116,15 @@ layout: zh/default
 			<td>Asia/北京</td>
 			<td>Docker支持</td>
 		</tr>
+		<tr>
+			<td>MemoryF</td>
+			<td></td>
+			<td>https://github.com/MemoryF</td>
+			<td></td>
+			<td>contributor</td>
+			<td>Asia/北京</td>
+			<td>前后端分离注销问题</td>
+		</tr>
 	</tbody>
 </table>
 
