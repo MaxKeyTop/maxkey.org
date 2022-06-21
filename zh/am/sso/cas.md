@@ -255,9 +255,9 @@ server:
   port: 8989
 cas:
   # cas服务端地址
-  server-url-prefix: http://sso.maxkey.top/maxkey/authz/cas/
+  server-url-prefix: http://sso.maxkey.top/sign/authz/cas/
   # cas服务端登陆地址
-  server-login-url: http://sso.maxkey.top/maxkey/authz/cas/login
+  server-login-url: http://sso.maxkey.top/sign/authz/cas/login
   # 客户端访问地址
   client-host-url: http://localhost:8989/
   # 认证方式，默认cas
@@ -340,7 +340,7 @@ import java.util.Set;
 public class RestTestClient {
 
     public static void main(String[] args ) throws HttpAction {
-        final String casUrlPrefix = "http://sso.maxkey.top/maxkey/authz/cas/";
+        final String casUrlPrefix = "http://sso.maxkey.top/sign/authz/cas/";
         String username ="admin";
         String password ="maxkey";
         String serviceUrl = "http://cas.demo.maxkey.top:8080/demo-cas/";
