@@ -11,26 +11,24 @@ layout: zh/default
 	<tbody>
 		<tr>
 			<td>标准协议</td>
-			<td>OpenID Connect</td>
+			<td>OpenID Connect 1.0</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td>插件</td>
 		</tr>
 		<tr>
 			<td>标准协议</td>
-			<td>OAuth v2</td>
+			<td>OAuth v2.0/2.1</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td>插件</td>
 		</tr>
 		<tr>
 			<td>标准协议</td>
-			<td>SAML V2</td>
+			<td>SAML V2.0</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td>插件</td>
-			
 		</tr>
 		<tr>
 			<td>标准协议</td>
@@ -38,14 +36,13 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>标准协议</td>
 			<td>JWT</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td>定制开发</td>
-			<td>定制开发</td>
+			<td>定制</td>
+			<td>定制</td>
 		</tr>
 		<tr>
 			<td>标准协议</td>
@@ -72,12 +69,11 @@ layout: zh/default
 			<td>标准协议</td>
 			<td>扩展定制支持</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td>定制开发</td>
-			<td>定制开发</td>
+			<td>定制</td>
+			<td>定制</td>
 		</tr>
 		<tr>
 			<td colspan="5"></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -90,7 +86,7 @@ layout: zh/default
 			<td>认证服务</td>
 			<td>用户登录-图片验证码</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td>定制开发</td>
+			<td>定制</td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
 		<tr>
@@ -104,7 +100,7 @@ layout: zh/default
 			<td>认证服务</td>
 			<td>用户登录-TOTP动态令牌</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td>定制开发</td>
+			<td>定制</td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
 		<tr>
@@ -113,7 +109,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -121,7 +116,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -134,9 +128,8 @@ layout: zh/default
 			<td>认证服务</td>
 			<td>用户登录-双因素认证</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td>定制开发</td>
+			<td>定制</td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -144,7 +137,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -152,15 +144,13 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
-			<td>用户登录-Active Directory域身份认证</td>
+			<td>用户登录-Windows域认证</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -168,21 +158,18 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td> 应用访问权限控制</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td>定制开发</td>
-			
+			<td>定制</td>
 		</tr>
 		<tr>
 			<td>认证服务</td>
 			<td>密码修改</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
@@ -190,7 +177,6 @@ layout: zh/default
 			<td>认证服务</td>
 			<td>密码过期修改</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
@@ -207,7 +193,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -215,7 +200,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -223,7 +207,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -231,7 +214,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -239,7 +221,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -247,7 +228,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td>插件</td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -269,7 +249,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -277,7 +256,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>认证服务</td>
@@ -285,11 +263,9 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td colspan="5"></td>
-			
 		</tr>
 		<tr>
 			<td>管理服务</td>
@@ -304,7 +280,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>管理服务</td>
@@ -312,7 +287,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>管理服务</td>
@@ -320,72 +294,41 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td></td>
-			
-		</tr>
-		
-		
-		<tr>
-			<td>管理服务</td>
-			<td>访问控制管理-组管理</td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>管理服务</td>
-			<td>访问控制管理-组成员管理</td>
+			<td>访问控制-角色管理</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>管理服务</td>
-			<td>访问控制管理-组访问权限管理</td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-		</tr>
-		
-		
-		<tr>
-			<td>管理服务</td>
-			<td>角色权限管理-角色管理</td>
+			<td>访问控制-角色成员管理</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>管理服务</td>
-			<td>角色权限管理-角色用户管理</td>
+			<td>访问控制-访问控制管理</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>管理服务</td>
-			<td>角色权限管理-角色权限管理</td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
-		</tr>
-		<tr>
-			<td>管理服务</td>
-			<td>角色权限管理-资源管理</td>
+			<td>权限管理-资源管理</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>管理服务</td>
-			<td>配置管理-通知公告</td>
+			<td>权限管理-权限管理</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-			<td></td>
-			<td></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
 		<tr>
 			<td>管理服务</td>
@@ -407,18 +350,14 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>管理服务</td>
-			<td>MaxKey单点登录</td>
+			<td>管理端单点登录</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td></td>
 			<td></td>
 		</tr>
-		
-		
-		
 		<tr>
 			<td colspan="5"></td>
 		</tr>
@@ -428,7 +367,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>生命周期管理</td>
@@ -436,7 +374,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>生命周期管理</td>
@@ -444,7 +381,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td >生命周期管理</td><td colspan="5">同步器把存在上游系统的机构和账号同步到MaxKey</td>
@@ -456,7 +392,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
-		
 		<tr>
 			<td>生命周期管理</td>
 			<td>标准LDAP同步器</td>
@@ -523,7 +458,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
-		
 		<tr>
 			<td colspan="5"></td>
 		</tr>
@@ -533,7 +467,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>日志审计</td>
@@ -541,16 +474,13 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
-		
 		<tr>
 			<td>日志审计</td>
 			<td>登录日志审计</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
 		<tr>
 			<td>日志审计</td>
@@ -558,9 +488,7 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
-			
 		</tr>
-		
 		<tr>
 			<td>日志审计</td>
 			<td>连接器日志审计</td>
@@ -616,7 +544,6 @@ layout: zh/default
 		<tr>
 			<td colspan="5"></td>
 		</tr>
-		
 		<tr>
 			<td>客户服务</td>
 			<td>产品文档及安装配置(集群)</td>
@@ -638,7 +565,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-window-close" style="color:red;"></i></div></td>
 		</tr>
-		
 		<tr>
 			<td>客户服务</td>
 			<td>集成解决方案咨询</td>
@@ -687,7 +613,7 @@ layout: zh/default
 		<tr>
 			<td>授权标识</td>
 			<td><a href="{{site.baseurl}}/zh/about/licenses.html">许可证声明</a></td>
-			<td><div class="icon">不可忽略/授权许可</div></td>
+			<td><div class="icon">不可忽略</div></td>
 			<td><div class="icon">不可忽略</div></td>
 			<td><div class="icon">不可忽略</div></td>
 		</tr>
