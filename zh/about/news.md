@@ -3,6 +3,26 @@ layout: zh/default
 ---
 <h2>新闻动态</h2>
 
+MaxKey 单点登录认证系统前后端分离 v3.5.1GA 发布[2022/06/01] 
+<a href="https://www.oschina.net/news/199127/maxkey-3-5-ga-released" target="_blank">查看</a>
+<br/>
+
+MaxKey 单点登录认证系统前后端分离 v3.5.0GA 发布[2022/05/11] 
+<a href="https://www.oschina.net/news/195215/maxkey-3-5-0-ga" target="_blank">查看</a>
+<br/>
+
+MaxKey 单点登录认证系统 v3.5.0 RC 发布[2022/05/01] 
+<a href="https://www.oschina.net/news/193842/maxkey-3-5-0-rc-released" target="_blank">查看</a>
+<br/>
+
+MaxKey 单点登录认证系统 v3.3.0 GA 发布[2022/03/03] 
+<a href="https://www.oschina.net/news/184825" target="_blank">查看</a>
+<br/>
+
+MaxKey 单点登录认证系统 v3.2.0 GA 发布[2022/02/17] 
+<a href="https://www.oschina.net/news/182808/maxkey-3-3-2-ga" target="_blank">查看</a>
+<br/>
+
 MaxKey 单点登录认证系统 v3.1.0 GA 发布[2021/11/03] 
 <a href="https://www.oschina.net/news/167060/maxkey-3-1-0-ga-released" target="_blank">查看</a>
 <br/>
