@@ -283,7 +283,6 @@ layout: zh/default
 			<td colspan="5"></td>
 		</tr>
 		<tr>
-		<tr>
 			<td>管理服务</td>
 			<td>权限管理-资源管理</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
