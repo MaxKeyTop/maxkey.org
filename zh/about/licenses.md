@@ -74,7 +74,11 @@ Apache License Version 2.0 鼓励代码共享和尊重原作者的著作权，�
 
 <h3><a name="Illegal "></a>违反开源协议新闻</h3>
 
+<a href="https://www.oschina.net/news/201007" target="_blank">开源项目维权成功案例： spug 开源运维平台成功维权-2022年06月28日</a>
+
 <a href="https://blog.csdn.net/csdnopensource/article/details/125447214" target="_blank">删库跑路、“投毒”、改协议，开源有哪几大红线千万不能踩？-2022年06月24日</a>
+
+<a href="https://blog.csdn.net/csdnnews/article/details/124837759" target="_blank">GPL 法律之战：它是自由软件许可证，更具合同效力-2022年05月18日</a>
 
 <a href="https://www.oschina.net/news/180750/volcengine-apache-skywalking" target="_blank">违规再分发 SkyWalking，火山引擎回应并道歉-2022年01月29日</a>
 
