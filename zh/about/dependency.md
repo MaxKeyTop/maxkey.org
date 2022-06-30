@@ -509,7 +509,17 @@ layout: zh/default
 			</td>
             <td>{{ site.springBootVersion}}</td>
             <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
+            <td>The Apache License, Version 2.0</td>
+		</tr>
+		
+		<tr>
+            <td>compile</td>
+            <td>org.springframework.security</td>
+            <td>spring-security-oauth</td>
+            <td>2.5.1</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td>
+		</tr>	
 		<tr>
             <td>compile</td>
             <td>org.springframework.data</td>
@@ -524,14 +534,14 @@ layout: zh/default
 		
 		<tr>
             <td>compile</td>
-            <td>rg.springframework.plugin</td>
+            <td>org.springframework.plugin</td>
             <td>spring-plugin-core</td>
             <td>{{ site.springplugincoreVersion}}</td>
             <td>jar</td>
             <td>The Apache License, Version 2.0</td></tr>		
 		<tr>
             <td>compile</td>
-            <td>rg.springframework.plugin</td>
+            <td>org.springframework.plugin</td>
             <td>spring-plugin-metadata</td>
             <td>{{ site.springpluginmetadataVersion}}</td>
             <td>jar</td>
