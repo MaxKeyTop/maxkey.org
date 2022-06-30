@@ -963,7 +963,16 @@ layout: zh/default
             <td>cglib</td>
             <td>{{site.cglibVersion}}</td>
             <td>jar</td>
-            <td>The Apache License, Version 2.0</td></tr>
+            <td>The Apache License, Version 2.0</td>
+		</tr>
+		<tr>
+            <td>compile</td>
+            <td>org.lionsoul</td>
+            <td>ip2region</td>
+            <td>1.7.2</td>
+            <td>jar</td>
+            <td>The Apache License, Version 2.0</td>
+		</tr>
         <tr>
             <td>compile</td>
             <td>org.ow2.asm</td>
