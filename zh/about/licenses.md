@@ -14,7 +14,7 @@ http://www.apache.org/licenses/LICENSE-2.0
 </a>
 
 <pre><code class="ini hljs">
-Copyright [2021] [MaxKey of copyright http://www.maxkey.top]
+Copyright [2022] [MaxKey of copyright http://www.maxkey.top]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -73,6 +73,8 @@ Apache License Version 2.0 鼓励代码共享和尊重原作者的著作权，�
 
 
 <h3><a name="Illegal "></a>违反开源协议新闻</h3>
+
+<a href="/zh/about/licenses_zqjy_2207.html" target="_blank">关于Authing.cn在百度搜索关键字“MaxKey单点登录认证系统”侵权的进展通告-2022年07月16日</a>
 
 <a href="https://www.oschina.net/news/201007" target="_blank">开源项目维权成功案例： spug 开源运维平台成功维权-2022年06月28日</a>
 

@@ -2,6 +2,9 @@
 layout: zh/default
 ---
 <h2>新闻动态</h2>
+关于Authing.cn在百度搜索关键字“MaxKey单点登录认证系统”侵权的进展通告-[2022/07/16] 
+<a href="/zh/about/licenses_zqjy_2207.html" target="_blank">查看</a>
+<br/>
 
 MaxKey 单点登录认证系统前后端分离 v3.5.1GA 发布[2022/06/01] 
 <a href="https://www.oschina.net/news/199127/maxkey-3-5-ga-released" target="_blank">查看</a>
@@ -21,6 +24,10 @@ MaxKey 单点登录认证系统 v3.3.0 GA 发布[2022/03/03]
 
 MaxKey 单点登录认证系统 v3.2.0 GA 发布[2022/02/17] 
 <a href="https://www.oschina.net/news/182808/maxkey-3-3-2-ga" target="_blank">查看</a>
+<br/>
+
+关于Authing.cn在百度搜索关键字“MaxKey单点登录认证系统”侵权的通告-[2021/12/15] 
+<a href="/zh/about/licenses_zqjy.html" target="_blank">查看</a>
 <br/>
 
 MaxKey 单点登录认证系统 v3.1.0 GA 发布[2021/11/03] 
