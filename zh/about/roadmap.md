@@ -13,26 +13,30 @@ layout: zh/default
 	</thead>
 	<tbody>
 		<tr>
-			<td>2022Q4</td>
+			<td>2023Q3</td>
 			<td>Java 17+</td>
 			<td></td>
 		</tr>
 		<tr >
-			<td>2022Q4</td>
+			<td>2023Q3</td>
 			<td>Jakarta EE 9+ </td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>2022Q4</td>
+			<td>2023Q3</td>
 			<td>Spring Framework 6</td>
 			<td></td>
 		</tr>
 		<tr >
-			<td>2022Q4</td>
+			<td>2023Q3</td>
 			<td>Spring Boot 3 </td>
 			<td></td>
 		</tr>
-		
+		<tr >
+			<td>2022Q3</td>
+			<td>Spring Boot 2.7.x </td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
 		<tr >
 			<td>2022Q2</td>
 			<td>Ant Design of Angular</td>

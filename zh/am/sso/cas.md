@@ -55,7 +55,7 @@ commons-logging-1.1.1.jar
 		&lt;!-- cas server login url --&gt;
 		&lt;init-param&gt;
 			&lt;param-name&gt;casServerLoginUrl&lt;/param-name&gt;
-			&lt;param-value&gt;&gt;http://sso.maxkey.top/sign/authz/cas/login&lt;/param-value&gt;
+			&lt;param-value&gt;http://sso.maxkey.top/sign/authz/cas/login&lt;/param-value&gt;
 		&lt;/init-param&gt;
 		&lt;!-- cas client url, in end of url / is required --&gt;
 		&lt;init-param&gt;

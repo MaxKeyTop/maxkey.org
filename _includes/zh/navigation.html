@@ -1,27 +1,21 @@
 <nav id="nav-menu-container">
 	<ul class="nav-menu">
-			<li class="menu-has-children"><a href="{{site.baseurl}}/zh/about/welcome.html"><span class="none"></span>About关于</a>
-				<ul class="nav nav-list">
-					<li><a href="{{site.baseurl}}/zh/about/welcome.html"><span class="none"></span>About关于</a></li>
-					<li><a href="{{site.baseurl}}/zh/about/news.html"><span class="none"></span>新闻动态</a></li>
-					<li class=""><a href="{{site.baseurl}}/zh/about/cevsenterprise.html"><span class="none"></span>社区版和企业版对比</a></li>
-					<li class=""><a href="{{site.baseurl}}/zh/about/cevscas.html"><span class="none"></span>MaxKey和Keycloak/CAS对比</a></li>
-					<li class=""><a href="{{site.baseurl}}/zh/about/team.html"><span class="none"></span>项目团队</a></li>
-					<li class=""><a href="{{site.baseurl}}/zh/about/licenses.html"><span class="none"></span>项目许可证</a></li>
-					<li class=""><a href="{{site.baseurl}}/zh/about/performance.html"><span class="none"></span>性能测试报告</a></li>
-					<li class=""><a href="{{site.baseurl}}/zh/about/dependency.html"><span class="none"></span>项目依赖</a></li>
-					<li class=""><a href="{{site.baseurl}}/zh/about/roadmap.html"><span class="none"></span>Roadmap</a></li>
-					
-				</ul>
-			</li>
-			
 			<li class="menu-has-children">
-				<a href="#"><span class="icon-chevron-down"></span>单点登录</a>
+				<a href="#"><span class="icon-chevron-down"></span>产品</a>
 				<ul class="nav nav-list">
-					<li class=""><a href="{{site.baseurl}}/zh/am/ui.html"><span class="none"></span>认证界面</a></li>
 					<li class="menu-has-children">
-						<a href="#"><span class="icon-chevron-down"></span>应用集成</a>
+						<a href="#"><span class="icon-chevron-down"></span>身份管理</a>
 						<ul class="nav nav-list">
+							<li class=""><a href="{{site.baseurl}}/zh/im/im.html"><span class="none"></span>身份管理架构</a></li>
+							<li class=""><a href="{{site.baseurl}}/zh/im/im_connectors.html"><span class="none"></span>身份连接器</a></li>
+							<li class=""><a href="{{site.baseurl}}/zh/im/ui_mgt.html"><span class="none"></span>管理界面</a></li>
+							
+						</ul>
+					</li>
+					<li class="menu-has-children">
+						<a href="#"><span class="icon-chevron-down"></span>单点登录</a>
+						<ul class="nav nav-list">
+							<li class=""><a href="{{site.baseurl}}/zh/am/ui.html"><span class="none"></span>认证界面</a></li>
 							<li class=""><a href="{{site.baseurl}}/zh/am/sso/oauth2.html"><span class="none"></span>OAuth2</a></li>
 							<li class=""><a href="{{site.baseurl}}/zh/am/sso/jwt.html"><span class="none"></span>JWT</a></li>
 							<li class=""><a href="{{site.baseurl}}/zh/am/sso/oidc.html"><span class="none"></span>OIDC</a></li>
@@ -33,19 +27,17 @@
 							<li class=""><a href="{{site.baseurl}}/zh/am/sso/saml_salesforce.html"><span class="none"></span>Salesforce(SAML)</a></li>
 						</ul>
 					</li>
-					<li class=""><a href="{{site.baseurl}}/zh/am/inteapps.html"><span class="none"></span>常用应用集成指南</a></li>
-					<li class=""><a href="{{site.baseurl}}/zh/am/safety.html"><span class="none"></span>单点登录安全性</a></li>
 					<li class=""><a href="{{site.baseurl}}/zh/am/slo.html"><span class="none"></span>单点注销</a></li>
-				</ul>
-				
-			</li>
-			<li class="menu-has-children"><a href="{{site.baseurl}}/zh/im/im.html"><span class="none"></span>身份管理</a>
-				<ul class="nav nav-list">
-					<li class=""><a href="{{site.baseurl}}/zh/im/im.html"><span class="none"></span>身份管理架构</a></li>
-					<li class=""><a href="{{site.baseurl}}/zh/im/ui_mgt.html"><span class="none"></span>管理界面</a></li>
+					<li class=""><a href="{{site.baseurl}}/zh/am/safety.html"><span class="none"></span>单点登录安全性</a></li>
+					<li class=""><a href="{{site.baseurl}}/zh/am/inteapps.html"><span class="none"></span>常用应用集成指南</a></li>
+					<li class=""><a href="{{site.baseurl}}/zh/about/cevsenterprise.html"><span class="none"></span>社区版和企业版对比</a></li>
+					<li class=""><a href="{{site.baseurl}}/zh/about/cevscas.html"><span class="none"></span>MaxKey和Keycloak/CAS对比</a></li>
 				</ul>
 			</li>
-			<li class="menu-has-children"><a href="{{site.baseurl}}/zh/conf/tutorial.html"><span class="none"></span>配置</a>
+			<li class="menu-has-children">
+				<a href="{{site.baseurl}}/zh/ppts.html"><span class="icon-chevron-down"></span>🔥 解决方案</a>
+			</li>
+			<li class="menu-has-children"><a href="{{site.baseurl}}/zh/conf/tutorial.html"><span class="none"></span>开发配置</a>
 				<ul class="nav nav-list">
 					<li class=""><a href="{{site.baseurl}}/zh/conf/tutorial.html"><span class="none"></span>快速使用</a></li>
 					<li class="menu-has-children">
@@ -88,16 +80,25 @@
 					<li class=""><a href="{{site.baseurl}}/zh/college/protocols/cas.html"><span class="none"></span>CAS介绍</a></li>
 					<li class=""><a href="{{site.baseurl}}/zh/college/protocols/tokenbased.html"><span class="none"></span>TokenBased介绍</a></li>
 					<li class=""><a href="{{site.baseurl}}/zh/college/protocols/formbased.html"><span class="none"></span>FormBased介绍</a></li>
-					
-					
 				 </ul>
 			</li>
 			<li class="menu-has-children">
-				<a href="{{site.baseurl}}/zh/about/download.html" title="Download"><span class="icon-chevron-down"></span>Download下载</a>
+				<a href="{{site.baseurl}}/zh/about/download.html" title="Download"><span class="icon-chevron-down"></span>下载</a>
 				<ul class="nav nav-list">
 					<li class=""><a href="{{site.baseurl}}/zh/about/download.html"><span class="none"></span>社区版下载</a></li>
 					<li ><a href="https://github.com/dromara/MaxKey" class="externalLink" title="GitHub">MaxKey@GitHub</a></li>
 					<li ><a href="https://gitee.com/dromara/MaxKey" class="externalLink" title="码云">MaxKey@码云</a></li>
+				</ul>
+			</li>
+			<li class="menu-has-children"><a href="{{site.baseurl}}/zh/about/welcome.html"><span class="none"></span>About关于</a>
+				<ul class="nav nav-list">
+					<li><a href="{{site.baseurl}}/zh/about/welcome.html"><span class="none"></span>About关于</a></li>
+					<li><a href="{{site.baseurl}}/zh/about/news.html"><span class="none"></span>新闻动态</a></li>
+					<li class=""><a href="{{site.baseurl}}/zh/about/team.html"><span class="none"></span>项目团队</a></li>
+					<li class=""><a href="{{site.baseurl}}/zh/about/licenses.html"><span class="none"></span>项目许可证</a></li>
+					<li class=""><a href="{{site.baseurl}}/zh/about/performance.html"><span class="none"></span>性能测试报告</a></li>
+					<li class=""><a href="{{site.baseurl}}/zh/about/dependency.html"><span class="none"></span>项目依赖</a></li>
+					<li class=""><a href="{{site.baseurl}}/zh/about/roadmap.html"><span class="none"></span>Roadmap</a></li>
 				</ul>
 			</li>
 			<li class="menu-has-children">

@@ -69,61 +69,51 @@ layout: zh/default
                     </tr>
                     <tr>
                         <td>12</td>
-                        <td>maxkey_monitor</td>
-                        <td>监控平台,端口9528</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
                         <td>mysql_***</td>
                         <td>MySQL数据库,端口3306</td>
                     </tr>
                     <tr>
-                        <td>14</td>
+                        <td>13</td>
                         <td>maxkey_demo</td>
                         <td>样例,端口9521</td>
                     </tr>
                     <tr>
-                        <td>15</td>
+                        <td>14</td>
                         <td>start_maxkey.bat</td>
                         <td>启动认证服务器</td>
                     </tr>
                     <tr>
-                        <td>16</td>
+                        <td>15</td>
                         <td>start_maxkey_frontend.bat</td>
                         <td>启动认证前端服务器</td>
                     </tr>
                     <tr>
-                        <td>17</td>
+                        <td>16</td>
                         <td>start_maxkey_mgt.bat</td>
                         <td>启动管理服务器</td>
                     </tr>
                     <tr>
-                        <td>18</td>
+                        <td>17</td>
                         <td>start_maxkey_mgt_frontend.bat</td>
                         <td>启动管理前端服务器</td>
                     </tr>
                     <tr>
-                        <td>19</td>
+                        <td>18</td>
                         <td>start_maxkey_db.bat</td>
                         <td>启动数据库</td>
                     </tr>
                     <tr>
-                        <td>20</td>
+                        <td>19</td>
                         <td>start_maxkey_proxy.bat</td>
                         <td>启动代理服务器</td>
                     </tr>
                     <tr>
-                        <td>21</td>
-                        <td>start_maxkey_monitor.bat</td>
-                        <td>启动监控服务器</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
+                        <td>20</td>
                         <td>start_maxkey_demo.bat</td>
                         <td>启动样例</td>
                     </tr>
                     <tr>
-                        <td>23</td>
+                        <td>21</td>
                         <td>set_maxkey_env.bat</td>
                         <td>环境设置脚本</td>
                     </tr>
@@ -158,19 +148,8 @@ layout: zh/default
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>监控平台</td>
-                            <td><a href="http://sso.maxkey.top:9528/login"
-                                    target="blank">http://sso.maxkey.top:9528/login</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
                             <td>账户密码</td>
                             <td>admin/maxkey</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>监控账户密码</td>
-                            <td>monitor/maxkey</td>
                         </tr>
                     </tbody>
 </table>		

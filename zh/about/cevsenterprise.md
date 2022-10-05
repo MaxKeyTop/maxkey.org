@@ -134,6 +134,12 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>认证服务</td>
+			<td>HMAC_SHA256信任登录</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>认证服务</td>
 			<td>IP地址转换行政区域</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
@@ -229,6 +235,12 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
+			<td>认证服务</td>
+			<td>Redis集群支持</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
 			<td colspan="5"></td>
 		</tr>
 		<tr>
@@ -246,7 +258,7 @@ layout: zh/default
 		<tr>
 			<td>管理服务</td>
 			<td>账号管理</td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i>简单映射</div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
@@ -305,7 +317,34 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>管理服务</td>
+			<td>分级授权-组织授权</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>管理服务</td>
+			<td>分级授权-应用授权</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>管理服务</td>
+			<td>分级授权-角色授权</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td colspan="5"></td>
+		</tr>
+		<tr>
+			<td>管理服务</td>
 			<td>配置管理-岗位管理</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>管理服务</td>
+			<td>配置管理-账号策略</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
@@ -334,12 +373,6 @@ layout: zh/default
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
-			<td>管理服务</td>
-			<td>分级授权</td>
-			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
-			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
-		</tr>
-		<tr>
 			<td colspan="5"></td>
 		</tr>
 		<tr>
@@ -356,7 +389,7 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td>生命周期管理</td>
-			<td>KAFKA同步支持</td>
+			<td>MQ(RocketMQ/KAFKA)同步支持</td>
 			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
@@ -387,6 +420,12 @@ layout: zh/default
 		<tr>
 			<td>生命周期管理</td>
 			<td>钉钉同步器</td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
+		</tr>
+		<tr>
+			<td>生命周期管理</td>
+			<td>飞书同步器</td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
@@ -479,6 +518,12 @@ layout: zh/default
 		</tr>
 		<tr>
 			<td colspan="5"></td>
+		</tr>
+		<tr>
+			<td>其他</td>
+			<td>Maven版本</td>
+			<td><div class="icon"><i class="fa fa-lock" style="color:red;"></i></div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i></div></td>
 		</tr>
 		<tr>
 			<td>其他</td>
@@ -579,8 +624,8 @@ layout: zh/default
 		<tr>
 			<td>授权标识</td>
 			<td><a href="{{site.baseurl}}/zh/about/licenses.html">许可证声明</a></td>
-			<td><div class="icon">不可忽略</div></td>
-			<td><div class="icon">友好</div></td>
+			<td><div class="icon">必须保留</div></td>
+			<td><div class="icon"><i class="fa fa-check-square" style="color:#009999;"></i>友好</div></td>
 		</tr>
 	</tbody>
 </table>

@@ -71,6 +71,7 @@ Apache License Version 2.0 鼓励代码共享和尊重原作者的著作权，�
 
 <img src="{{ "/static/images/maxkey_login_licenses.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}"  alt=""/>
 
+仅使用java程序情况，必须在软件前端页脚中添加此声明
 
 <h3><a name="Illegal "></a>违反开源协议新闻</h3>
 
